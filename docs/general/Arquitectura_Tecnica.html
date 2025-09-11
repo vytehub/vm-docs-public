@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-general/Arquitectura_Tecnica" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Arquitectura Técnica | Vyte Merge Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://vytehub.github.io/vm-docs-public/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://vytehub.github.io/vm-docs-public/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://vytehub.github.io/vm-docs-public/docs/general/Arquitectura_Tecnica"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Arquitectura Técnica | Vyte Merge Docs"><meta data-rh="true" name="description" content="1) Contexto &amp; Objetivo"><meta data-rh="true" property="og:description" content="1) Contexto &amp; Objetivo"><link data-rh="true" rel="icon" href="/vm-docs-public/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://vytehub.github.io/vm-docs-public/docs/general/Arquitectura_Tecnica"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/general/Arquitectura_Tecnica" hreflang="es"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/en/docs/general/Arquitectura_Tecnica" hreflang="en"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/general/Arquitectura_Tecnica" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"General","item":"https://vytehub.github.io/vm-docs-public/docs/category/general"},{"@type":"ListItem","position":2,"name":"Arquitectura Técnica","item":"https://vytehub.github.io/vm-docs-public/docs/general/Arquitectura_Tecnica"}]}</script><link rel="alternate" type="application/rss+xml" href="/vm-docs-public/blog/rss.xml" title="Vyte Merge Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/vm-docs-public/blog/atom.xml" title="Vyte Merge Docs Atom Feed"><link rel="stylesheet" href="/vm-docs-public/assets/css/styles.92c3af45.css">
+<script src="/vm-docs-public/assets/js/runtime~main.dcad0599.js" defer="defer"></script>
+<script src="/vm-docs-public/assets/js/main.f648aacd.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/vm-docs-public/img/logo.svg"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/vm-docs-public/"><div class="navbar__logo"><img src="/vm-docs-public/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/vm-docs-public/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">VyteMergeDocs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/vm-docs-public/docs/intro">Documentacion</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/vytehub/vm-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Cambiar entre modo oscuro y claro (actualmente system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/vm-docs-public/docs/intro">Que es VyteMerge?</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/vm-docs-public/docs/category/general">General</a><button aria-label="Colapsar categoría &#x27;General&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/vm-docs-public/docs/general/Arquitectura_Tecnica">Arquitectura Técnica</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/docs/general/Roadmap">Roadmap MVP (Web)</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/docs/category/modulos">Modulos</a><button aria-label="Ampliar la categoría &#x27;Modulos&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/docs/category/epicas">Epicas</a><button aria-label="Ampliar la categoría &#x27;Epicas&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/vm-docs-public/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/docs/category/general"><span>General</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Arquitectura Técnica</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Arquitectura Técnica</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-contexto--objetivo">1) Contexto &amp; Objetivo<a href="#1-contexto--objetivo" class="hash-link" aria-label="Enlace directo al 1) Contexto &amp; Objetivo" title="Enlace directo al 1) Contexto &amp; Objetivo">​</a></h2>
+<p>Definir la arquitectura para el MVP Web de <strong>VyteMerge</strong>, maximizando <strong>time-to-market</strong> con <strong>.NET 8 + Angular</strong> y aislando desde el inicio el <strong>servicio de IA + Search (IR)</strong> para experimentar rápido en <strong>Search/Feed</strong> sin frenar el desarrollo del dominio.</p>
+<ul>
+<li>Equipo: 1 Arquitecto de software, 1 dev Jr, 1 diseñadora Jr.</li>
+<li>Objetivo técnico: <strong>Modular Monolith + CQRS (MediatR)</strong> (.NET) para dominio y <strong>Servicio IR</strong> separado para <strong>búsqueda y recomendaciones</strong>.</li>
+<li>Objetivo de producto: publicar <strong>Offering/Slot/Booking</strong>, Social básico (Profiles/Follows/Posts), Campaigns, <strong>Search + Feed</strong>.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-alcance-inout">2) Alcance (In/Out)<a href="#2-alcance-inout" class="hash-link" aria-label="Enlace directo al 2) Alcance (In/Out)" title="Enlace directo al 2) Alcance (In/Out)">​</a></h2>
+<p><strong>Incluye (MVP)</strong></p>
+<ul>
+<li>Web Angular (repos separados), design system (<code>vt-toolkit</code>, <code>vt-shared</code>) con Storybook.</li>
+<li>Backend <strong>Modular Monolith .NET 8 + CQRS (MediatR)</strong>, <strong>BFF Minimal APIs</strong>, <strong>gRPC</strong> interno (donde aplique).</li>
+<li><strong>IR Service (IA + Search)</strong> expuesto vía <code>/search</code> y <code>/feed</code>.</li>
+<li>PostgreSQL (core), Redis (cache), Blob Storage (archivos), Service Bus (eventos).</li>
+<li>Autenticación JWT corto + refresh; niveles de privacidad (cuenta/timeline/slot).</li>
+<li>Observabilidad: OpenTelemetry + App Insights.</li>
+</ul>
+<p><strong>Fuera de alcance (Fase 2)</strong></p>
+<ul>
+<li>SSR/PWA, app mobile nativa, sync bidireccional con calendarios externos, escrow/hold en pagos, streaming avanzado (Event Hubs/Kafka).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-requisitos">3) Requisitos<a href="#3-requisitos" class="hash-link" aria-label="Enlace directo al 3) Requisitos" title="Enlace directo al 3) Requisitos">​</a></h2>
+<p><strong>Funcionales</strong></p>
+<ul>
+<li><strong>Offerings, Slots, Bookings</strong>; <strong>Profiles, Follows, Posts</strong>; <strong>Campaigns</strong>.</li>
+<li><strong>Search</strong> con filtros (tiempo/geo/categoría/visibilidad) y <strong>Feed</strong> personalizado.</li>
+</ul>
+<p><strong>No funcionales (SLOs)</strong></p>
+<ul>
+<li>API lecturas p95 ≤ <strong>300ms</strong>; escrituras críticas p95 ≤ <strong>600ms</strong>.</li>
+<li><strong>IR/Search</strong> p95 ≤ <strong>300ms</strong>; <strong>index freshness</strong> &lt; <strong>10s</strong> tras publicar/actualizar Slot.</li>
+<li>Disponibilidad objetivo MVP: <strong>99.5%</strong>.</li>
+<li>Seguridad: TLS 1.2+, secretos en Key Vault; logging/trazas E2E.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-arquitectura-overview">4) Arquitectura (overview)<a href="#4-arquitectura-overview" class="hash-link" aria-label="Enlace directo al 4) Arquitectura (overview)" title="Enlace directo al 4) Arquitectura (overview)">​</a></h2>
+<!-- -->
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-proyectos--repos">5) Proyectos / Repos<a href="#5-proyectos--repos" class="hash-link" aria-label="Enlace directo al 5) Proyectos / Repos" title="Enlace directo al 5) Proyectos / Repos">​</a></h2>
+<p><strong>Frontend (repos separados)</strong></p>
+<ul>
+<li><code>vyte-web-shell</code> (Angular SPA; rutas y auth).</li>
+<li><code>vt-toolkit</code> (design system de componentes).</li>
+<li><code>vt-shared</code> (utilidades/SDK, modelos, estilos compartidos).</li>
+</ul>
+<p><strong>Backend</strong></p>
+<ul>
+<li><code>vytemerge-backend</code> (monolito modular .NET 8):<!-- -->
+<ul>
+<li><strong>BFF</strong> (Minimal APIs) + módulos dominio (Auth, Profiles, Offering&amp;Slots, Booking, Social, Campaigns, Notifications).</li>
+<li>Infra: <strong>Outbox</strong>, integración <strong>Service Bus</strong>, <strong>Observabilidad</strong>.</li>
+</ul>
+</li>
+<li><code>vytemerge-ir-service</code> (IA + Search) — <em>Propuesta por defecto</em>: <strong>Python + FastAPI</strong> (ver §7).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-tecnologías-según-cuestionario">6) Tecnologías (según cuestionario)<a href="#6-tecnologías-según-cuestionario" class="hash-link" aria-label="Enlace directo al 6) Tecnologías (según cuestionario)" title="Enlace directo al 6) Tecnologías (según cuestionario)">​</a></h2>
+<table><thead><tr><th>Capa</th><th>Decisión</th></tr></thead><tbody><tr><td>Frontend</td><td>Angular (repos separados), <code>vt-toolkit</code> + <code>vt-shared</code>, Storybook; <strong>sin SSR/PWA</strong> en MVP; Tests: Karma/Jasmine + Cypress; i18n Angular</td></tr><tr><td>BFF / API</td><td>.NET 8 Minimal APIs; versionado por media type <code>application/vnd.vytemerge.v1+json</code>; rate limiting</td></tr><tr><td>Dominio</td><td><strong>Modular Monolith + CQRS (MediatR)</strong>; EF Core (writes) + Dapper (reads)</td></tr><tr><td>Comunicación interna</td><td><strong>gRPC</strong> (BFF↔Monolito y/o entre módulos si aplica)</td></tr><tr><td>Datos</td><td><strong>PostgreSQL</strong> (core), <strong>Redis</strong> (cache), <strong>Blob Storage</strong> (archivos)</td></tr><tr><td>Mensajería</td><td><strong>Azure Service Bus</strong> (colas/tópicos)</td></tr><tr><td>Notificaciones</td><td><strong>SendGrid</strong> (email), <strong>FCM</strong> (push)</td></tr><tr><td>Pagos</td><td><strong>Mercado Pago</strong></td></tr><tr><td>Cloud &amp; Ops</td><td><strong>Azure</strong>, <strong>AKS</strong>, <strong>GitHub Actions</strong> CI/CD, <strong>Front Door</strong>, <strong>Key Vault</strong>, <strong>App Configuration (Feature Flags)</strong></td></tr><tr><td>Observabilidad</td><td><strong>OpenTelemetry + Application Insights</strong></td></tr></tbody></table>
+<blockquote>
+<p><strong>Pendiente por elegir (Propuesta por defecto)</strong>: §7 IR Service y §8 Búsqueda/Vectores.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-ir-service-ia--search">7) IR Service (IA + Search)<a href="#7-ir-service-ia--search" class="hash-link" aria-label="Enlace directo al 7) IR Service (IA + Search)" title="Enlace directo al 7) IR Service (IA + Search)">​</a></h2>
+<p><strong>Decisión pendiente</strong>: lenguaje/stack, motor de búsqueda/vector, embeddings y ranking.</p>
+<p><strong>Propuesta por defecto (costo‑beneficio‑velocidad):</strong></p>
+<ul>
+<li><strong>Lenguaje</strong>: <strong>Python + FastAPI</strong> (iteración ML rápida; skills existentes).</li>
+<li><strong>Búsqueda</strong>: <strong>Azure AI Search</strong> (BM25 + Semantic Ranker + <strong>Vector</strong> en el mismo servicio).</li>
+<li><strong>Embeddings</strong>: <strong>Azure OpenAI</strong> (batch; no al vuelo) con <strong>versionado</strong>.</li>
+<li><strong>Ranking</strong>: <strong>híbrido</strong> (reglas + pesos) en MVP; luego <strong>LightGBM/XGBoost</strong>.</li>
+<li><strong>Señales</strong>: Monolito → <strong>Service Bus</strong> → IR (views, clicks, bookings, follows).</li>
+<li><strong>SLOs</strong>: p95 <code>/search</code> ≤ <strong>300ms</strong>; <strong>freshness</strong> <code>&lt;10s</code>.</li>
+</ul>
+<p><strong>Contratos frontera (BFF → IR)</strong></p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GET /search?q&amp;when&amp;near&amp;category&amp;cursor&amp;limit&amp;fields</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">GET /feed?userId&amp;near&amp;timebox&amp;cursor&amp;limit&amp;fields</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">POST /feedback { itemId, type: &quot;impression|click|dismiss|save|book&quot; }</span><br></span></code></pre></div></div>
+<p><strong>Provider Abstraction (para no perder control)</strong></p>
+<ul>
+<li><code>SearchProvider</code> dentro de IR para permitir reemplazar <strong>AI Search</strong> por <strong>Elastic + pgvector</strong> sin tocar FE/BFF.</li>
+<li><code>EmbeddingProvider</code> (Azure OpenAI u OSS).</li>
+</ul>
+<p><strong>Indexación &amp; Señales</strong></p>
+<ul>
+<li>Indexador IR suscripto a eventos: <code>slot_published|updated|booked|cancelled</code>, <code>follow_created</code>, <code>post_published</code>, <code>card_clicked</code>.</li>
+<li><strong>Embeddings</strong> en batch por cambios sustanciales; <strong>Redis</strong> para features online (CTR reciente, afinidad social, popularidad).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-data-model-mvp">8) Data Model (MVP)<a href="#8-data-model-mvp" class="hash-link" aria-label="Enlace directo al 8) Data Model (MVP)" title="Enlace directo al 8) Data Model (MVP)">​</a></h2>
+<!-- -->
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="9-api-extracto-mvp">9) API (extracto MVP)<a href="#9-api-extracto-mvp" class="hash-link" aria-label="Enlace directo al 9) API (extracto MVP)" title="Enlace directo al 9) API (extracto MVP)">​</a></h2>
+<p><strong>Auth/Profiles</strong></p>
+<ul>
+<li><code>POST /auth/login</code> • <code>POST /auth/signup</code></li>
+<li><code>GET /profiles/:id</code> • <code>PATCH /profiles/:id</code></li>
+</ul>
+<p><strong>Follow</strong></p>
+<ul>
+<li><code>POST /follows</code> • <code>PATCH /follows/:userId/(approve|remove|block)</code></li>
+<li><code>GET /profiles/:id/(followers|following)</code></li>
+</ul>
+<p><strong>Offerings/Slots</strong></p>
+<ul>
+<li><code>POST /offerings</code> • <code>PATCH /offerings/:id</code></li>
+<li><code>POST /slots/generate</code> (reglas → slots)</li>
+<li><code>GET /slots?timelineId=&amp;visibility=public</code></li>
+</ul>
+<p><strong>Bookings</strong></p>
+<ul>
+<li><code>POST /bookings</code></li>
+<li><code>PATCH /bookings/:id/(confirm|cancel)</code></li>
+</ul>
+<p><strong>Posts/Campaigns</strong></p>
+<ul>
+<li><code>POST /posts</code> • <code>DELETE /posts/:id</code></li>
+<li><code>POST /campaigns</code> • <code>GET /campaigns?owner=...</code></li>
+</ul>
+<p><strong>Discovery / IR</strong></p>
+<ul>
+<li><code>GET /search?q&amp;when&amp;near&amp;category&amp;cursor&amp;limit&amp;fields</code></li>
+<li><code>GET /feed?userId&amp;near&amp;timebox&amp;cursor&amp;limit&amp;fields</code></li>
+</ul>
+<p><strong>Versionado</strong>: header <code>Accept: application/vnd.vytemerge.v1+json</code>.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="10-seguridad--privacidad">10) Seguridad &amp; Privacidad<a href="#10-seguridad--privacidad" class="hash-link" aria-label="Enlace directo al 10) Seguridad &amp; Privacidad" title="Enlace directo al 10) Seguridad &amp; Privacidad">​</a></h2>
+<ul>
+<li><strong>Auth</strong>: JWT corto + refresh; scopes/roles.</li>
+<li><strong>Privacidad</strong>: cuenta/timeline/slot; filtros de visibilidad en IR/Search.</li>
+<li><strong>Cifrado</strong>: TLS 1.2+; secretos en <strong>Key Vault</strong>.</li>
+<li><strong>PII</strong>: mínimo necesario; logs sin datos sensibles; retention acorde.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="11-observabilidad">11) Observabilidad<a href="#11-observabilidad" class="hash-link" aria-label="Enlace directo al 11) Observabilidad" title="Enlace directo al 11) Observabilidad">​</a></h2>
+<ul>
+<li><strong>Trazas</strong>: OpenTelemetry (traceId de FE→BFF→Monolito/IR→AI Search).</li>
+<li><strong>Métricas</strong>: p95 <code>/search</code>, <code>/feed</code>; tasa de error; colas atrasadas.</li>
+<li><strong>Logs</strong>: Serilog/estructura; App Insights con sampling (10–20% en MVP).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="12-despliegue--entornos">12) Despliegue &amp; Entornos<a href="#12-despliegue--entornos" class="hash-link" aria-label="Enlace directo al 12) Despliegue &amp; Entornos" title="Enlace directo al 12) Despliegue &amp; Entornos">​</a></h2>
+<ul>
+<li><strong>Azure</strong> + <strong>AKS</strong> (MVP con 1–2 réplicas por servicio).</li>
+<li>Entornos: <code>dev</code> • <code>staging</code> • <code>prod</code>.</li>
+<li><strong>Front Door</strong> (CDN/WAF), dominios y TLS administrados.</li>
+<li><strong>CI/CD</strong>: GitHub Actions (build/test/lint → deploy por entorno; <code>trunk-based</code> + feature flags).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="13-slos--kpis">13) SLOs &amp; KPIs<a href="#13-slos--kpis" class="hash-link" aria-label="Enlace directo al 13) SLOs &amp; KPIs" title="Enlace directo al 13) SLOs &amp; KPIs">​</a></h2>
+<ul>
+<li><strong>SLO</strong>: <code>/search</code> y <code>/feed</code> p95 ≤ 300ms; freshness <code>&lt;10s</code>.</li>
+<li><strong>KPIs</strong>: CTR feed, conversión Slot→Booking, utilización timeline, aceptación follow, ROAS campañas.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="14-plan-de-evolución">14) Plan de Evolución<a href="#14-plan-de-evolución" class="hash-link" aria-label="Enlace directo al 14) Plan de Evolución" title="Enlace directo al 14) Plan de Evolución">​</a></h2>
+<ol>
+<li><strong>MVP</strong>: ranking por reglas; embeddings batch; cache Redis; Service Bus básico.</li>
+<li><strong>Fase 1.5</strong>: ranker <strong>LightGBM/XGBoost</strong>; A/B simple; más señales (dwell/saves).</li>
+<li><strong>Fase 2</strong>: Event Hubs/Kafka; feature store ligero; SSR en páginas públicas (opcional); mobile con <strong>Angular + Capacitor</strong>.</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="15-adrs-resumen">15) ADRs (resumen)<a href="#15-adrs-resumen" class="hash-link" aria-label="Enlace directo al 15) ADRs (resumen)" title="Enlace directo al 15) ADRs (resumen)">​</a></h2>
+<ul>
+<li><strong>ADR-001</strong>: Término <strong>Service → Offering</strong> (global).</li>
+<li><strong>ADR-002</strong>: <strong>Monolito modular + BFF</strong> con <strong>IR Service</strong> separado desde día 1.</li>
+<li><strong>ADR-003</strong>: <strong>PostgreSQL</strong> como DB Core.</li>
+<li><strong>ADR-004 (Propuesta)</strong>: <strong>IR Python + AI Search (texto+vector) + Embeddings Azure OpenAI</strong>; ranking híbrido; SLOs definidos.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="16-riesgos--open-questions">16) Riesgos &amp; Open Questions<a href="#16-riesgos--open-questions" class="hash-link" aria-label="Enlace directo al 16) Riesgos &amp; Open Questions" title="Enlace directo al 16) Riesgos &amp; Open Questions">​</a></h2>
+<ul>
+<li><strong>IR Stack</strong> (Python vs .NET) y <strong>motor de búsqueda</strong> (AI Search vs Elastic + pgvector) → <strong>Propuesta</strong> arriba.</li>
+<li><strong>Costo</strong> AI Search/embeddings a escala → mitigado con embeddings batch + cache + escalado gradual de SKU.</li>
+<li><strong>gRPC</strong> interno con equipo chico → mantenerlo en BFF↔Monolito; evitar gRPC entre todos los módulos al inicio.</li>
+<li><strong>Repos separados FE</strong> → disciplina para compartir modelos/SDKs; opción de generar SDK desde OpenAPI.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="17-test--acceptance-criteria">17) Test / Acceptance Criteria<a href="#17-test--acceptance-criteria" class="hash-link" aria-label="Enlace directo al 17) Test / Acceptance Criteria" title="Enlace directo al 17) Test / Acceptance Criteria">​</a></h2>
+<ul>
+<li><code>GET /search</code> y <code>GET /feed</code> cumplen p95 ≤ 300ms en staging con dataset MVP.</li>
+<li>Indexación &lt; 10s tras <code>slot_published</code>.</li>
+<li>Outbox + Service Bus con reintentos e idempotencia.</li>
+<li>Observabilidad con traceId E2E y dashboards básicos.</li>
+<li><strong>Build/Deploy</strong> verde a <code>dev</code> y <code>staging</code> desde CI.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="18-checklist--next-steps">18) Checklist / Next Steps<a href="#18-checklist--next-steps" class="hash-link" aria-label="Enlace directo al 18) Checklist / Next Steps" title="Enlace directo al 18) Checklist / Next Steps">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Confirmar <strong>IR stack</strong> (aceptar Propuesta o ajustar).</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Definir <strong>esquema de índices</strong> y <strong>feature set</strong> inicial en IR.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Escribir <strong>OpenAPI</strong> de <code>/search</code>, <code>/feed</code>, <code>/feedback</code>.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Implementar <strong>Indexador</strong> (Service Bus → IR → AI Search).</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Preparar <strong>pipelines CI/CD</strong> (BFF, Monolito, IR) y secretos en Key Vault.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Crear <strong>épica Platform Setup</strong> con IaC y provisión de: AKS, AI Search, Redis, Key Vault, App Insights, Front Door.</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vytehub/vm-docs/tree/main/docs/general/Arquitectura_Tecnica.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar esta página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/vm-docs-public/docs/category/general"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">General</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/vm-docs-public/docs/general/Roadmap"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Roadmap MVP (Web)</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-contexto--objetivo" class="table-of-contents__link toc-highlight">1) Contexto &amp; Objetivo</a></li><li><a href="#2-alcance-inout" class="table-of-contents__link toc-highlight">2) Alcance (In/Out)</a></li><li><a href="#3-requisitos" class="table-of-contents__link toc-highlight">3) Requisitos</a></li><li><a href="#4-arquitectura-overview" class="table-of-contents__link toc-highlight">4) Arquitectura (overview)</a></li><li><a href="#5-proyectos--repos" class="table-of-contents__link toc-highlight">5) Proyectos / Repos</a></li><li><a href="#6-tecnologías-según-cuestionario" class="table-of-contents__link toc-highlight">6) Tecnologías (según cuestionario)</a></li><li><a href="#7-ir-service-ia--search" class="table-of-contents__link toc-highlight">7) IR Service (IA + Search)</a></li><li><a href="#8-data-model-mvp" class="table-of-contents__link toc-highlight">8) Data Model (MVP)</a></li><li><a href="#9-api-extracto-mvp" class="table-of-contents__link toc-highlight">9) API (extracto MVP)</a></li><li><a href="#10-seguridad--privacidad" class="table-of-contents__link toc-highlight">10) Seguridad &amp; Privacidad</a></li><li><a href="#11-observabilidad" class="table-of-contents__link toc-highlight">11) Observabilidad</a></li><li><a href="#12-despliegue--entornos" class="table-of-contents__link toc-highlight">12) Despliegue &amp; Entornos</a></li><li><a href="#13-slos--kpis" class="table-of-contents__link toc-highlight">13) SLOs &amp; KPIs</a></li><li><a href="#14-plan-de-evolución" class="table-of-contents__link toc-highlight">14) Plan de Evolución</a></li><li><a href="#15-adrs-resumen" class="table-of-contents__link toc-highlight">15) ADRs (resumen)</a></li><li><a href="#16-riesgos--open-questions" class="table-of-contents__link toc-highlight">16) Riesgos &amp; Open Questions</a></li><li><a href="#17-test--acceptance-criteria" class="table-of-contents__link toc-highlight">17) Test / Acceptance Criteria</a></li><li><a href="#18-checklist--next-steps" class="table-of-contents__link toc-highlight">18) Checklist / Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 VyteMergeDocs, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

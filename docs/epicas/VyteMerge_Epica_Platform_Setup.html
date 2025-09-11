@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-epicas/VyteMerge_Epica_Platform_Setup" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Épica: Platform &amp; Infrastructure Setup (MVP) | Vyte Merge Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://vytehub.github.io/vm-docs-public/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://vytehub.github.io/vm-docs-public/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://vytehub.github.io/vm-docs-public/docs/epicas/VyteMerge_Epica_Platform_Setup"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Épica: Platform &amp; Infrastructure Setup (MVP) | Vyte Merge Docs"><meta data-rh="true" name="description" content="Contexto / Objetivo"><meta data-rh="true" property="og:description" content="Contexto / Objetivo"><link data-rh="true" rel="icon" href="/vm-docs-public/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://vytehub.github.io/vm-docs-public/docs/epicas/VyteMerge_Epica_Platform_Setup"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/epicas/VyteMerge_Epica_Platform_Setup" hreflang="es"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/en/docs/epicas/VyteMerge_Epica_Platform_Setup" hreflang="en"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/epicas/VyteMerge_Epica_Platform_Setup" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Epicas","item":"https://vytehub.github.io/vm-docs-public/docs/category/epicas"},{"@type":"ListItem","position":2,"name":"Épica: Platform & Infrastructure Setup (MVP)","item":"https://vytehub.github.io/vm-docs-public/docs/epicas/VyteMerge_Epica_Platform_Setup"}]}</script><link rel="alternate" type="application/rss+xml" href="/vm-docs-public/blog/rss.xml" title="Vyte Merge Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/vm-docs-public/blog/atom.xml" title="Vyte Merge Docs Atom Feed"><link rel="stylesheet" href="/vm-docs-public/assets/css/styles.92c3af45.css">
+<script src="/vm-docs-public/assets/js/runtime~main.dcad0599.js" defer="defer"></script>
+<script src="/vm-docs-public/assets/js/main.f648aacd.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/vm-docs-public/img/logo.svg"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/vm-docs-public/"><div class="navbar__logo"><img src="/vm-docs-public/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/vm-docs-public/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">VyteMergeDocs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/vm-docs-public/docs/intro">Documentacion</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/vytehub/vm-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Cambiar entre modo oscuro y claro (actualmente system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/vm-docs-public/docs/intro">Que es VyteMerge?</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/docs/category/general">General</a><button aria-label="Ampliar la categoría &#x27;General&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/docs/category/modulos">Modulos</a><button aria-label="Ampliar la categoría &#x27;Modulos&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/vm-docs-public/docs/category/epicas">Epicas</a><button aria-label="Colapsar categoría &#x27;Epicas&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/vm-docs-public/docs/epicas/VyteMerge_Epica_Platform_Setup">Épica: Platform &amp; Infrastructure Setup (MVP)</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/vm-docs-public/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/docs/category/epicas"><span>Epicas</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Épica: Platform &amp; Infrastructure Setup (MVP)</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Épica: Platform &amp; Infrastructure Setup (MVP)</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="contexto--objetivo">Contexto / Objetivo<a href="#contexto--objetivo" class="hash-link" aria-label="Enlace directo al Contexto / Objetivo" title="Enlace directo al Contexto / Objetivo">​</a></h2>
+<p>Preparar la <strong>plataforma base</strong> para que el equipo (1 dev Sr, 1 dev Jr, 1 diseñadora Jr) pueda <strong>entregar el MVP web</strong> con ciclos de despliegue seguros y medibles. La épica abarca <strong>repos, CI/CD, cloud (Azure), seguridad básica, observabilidad</strong>, y el <strong>esqueleto</strong> para el <strong>IR Service (IA + Search)</strong> separado desde el día 1.</p>
+<p><strong>Metas clave</strong></p>
+<ul>
+<li><em>Time‑to‑market</em> rápido con <strong>.NET 8 + Angular</strong> y <strong>AKS</strong>.</li>
+<li>Aislar <strong>IR (IA + Search)</strong> en un servicio independiente.</li>
+<li>Estándares de <strong>versionado</strong>, <strong>branching</strong> (<em>trunk‑based</em>), <strong>feature flags</strong>, <strong>telemetría</strong> y <strong>secrets</strong> desde el inicio.</li>
+<li>Costos controlados con <strong>SKUs mínimos</strong> y escalado progresivo.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="alcance-in--out">Alcance (In / Out)<a href="#alcance-in--out" class="hash-link" aria-label="Enlace directo al Alcance (In / Out)" title="Enlace directo al Alcance (In / Out)">​</a></h2>
+<p><strong>Incluye</strong></p>
+<ul>
+<li>Repos y estructura inicial (FE repos separados; BE polyrepo; IR service propio).</li>
+<li><strong>CI/CD</strong> con GitHub Actions: build, test, security checks, contenedores y despliegue a <strong>dev/staging/prod</strong>.</li>
+<li><strong>Azure</strong>: <strong>AKS</strong>, <strong>Azure Front Door (CDN/WAF)</strong>, <strong>Azure Key Vault</strong>, <strong>Application Insights (OTel)</strong>, <strong>Azure App Configuration (Feature Flags)</strong>, <strong>Azure Service Bus</strong>, <strong>Azure Cache for Redis</strong>, <strong>Azure Blob Storage</strong>.</li>
+<li>Provisión inicial (IaC) de <strong>PostgreSQL</strong> (Flexible Server) como DB core.</li>
+<li>Pipeline de <strong>infra</strong> (IaC) para ambientes <code>dev</code>, <code>stg</code>, <code>prod</code>.</li>
+<li><strong>Health endpoints</strong> y chequeos de <em>readiness/liveness</em> para BFF, Monolito y IR.</li>
+</ul>
+<p><strong>Fuera de alcance (de esta épica)</strong></p>
+<ul>
+<li>Funcionalidad de dominio (Offerings/Slots/Booking/Social/Campaigns).</li>
+<li>Modelo de ranking avanzado y A/B testing (Fase 1.5).</li>
+<li>SSR/PWA, app mobile (se preparan hooks, no se implementan aquí).</li>
+</ul>
+<p><strong>Suposiciones</strong></p>
+<ul>
+<li>Cloud: <strong>Azure</strong>.</li>
+<li>DB: <strong>PostgreSQL</strong> (core); Redis para cache; Service Bus para eventos.</li>
+<li>IR Provider (inicial): <strong>Azure AI Search</strong> (texto+vector); embeddings en <strong>Azure OpenAI</strong> (batch).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="requisitos-técnicos--no-funcionales">Requisitos (técnicos / no funcionales)<a href="#requisitos-técnicos--no-funcionales" class="hash-link" aria-label="Enlace directo al Requisitos (técnicos / no funcionales)" title="Enlace directo al Requisitos (técnicos / no funcionales)">​</a></h2>
+<ul>
+<li><strong>Disponibilidad (MVP)</strong>: 99.5% (apps) con al menos 2 instancias en <code>prod</code> (cuando corresponda).</li>
+<li><strong>Seguridad</strong>: TLS 1.2+, secretos en Key Vault, <em>least privilege</em>.</li>
+<li><strong>Observabilidad</strong>: Trazas (OTel), logs estructurados, métricas clave y dashboards.</li>
+<li><strong>CI/CD</strong>: Despliegue automatizado a <code>dev</code> y <code>stg</code>, <em>manual approval</em> a <code>prod</code>.</li>
+<li><strong>Performance</strong>: p95 <code>/search</code> y <code>/feed</code> ≤ 300ms (validado en <code>stg</code>).</li>
+<li><strong>Costos</strong>: uso de SKUs mínimos y <em>autoscale</em> controlado.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="diseño-arquitectura-de-plataforma">Diseño (Arquitectura de Plataforma)<a href="#diseño-arquitectura-de-plataforma" class="hash-link" aria-label="Enlace directo al Diseño (Arquitectura de Plataforma)" title="Enlace directo al Diseño (Arquitectura de Plataforma)">​</a></h2>
+<!-- -->
+<p><strong>Componentes principales</strong></p>
+<ul>
+<li><strong>AKS</strong>: orquesta BFF, Monolito y IR Service (pods con HPA).</li>
+<li><strong>Front Door</strong>: terminación TLS, CDN, WAF, <em>routing</em>.</li>
+<li><strong>Key Vault</strong>: secretos/keys para apps/pipelines.</li>
+<li><strong>App Insights</strong>: logs, métricas, trazas (OTel).</li>
+<li><strong>App Configuration</strong>: <strong>feature flags</strong> para <em>trunk‑based</em>.</li>
+<li><strong>Service Bus</strong>: eventos de dominio/señales.</li>
+<li><strong>Redis</strong>: cache para <code>/search</code>, <code>/feed</code> y sesiones.</li>
+<li><strong>Blob</strong>: media y adjuntos.</li>
+<li><strong>PostgreSQL</strong>: DB core con backups automáticos.</li>
+<li><strong>Azure AI Search</strong>: índice de texto + vector (para IR).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="repos--estructura-inicial">Repos / Estructura inicial<a href="#repos--estructura-inicial" class="hash-link" aria-label="Enlace directo al Repos / Estructura inicial" title="Enlace directo al Repos / Estructura inicial">​</a></h2>
+<ul>
+<li><strong>Frontend</strong>
+<ul>
+<li><code>vyte-web-shell</code> (Angular SPA, rutas, auth).</li>
+<li><code>vt-toolkit</code> (design system).</li>
+<li><code>vt-shared</code> (utilidades/SDK).</li>
+</ul>
+</li>
+<li><strong>Backend</strong>
+<ul>
+<li><code>vytemerge-backend</code> (Monolito modular .NET 8 + CQRS + BFF).</li>
+<li><code>vytemerge-ir-service</code> (<strong>IR</strong>: IA + Search; FastAPI Python <em>propuesto</em>).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Branching</strong></p>
+<ul>
+<li><strong>Trunk‑based</strong> con ramas cortas; <code>main</code> protegido; <em>feature flags</em> para <em>dark‑launch</em>.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cicd-pipeline-de-referencia">CI/CD (pipeline de referencia)<a href="#cicd-pipeline-de-referencia" class="hash-link" aria-label="Enlace directo al CI/CD (pipeline de referencia)" title="Enlace directo al CI/CD (pipeline de referencia)">​</a></h2>
+<!-- -->
+<p><strong>Checks mínimos por pipeline</strong></p>
+<ul>
+<li>Lint + unit + e2e (cuando aplique).</li>
+<li><em>SBOM</em> y SCA (dependabot/trivy).</li>
+<li>Firma de contenedores (cosign, opcional).</li>
+<li><em>Smoke tests</em> post‑deploy; <em>rollbacks</em> automatizados.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="entornos--naming">Entornos &amp; Naming<a href="#entornos--naming" class="hash-link" aria-label="Enlace directo al Entornos &amp; Naming" title="Enlace directo al Entornos &amp; Naming">​</a></h2>
+<ul>
+<li><strong>Entornos</strong>: <code>dev</code>, <code>stg</code>, <code>prod</code>.</li>
+<li><strong>Convenciones</strong>: <code>rg-vyte-{env}</code>, <code>aks-vyte-{env}</code>, <code>kv-vyte-{env}</code>…</li>
+<li><strong>Dominios</strong>: <code>app.dev.vytemerge.com</code>, <code>app.stg...</code>, <code>app.vytemerge.com</code>.</li>
+<li><strong>Images</strong>: <code>acr.io/vyte/{service}:{git-sha|semver}</code>.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="seguridad--accesos">Seguridad &amp; Accesos<a href="#seguridad--accesos" class="hash-link" aria-label="Enlace directo al Seguridad &amp; Accesos" title="Enlace directo al Seguridad &amp; Accesos">​</a></h2>
+<ul>
+<li><strong>Identidad</strong>: Managed Identity para pods que acceden a Key Vault/App Config.</li>
+<li><strong>Secretos</strong>: almacenados en <strong>Key Vault</strong>; <em>mounted</em> por CSI Driver en AKS.</li>
+<li><strong>Policies</strong>: <em>least privilege</em>, RBAC por entorno; bloqueo de <em>public network</em> en DB cuando sea posible.</li>
+<li><strong>WAF</strong>: reglas OWASP en Front Door; rate limit básico.</li>
+<li><strong>Auth</strong>: JWT corto + refresh; <em>rate limiting</em> en BFF.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="observabilidad">Observabilidad<a href="#observabilidad" class="hash-link" aria-label="Enlace directo al Observabilidad" title="Enlace directo al Observabilidad">​</a></h2>
+<ul>
+<li><strong>OpenTelemetry</strong>: trazas desde FE (traceId) → BFF → Monolito/IR → dependencias.</li>
+<li><strong>Dashboards</strong> (App Insights):<!-- -->
+<ul>
+<li>p95 <code>/search</code>, <code>/feed</code>, error rate, colas Service Bus, CPU/RAM pods.</li>
+</ul>
+</li>
+<li><strong>Alertas</strong>:<!-- -->
+<ul>
+<li>p95 &gt; umbral, error rate &gt; X%, backlog en cola &gt; N, pod restarts &gt; K.</li>
+</ul>
+</li>
+<li><strong>Log</strong>: estructurado (Serilog/Pydantic), sin PII sensible.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="costos--guardrails">Costos / Guardrails<a href="#costos--guardrails" class="hash-link" aria-label="Enlace directo al Costos / Guardrails" title="Enlace directo al Costos / Guardrails">​</a></h2>
+<ul>
+<li><strong>SKUs mínimos</strong> (S1 en AI Search; Redis/Service Bus básicos al inicio).</li>
+<li><strong>Autoscale</strong> conservador (HPA por CPU/requests).</li>
+<li><strong>App Insights</strong> con <em>sampling</em> 10–20% en <code>prod</code> (ajustable).</li>
+<li><strong>Embeddings batch</strong> (no <em>on‑demand</em>) para controlar costos.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="datos-de-configuración-modelo-mínimo">Datos de Configuración (modelo mínimo)<a href="#datos-de-configuración-modelo-mínimo" class="hash-link" aria-label="Enlace directo al Datos de Configuración (modelo mínimo)" title="Enlace directo al Datos de Configuración (modelo mínimo)">​</a></h2>
+<ul>
+<li><strong>FeatureFlag</strong>: <code>{ key, env, enabled, rollout, owner }</code></li>
+<li><strong>SecretRef</strong>: <code>{ name, kvPath, scope (svc/env), rotation }</code></li>
+<li><strong>ServiceEndpoint</strong>: <code>{ name, url, version }</code></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="api-plataforma">API (plataforma)<a href="#api-plataforma" class="hash-link" aria-label="Enlace directo al API (plataforma)" title="Enlace directo al API (plataforma)">​</a></h2>
+<ul>
+<li><strong>Health</strong>: <code>GET /healthz</code> (liveness), <code>GET /readyz</code> (readiness) en BFF/Monolito/IR.</li>
+<li><strong>Metrics</strong>: <code>/metrics</code> (si aplica Prom exporter) y App Insights/OTel.</li>
+<li><strong>Versionado</strong>: BFF expone <code>Accept: application/vnd.vytemerge.v1+json</code>.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="plan-de-implementación-sprints-sugeridos">Plan de Implementación (sprints sugeridos)<a href="#plan-de-implementación-sprints-sugeridos" class="hash-link" aria-label="Enlace directo al Plan de Implementación (sprints sugeridos)" title="Enlace directo al Plan de Implementación (sprints sugeridos)">​</a></h2>
+<ul>
+<li><strong>Sprint 0 (Foundation)</strong>: Repos, CI, ACR, <em>hello‑world</em> en AKS, Key Vault, App Insights, App Config, Front Door.</li>
+<li><strong>Sprint 1 (DB &amp; Messaging)</strong>: PostgreSQL, Redis, Service Bus, secretos y permisos, <em>readiness/liveness</em>.</li>
+<li><strong>Sprint 2 (IR base)</strong>: Provisión AI Search, <em>indexer</em> base, contrato <code>/search</code> y <code>/feed</code>, Redis cache, dashboards y alertas.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="acceptance-criteria-épica">Acceptance Criteria (épica)<a href="#acceptance-criteria-épica" class="hash-link" aria-label="Enlace directo al Acceptance Criteria (épica)" title="Enlace directo al Acceptance Criteria (épica)">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Pipelines <strong>verdes</strong> con build/test/lint y artefactos empujados a ACR.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Deploy automático</strong> a <code>dev</code> y <code>stg</code>; <strong>manual</strong> a <code>prod</code>.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Key Vault</strong> integrado; ninguna credencial en repos.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>OpenTelemetry</strong> enlaza FE→BFF→Monolito/IR (traceId visible en App Insights).</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Health checks</strong> activos; <em>readiness</em> condiciona el tráfico.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Dashboards</strong> y <strong>alertas</strong> (p95, error‑rate, backlog colas).</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Cost guardrails</strong> documentados y activos (sampling, autoscale).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kpis-plataforma">KPIs (plataforma)<a href="#kpis-plataforma" class="hash-link" aria-label="Enlace directo al KPIs (plataforma)" title="Enlace directo al KPIs (plataforma)">​</a></h2>
+<ul>
+<li><strong>Lead time</strong>: commit → deploy a <code>stg</code> ≤ 30 min.</li>
+<li><strong>MTTR</strong>: rollback ≤ 10 min.</li>
+<li><strong>Éxito de pipelines</strong> ≥ 95%.</li>
+<li><strong>Onboarding dev</strong>: <em>setup local</em> ≤ 30 min.</li>
+<li><strong>Coste mensual</strong> dentro de presupuesto (±20%).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="riesgos--open-questions">Riesgos &amp; Open Questions<a href="#riesgos--open-questions" class="hash-link" aria-label="Enlace directo al Riesgos &amp; Open Questions" title="Enlace directo al Riesgos &amp; Open Questions">​</a></h2>
+<ul>
+<li>Complejidad inicial de AKS con equipo chico → plantillas y <em>starter charts</em>.</li>
+<li>Elección Bicep vs Terraform → <strong>decidir</strong> (Propuesta: Bicep si solo Azure, Terraform si se prevé multi‑cloud).</li>
+<li>Seguridad de red (privado vs público) en DB/AI Search según presupuesto/tiempos.</li>
+<li>Trazabilidad de eventos (Service Bus) → definir <em>dead‑letter</em> y reintentos.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="checklist--next-steps">Checklist / Next Steps<a href="#checklist--next-steps" class="hash-link" aria-label="Enlace directo al Checklist / Next Steps" title="Enlace directo al Checklist / Next Steps">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Elegir <strong>IaC</strong>: Bicep (<em>propuesta</em>) o Terraform.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Crear repos y <em>branch protection</em> (<code>main</code>).</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Provisionar <strong>AKS</strong>, <strong>ACR</strong>, <strong>Front Door</strong>, <strong>Key Vault</strong>, <strong>App Insights</strong>, <strong>App Config</strong>.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Provisionar <strong>PostgreSQL</strong>, <strong>Redis</strong>, <strong>Service Bus</strong>, <strong>Blob</strong>; <em>seeding</em> mínimo.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Provisionar <strong>AI Search</strong> y cablear IR base (índices vacíos + <code>/search</code> ping).</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Configurar <strong>CI/CD</strong> (GH Actions) para FE, BE, IR con deploy a <code>dev/stg</code>.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Publicar <strong>runbooks</strong>: rollback, rotación de secretos, incident response.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="backlog-jira-épica--historias--subtareas">Backlog Jira (Épica → Historias → Subtareas)<a href="#backlog-jira-épica--historias--subtareas" class="hash-link" aria-label="Enlace directo al Backlog Jira (Épica → Historias → Subtareas)" title="Enlace directo al Backlog Jira (Épica → Historias → Subtareas)">​</a></h2>
+<p><strong>EPIC</strong>: VyteMerge — Platform &amp; Infrastructure Setup (MVP)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="story-1--repos--ci-básico">Story 1 — Repos &amp; CI Básico<a href="#story-1--repos--ci-básico" class="hash-link" aria-label="Enlace directo al Story 1 — Repos &amp; CI Básico" title="Enlace directo al Story 1 — Repos &amp; CI Básico">​</a></h3>
+<p><strong>Desc.</strong> Repos iniciales (FE/BE/IR), <em>branch protection</em>, GH Actions lint+test+build.
+<strong>AC</strong></p>
+<ul>
+<li>Pipeline verde en PR (lint+test).</li>
+<li>Artefactos construidos.</li>
+</ul>
+<p><em>Subtareas</em></p>
+<ul>
+<li>Crear repos + plantillas (README, CODEOWNERS).</li>
+<li>GH Actions básicos (Node/.NET/Python).</li>
+<li>Dependabot y SCA.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="story-2--contenedores--aks-devstg">Story 2 — Contenedores &amp; AKS (dev/stg)<a href="#story-2--contenedores--aks-devstg" class="hash-link" aria-label="Enlace directo al Story 2 — Contenedores &amp; AKS (dev/stg)" title="Enlace directo al Story 2 — Contenedores &amp; AKS (dev/stg)">​</a></h3>
+<p><strong>Desc.</strong> ACR, imágenes, despliegue <em>hello‑world</em> en AKS.
+<strong>AC</strong></p>
+<ul>
+<li>Imágenes <code>:sha</code> en ACR.</li>
+<li><code>kubectl get pods</code> sano; <code>readyz</code> ok.</li>
+</ul>
+<p><em>Subtareas</em></p>
+<ul>
+<li>Dockerfiles (FE/BE/IR).</li>
+<li>Helm/manifests.</li>
+<li>HPA simple.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="story-3--seguridad--secrets">Story 3 — Seguridad &amp; Secrets<a href="#story-3--seguridad--secrets" class="hash-link" aria-label="Enlace directo al Story 3 — Seguridad &amp; Secrets" title="Enlace directo al Story 3 — Seguridad &amp; Secrets">​</a></h3>
+<p><strong>Desc.</strong> Key Vault + CSI Driver; secrets fuera de repos.
+<strong>AC</strong></p>
+<ul>
+<li>Variables críticas <strong>solo</strong> en Key Vault.</li>
+<li>Rotación documentada.</li>
+</ul>
+<p><em>Subtareas</em></p>
+<ul>
+<li>KV + permisos.</li>
+<li>Montaje en pods.</li>
+<li>Rotación y auditoría.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="story-4--observabilidad">Story 4 — Observabilidad<a href="#story-4--observabilidad" class="hash-link" aria-label="Enlace directo al Story 4 — Observabilidad" title="Enlace directo al Story 4 — Observabilidad">​</a></h3>
+<p><strong>Desc.</strong> App Insights + OpenTelemetry; dashboards y alertas.
+<strong>AC</strong></p>
+<ul>
+<li>TraceId E2E visible.</li>
+<li>Alertas p95/error/backlog activas.</li>
+</ul>
+<p><em>Subtareas</em></p>
+<ul>
+<li>SDK OTel en BE/IR.</li>
+<li>Dashboards &amp; alert rules.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="story-5--datos--mensajería">Story 5 — Datos &amp; Mensajería<a href="#story-5--datos--mensajería" class="hash-link" aria-label="Enlace directo al Story 5 — Datos &amp; Mensajería" title="Enlace directo al Story 5 — Datos &amp; Mensajería">​</a></h3>
+<p><strong>Desc.</strong> PostgreSQL, Redis, Service Bus y <em>hello event</em>.
+<strong>AC</strong></p>
+<ul>
+<li>Conexiones seguras (TLS).</li>
+<li>Evento de prueba circula de Monolito → SB → IR.</li>
+</ul>
+<p><em>Subtareas</em></p>
+<ul>
+<li>Provisionar PG/Redis/SB.</li>
+<li>Topic/cola + DLQ.</li>
+<li>Consumer IR demo.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="story-6--front-door--waf">Story 6 — Front Door &amp; WAF<a href="#story-6--front-door--waf" class="hash-link" aria-label="Enlace directo al Story 6 — Front Door &amp; WAF" title="Enlace directo al Story 6 — Front Door &amp; WAF">​</a></h3>
+<p><strong>Desc.</strong> CDN/WAF, dominios, TLS.
+<strong>AC</strong></p>
+<ul>
+<li><code>app.dev.*</code> sirviendo.</li>
+<li>Reglas OWASP activas.</li>
+</ul>
+<p><em>Subtareas</em></p>
+<ul>
+<li>DNS + certs.</li>
+<li>Reglas WAF.</li>
+<li>Health probes.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="story-7--ir-base-ai-search--endpoints">Story 7 — IR Base (AI Search &amp; Endpoints)<a href="#story-7--ir-base-ai-search--endpoints" class="hash-link" aria-label="Enlace directo al Story 7 — IR Base (AI Search &amp; Endpoints)" title="Enlace directo al Story 7 — IR Base (AI Search &amp; Endpoints)">​</a></h3>
+<p><strong>Desc.</strong> Provisión AI Search, índice base y <code>/search</code>/<code>/feed</code> <em>stub</em>.
+<strong>AC</strong></p>
+<ul>
+<li><code>GET /search</code> y <code>GET /feed</code> retornan 200 con estructura.</li>
+<li>Índice vacío creado.</li>
+</ul>
+<p><em>Subtareas</em></p>
+<ul>
+<li>Crear índice (schema vacío).</li>
+<li>FastAPI <em>skeleton</em>.</li>
+<li>Redis cache básico.</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vytehub/vm-docs/tree/main/docs/epicas/VyteMerge_Epica_Platform_Setup.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar esta página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/vm-docs-public/docs/category/epicas"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Epicas</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#contexto--objetivo" class="table-of-contents__link toc-highlight">Contexto / Objetivo</a></li><li><a href="#alcance-in--out" class="table-of-contents__link toc-highlight">Alcance (In / Out)</a></li><li><a href="#requisitos-técnicos--no-funcionales" class="table-of-contents__link toc-highlight">Requisitos (técnicos / no funcionales)</a></li><li><a href="#diseño-arquitectura-de-plataforma" class="table-of-contents__link toc-highlight">Diseño (Arquitectura de Plataforma)</a></li><li><a href="#repos--estructura-inicial" class="table-of-contents__link toc-highlight">Repos / Estructura inicial</a></li><li><a href="#cicd-pipeline-de-referencia" class="table-of-contents__link toc-highlight">CI/CD (pipeline de referencia)</a></li><li><a href="#entornos--naming" class="table-of-contents__link toc-highlight">Entornos &amp; Naming</a></li><li><a href="#seguridad--accesos" class="table-of-contents__link toc-highlight">Seguridad &amp; Accesos</a></li><li><a href="#observabilidad" class="table-of-contents__link toc-highlight">Observabilidad</a></li><li><a href="#costos--guardrails" class="table-of-contents__link toc-highlight">Costos / Guardrails</a></li><li><a href="#datos-de-configuración-modelo-mínimo" class="table-of-contents__link toc-highlight">Datos de Configuración (modelo mínimo)</a></li><li><a href="#api-plataforma" class="table-of-contents__link toc-highlight">API (plataforma)</a></li><li><a href="#plan-de-implementación-sprints-sugeridos" class="table-of-contents__link toc-highlight">Plan de Implementación (sprints sugeridos)</a></li><li><a href="#acceptance-criteria-épica" class="table-of-contents__link toc-highlight">Acceptance Criteria (épica)</a></li><li><a href="#kpis-plataforma" class="table-of-contents__link toc-highlight">KPIs (plataforma)</a></li><li><a href="#riesgos--open-questions" class="table-of-contents__link toc-highlight">Riesgos &amp; Open Questions</a></li><li><a href="#checklist--next-steps" class="table-of-contents__link toc-highlight">Checklist / Next Steps</a></li><li><a href="#backlog-jira-épica--historias--subtareas" class="table-of-contents__link toc-highlight">Backlog Jira (Épica → Historias → Subtareas)</a><ul><li><a href="#story-1--repos--ci-básico" class="table-of-contents__link toc-highlight">Story 1 — Repos &amp; CI Básico</a></li><li><a href="#story-2--contenedores--aks-devstg" class="table-of-contents__link toc-highlight">Story 2 — Contenedores &amp; AKS (dev/stg)</a></li><li><a href="#story-3--seguridad--secrets" class="table-of-contents__link toc-highlight">Story 3 — Seguridad &amp; Secrets</a></li><li><a href="#story-4--observabilidad" class="table-of-contents__link toc-highlight">Story 4 — Observabilidad</a></li><li><a href="#story-5--datos--mensajería" class="table-of-contents__link toc-highlight">Story 5 — Datos &amp; Mensajería</a></li><li><a href="#story-6--front-door--waf" class="table-of-contents__link toc-highlight">Story 6 — Front Door &amp; WAF</a></li><li><a href="#story-7--ir-base-ai-search--endpoints" class="table-of-contents__link toc-highlight">Story 7 — IR Base (AI Search &amp; Endpoints)</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 VyteMergeDocs, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

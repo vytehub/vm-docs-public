@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvyte_merge_docs=self.webpackChunkvyte_merge_docs||[]).push([[2498],{2498:(e,c,r)=>{r.d(c,{createArchitectureServices:()=>s.S});var s=r(3009);r(8198)}}]);

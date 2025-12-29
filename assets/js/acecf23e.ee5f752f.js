@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvyte_merge_docs=self.webpackChunkvyte_merge_docs||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/vm-docs-public/blog","blogTitle":"Blog","authorsListPath":"/vm-docs-public/blog/authors"}')}}]);

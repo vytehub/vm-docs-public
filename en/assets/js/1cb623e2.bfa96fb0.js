@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvyte_merge_docs=self.webpackChunkvyte_merge_docs||[]).push([[5995],{68941:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/vm-docs-public/en/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

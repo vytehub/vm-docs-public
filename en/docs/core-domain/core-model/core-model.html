@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-core-domain/core-model/core-model" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Core Model | Vyte Merge Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://vytehub.github.io/vm-docs-public/en/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://vytehub.github.io/vm-docs-public/en/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://vytehub.github.io/vm-docs-public/en/docs/core-domain/core-model/core-model"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Core Model | Vyte Merge Docs"><meta data-rh="true" name="description" content="Modelo mental central de VyteMerge (Profile, Timeline, Place, Catalog, Service, Product, Listing, Slot, Event, Booking, Attendees, Orders, Agreements, Access, Campaigns, Feed, Chat, Channels)."><meta data-rh="true" property="og:description" content="Modelo mental central de VyteMerge (Profile, Timeline, Place, Catalog, Service, Product, Listing, Slot, Event, Booking, Attendees, Orders, Agreements, Access, Campaigns, Feed, Chat, Channels)."><link data-rh="true" rel="icon" href="/vm-docs-public/en/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://vytehub.github.io/vm-docs-public/en/docs/core-domain/core-model/core-model"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/core-model/core-model" hreflang="es"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/en/docs/core-domain/core-model/core-model" hreflang="en"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/core-model/core-model" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Core Domain","item":"https://vytehub.github.io/vm-docs-public/en/docs/core-domain/"},{"@type":"ListItem","position":2,"name":"Concepts","item":"https://vytehub.github.io/vm-docs-public/en/docs/category/concepts"},{"@type":"ListItem","position":3,"name":"Core Model","item":"https://vytehub.github.io/vm-docs-public/en/docs/core-domain/core-model/core-model"}]}</script><link rel="alternate" type="application/rss+xml" href="/vm-docs-public/en/blog/rss.xml" title="Vyte Merge Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/vm-docs-public/en/blog/atom.xml" title="Vyte Merge Docs Atom Feed"><link rel="stylesheet" href="/vm-docs-public/en/assets/css/styles.92c3af45.css">
+<script src="/vm-docs-public/en/assets/js/runtime~main.94d2cfd4.js" defer="defer"></script>
+<script src="/vm-docs-public/en/assets/js/main.d874a4bf.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/vm-docs-public/en/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/vm-docs-public/en/"><div class="navbar__logo"><img src="/vm-docs-public/en/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/vm-docs-public/en/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">VyteMergeDocs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/vm-docs-public/en/docs/core-domain">Documentacion</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/vytehub/vm-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/vm-docs-public/en/docs/core-domain">Core Domain</a><button aria-label="Collapse sidebar category &#x27;Core Domain&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/en/docs/core-domain/vision/intro">Vision &amp; Scope</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/vm-docs-public/en/docs/category/concepts">Concepts</a><button aria-label="Collapse sidebar category &#x27;Concepts&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/vm-docs-public/en/docs/core-domain/core-model/core-model">Core Model</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/en/docs/category/módulos">Módulos</a><button aria-label="Expand sidebar category &#x27;Módulos&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/domain-behavior">Domain Behavior</a><button aria-label="Expand sidebar category &#x27;Domain Behavior&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/product-variants">Product Variants / Use Cases</a><button aria-label="Expand sidebar category &#x27;Product Variants / Use Cases&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/architecture">Architecture &amp; Implementation</a><button aria-label="Expand sidebar category &#x27;Architecture &amp; Implementation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/vm-docs-public/en/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/en/docs/core-domain"><span>Core Domain</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/en/docs/category/concepts"><span>Concepts</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Core Model</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Core Model (VyteMerge)</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TL;DR<a href="#tldr" class="hash-link" aria-label="Direct link to TL;DR" title="Direct link to TL;DR">​</a></h2>
+<p>VyteMerge se entiende con estas 3 reglas:</p>
+<blockquote>
+<p><strong>Service/Product</strong> define <em>qué</em> se ofrece (definición reusable).<br>
+<strong>Timeline</strong> define <em>cuándo</em> (de quién es el tiempo / agenda).<br>
+<strong>Listing (Listado)</strong> define <em>cómo se vende/ofrece</em> algo del Catálogo.</p>
+</blockquote>
+<p>Y una regla extra clave para que el mundo real cierre:</p>
+<blockquote>
+<p><strong>Place (Lugar)</strong> define <em>dónde</em> ocurre (ubicación, contexto y zona horaria).</p>
+</blockquote>
+<p>Sobre eso se apoyan:</p>
+<ul>
+<li><strong>Slots</strong> (disponibilidad proyectada)</li>
+<li><strong>Events</strong> (cosas que pasan en el tiempo)</li>
+<li><strong>Bookings</strong> (reservas/confirmaciones)</li>
+<li><strong>Attendees</strong> (quiénes participan)</li>
+<li><strong>Orders</strong> (compras / pagos)</li>
+<li><strong>Agreements + Access</strong> (relaciones y permisos/visibilidad)</li>
+<li><strong>Campaigns</strong> (autopromoción pagada de listings)</li>
+<li><strong>Feed + Chat + Channels</strong> (superficies de interacción)</li>
+</ul>
+<blockquote>
+<p>Nota: Casos específicos (vouchers, canchas públicas, marketplace B2B, etc.) viven en <em>Use Cases</em>, no en este documento.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="objetivo">Objetivo<a href="#objetivo" class="hash-link" aria-label="Direct link to Objetivo" title="Direct link to Objetivo">​</a></h2>
+<p>Este documento define el <strong>modelo mental</strong> común para producto/UX/dev.
+No describe implementación, endpoints ni detalles técnicos.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-identidad-social">1) Identidad social<a href="#1-identidad-social" class="hash-link" aria-label="Direct link to 1) Identidad social" title="Direct link to 1) Identidad social">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="profile">Profile<a href="#profile" class="hash-link" aria-label="Direct link to Profile" title="Direct link to Profile">​</a></h3>
+<p>Identidad social en VyteMerge: persona u organización.</p>
+<ul>
+<li>Persona: médico, docente, creador, profesional.</li>
+<li>Organización: clínica, colegio, club, estética.</li>
+</ul>
+<p>Un Profile puede:</p>
+<ul>
+<li>publicar y socializar</li>
+<li>vender (Services/Products vía Listings)</li>
+<li>operar Timelines y Places</li>
+<li>firmar Agreements con otros Profiles</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-tiempo-y-agenda">2) Tiempo y agenda<a href="#2-tiempo-y-agenda" class="hash-link" aria-label="Direct link to 2) Tiempo y agenda" title="Direct link to 2) Tiempo y agenda">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="timeline">Timeline<a href="#timeline" class="hash-link" aria-label="Direct link to Timeline" title="Direct link to Timeline">​</a></h3>
+<p>Representa <strong>tiempo</strong> (agenda) y su ocupación.</p>
+<p>Regla clave:</p>
+<blockquote>
+<p>El owner de un Timeline es quien pone el tiempo (persona) o controla un recurso/agenda (organización).</p>
+</blockquote>
+<p>Ejemplos:</p>
+<ul>
+<li>Dr. X (persona) es owner de su agenda.</li>
+<li>Colegio (org) es owner del timeline “Salita 3B”.</li>
+<li>Club (org) es owner del timeline “Cancha 1” (si modelás la cancha como agenda propia).</li>
+</ul>
+<p>En un Timeline viven:</p>
+<ul>
+<li>Events (manuales o derivados)</li>
+<li>Bookings (que bloquean tiempo)</li>
+<li><strong>Conflict Rules</strong> (qué cuenta como conflicto y qué acción tomar)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-lugares-dónde-ocurre">3) Lugares (dónde ocurre)<a href="#3-lugares-dónde-ocurre" class="hash-link" aria-label="Direct link to 3) Lugares (dónde ocurre)" title="Direct link to 3) Lugares (dónde ocurre)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="place-lugar--workplace">Place (Lugar / Workplace)<a href="#place-lugar--workplace" class="hash-link" aria-label="Direct link to Place (Lugar / Workplace)" title="Direct link to Place (Lugar / Workplace)">​</a></h3>
+<p>Un <strong>Place</strong> representa un lugar de trabajo o ubicación donde ocurren eventos y servicios.</p>
+<p>Incluye típicamente:</p>
+<ul>
+<li>nombre, descripción, fotos/media</li>
+<li>dirección / ubicación (o “zona”)</li>
+<li><strong>TimeZoneId</strong> (muy importante)</li>
+<li>(opcional) metadata operativa (horarios del lugar, instrucciones, etc.)</li>
+</ul>
+<p>Regla clave:</p>
+<blockquote>
+<p><strong>Place no es un Timeline.</strong><br>
+<!-- -->Un médico puede tener <strong>un único Timeline</strong> y <strong>múltiples Places</strong> (hospital + consultorio).</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="cómo-se-usa-place">¿Cómo se usa Place?<a href="#cómo-se-usa-place" class="hash-link" aria-label="Direct link to ¿Cómo se usa Place?" title="Direct link to ¿Cómo se usa Place?">​</a></h4>
+<ul>
+<li>Un <strong>Listing</strong> puede estar asociado a un Place (“consulta en consultorio”).</li>
+<li>Un <strong>Booking/Event</strong> referencia <code>PlaceId</code> para saber dónde ocurre.</li>
+<li>El horario real se interpreta con la <strong>zona horaria del Place</strong> (fuente de verdad del “horario local del lugar”).</li>
+</ul>
+<p>Regla de zona horaria (propuesta):</p>
+<ul>
+<li>Si un Booking/Event tiene <code>PlaceId</code>, la fuente de verdad del “horario local” es <code>Place.TimeZoneId</code>.</li>
+<li>Si no hay Place, usar <code>Timeline.TimeZoneId</code> como fallback (si existe).</li>
+<li>Los usuarios visualizan en su timezone personal, pero el “horario del evento” se ancla al lugar/timeline.</li>
+</ul>
+<blockquote>
+<p>Extensión futura (no requerida ahora): “Assets/Resources” dentro de un Place (gabinete 1, cancha 2, quirófano), cuando necesites capacidad física o agenda del recurso.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-catálogo-qué-se-vende">4) Catálogo: qué se vende<a href="#4-catálogo-qué-se-vende" class="hash-link" aria-label="Direct link to 4) Catálogo: qué se vende" title="Direct link to 4) Catálogo: qué se vende">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="service">Service<a href="#service" class="hash-link" aria-label="Direct link to Service" title="Direct link to Service">​</a></h3>
+<p>Define <strong>qué es</strong> un servicio, de forma reusable y estable.</p>
+<p>Incluye típicamente:</p>
+<ul>
+<li>nombre, descripción, categoría/tags</li>
+<li><strong>duración base</strong> (lo “normal”)</li>
+<li>(opcional) términos del servicio</li>
+</ul>
+<p>Ejemplos: “Masaje”, “Consulta”, “Corte de pelo”, “Alquiler cancha”.</p>
+<p><strong>Service no vende y no agenda</strong>: es el “qué”.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="product-producto">Product (Producto)<a href="#product-producto" class="hash-link" aria-label="Direct link to Product (Producto)" title="Direct link to Product (Producto)">​</a></h3>
+<p>Define un bien físico o digital que se puede vender.</p>
+<p>Incluye típicamente:</p>
+<ul>
+<li>nombre, descripción, categoría/tags</li>
+<li>precio base (y luego promos)</li>
+<li>variantes (talle/color/pack), si aplica</li>
+<li>(opcional) inventario/stock y logística (futuro)</li>
+</ul>
+<p>Ejemplos: “Shampoo”, “Kit uñas”, “Crema facial”, “Merch”.</p>
+<blockquote>
+<p>Product es el “qué” para bienes.<br>
+<!-- -->Se vende mediante un <strong>Listing</strong> igual que un Service.</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="catalog-catálogo">Catalog (Catálogo)<a href="#catalog-catálogo" class="hash-link" aria-label="Direct link to Catalog (Catálogo)" title="Direct link to Catalog (Catálogo)">​</a></h3>
+<p>El Catálogo es el conjunto de “cosas vendibles” que un Profile ofrece:</p>
+<ul>
+<li><strong>Services</strong></li>
+<li><strong>Products</strong></li>
+</ul>
+<p>El Catálogo permite:</p>
+<ul>
+<li>reutilizar definiciones (un mismo Service puede tener múltiples Listings)</li>
+<li>ordenar y buscar por categorías/tags</li>
+<li>habilitar <em>upsells</em> (productos asociados a un service) en el futuro</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-cómo-se-vende-listing">5) Cómo se vende: Listing<a href="#5-cómo-se-vende-listing" class="hash-link" aria-label="Direct link to 5) Cómo se vende: Listing" title="Direct link to 5) Cómo se vende: Listing">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="listing-listado">Listing (Listado)<a href="#listing-listado" class="hash-link" aria-label="Direct link to Listing (Listado)" title="Direct link to Listing (Listado)">​</a></h3>
+<p>Define <strong>cómo se ofrece/vende</strong> algo del Catálogo (un Service o un Product).</p>
+<p>Un Listing normalmente:</p>
+<ul>
+<li>referencia a un <strong>Service</strong> o <strong>Product</strong></li>
+<li>define reglas comerciales: precio, promos, políticas, canal (público/privado/partner)</li>
+<li>define reglas de presentación: fotos, descripción, highlights</li>
+<li>define reglas de distribución: elegible para <strong>Campaigns</strong> (promoción)</li>
+<li>(opcional) define <strong>Place</strong> (dónde se presta / se retira / ocurre)</li>
+</ul>
+<p>Tipos comunes:</p>
+<ul>
+<li><strong>Service Listing</strong> (reservable): usa un <strong>Timeline</strong> como fuente de disponibilidad.</li>
+<li><strong>Product Listing</strong> (comprable): puede incluir stock/inventario (si aplica).</li>
+<li>(futuro) <strong>Bundle/Pack</strong>: Service + Product (ej: “corte + shampoo”) o packs.</li>
+</ul>
+<p>En <strong>Service Listings</strong>, además:</p>
+<ul>
+<li>define reglas de scheduling (duración efectiva, buffers, ventana, etc.)</li>
+<li>define <strong>Capacity</strong>, <strong>MinToConfirm</strong> y <strong>Attendees</strong> cuando corresponda</li>
+<li>define si el booking es <strong>Private</strong> u <strong>Open</strong></li>
+<li>define si requiere <strong>confirmación manual</strong> (futuro)</li>
+</ul>
+<p><strong>Listing es el objeto “promocionable”</strong> en el marketplace/feed.</p>
+<p>Regla clave:</p>
+<blockquote>
+<p>Un Listing <strong>usa</strong> un Timeline como fuente de disponibilidad, pero <strong>no posee</strong> el tiempo.<br>
+<!-- -->El tiempo (y sus conflictos) siempre pertenece al Timeline y su owner.</p>
+</blockquote>
+<blockquote>
+<p>Diferencia útil: un Post es social; un Listing es comercial (reservable o comprable).</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-disponibilidad-proyectada">6) Disponibilidad proyectada<a href="#6-disponibilidad-proyectada" class="hash-link" aria-label="Direct link to 6) Disponibilidad proyectada" title="Direct link to 6) Disponibilidad proyectada">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="slot">Slot<a href="#slot" class="hash-link" aria-label="Direct link to Slot" title="Direct link to Slot">​</a></h3>
+<p>Un <strong>Slot</strong> es un “hueco reservable” <em>proyectado</em>.</p>
+<blockquote>
+<p>Slot = proyección de disponibilidad a partir de Timeline + reglas del Listing + conflictos.</p>
+</blockquote>
+<p>Un Slot:</p>
+<ul>
+<li>aparece en búsquedas/booking UI</li>
+<li>puede caducar/cambiar con el tiempo</li>
+<li>no es la fuente de verdad (la fuente es Timeline + reglas + eventos)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-qué-pasa-en-el-tiempo-events">7) Qué pasa en el tiempo: Events<a href="#7-qué-pasa-en-el-tiempo-events" class="hash-link" aria-label="Direct link to 7) Qué pasa en el tiempo: Events" title="Direct link to 7) Qué pasa en el tiempo: Events">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="event">Event<a href="#event" class="hash-link" aria-label="Direct link to Event" title="Direct link to Event">​</a></h3>
+<p>Algo que ocurre en un Timeline (manual o derivado).</p>
+<ul>
+<li><strong>Manual / no comercial</strong>: acto escolar, partido, viaje, reunión.</li>
+<li><strong>Derivado / comercial</strong>: turno/cita generado por un Booking.</li>
+</ul>
+<p>Un Event puede:</p>
+<ul>
+<li>existir sin Booking</li>
+<li>estar asociado a un Service (para semántica)</li>
+<li>estar asociado a un Booking (si nace de una reserva)</li>
+<li>estar asociado a un Place (dónde ocurre)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-reservas-bookings">8) Reservas: Bookings<a href="#8-reservas-bookings" class="hash-link" aria-label="Direct link to 8) Reservas: Bookings" title="Direct link to 8) Reservas: Bookings">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="booking">Booking<a href="#booking" class="hash-link" aria-label="Direct link to Booking" title="Direct link to Booking">​</a></h3>
+<p>Representa una <strong>reserva/confirmación</strong> de un Listing.</p>
+<ul>
+<li>bloquea tiempo en un Timeline</li>
+<li>suele generar o asociarse a un Event</li>
+<li>puede referenciar un Place</li>
+<li>tiene estado (pendiente/confirmado/cancelado)</li>
+<li>tiene responsable (quien reserva/paga)</li>
+</ul>
+<p>Regla clave (consistencia):</p>
+<blockquote>
+<p>Un Event puede existir sin Booking, pero un Booking <strong>confirmado</strong> no debería existir sin un Event asociado en el Timeline target.<br>
+<!-- -->(Para <em>pending</em>, puede no haber Event o haber un Event tentativo, según política.)</p>
+</blockquote>
+<p>En VyteMerge, un Booking puede ser:</p>
+<ul>
+<li><strong>Private</strong>: el responsable invita a otros (ej: “reservé la cancha e invité a 9”)</li>
+<li><strong>Open</strong>: cualquiera puede sumarse hasta completar cupos (ej: “partido público”)</li>
+</ul>
+<p>Por eso, un Booking puede incluir:</p>
+<ul>
+<li><strong>Capacity</strong>: cupos máximos (ej: 10 jugadores)</li>
+<li><strong>MinToConfirm</strong>: mínimo para confirmar (ej: 8 jugadores); si no se alcanza, puede cancelarse o quedar sin confirmar (según política)</li>
+<li><strong>Attendees</strong>: personas que participan (ver concepto siguiente)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="attendees-asistentes">Attendees (Asistentes)<a href="#attendees-asistentes" class="hash-link" aria-label="Direct link to Attendees (Asistentes)" title="Direct link to Attendees (Asistentes)">​</a></h3>
+<p><strong>Attendees</strong> representa quiénes participan en un Event/Booking, aunque <strong>no</strong> sean quienes pagaron o reservaron.</p>
+<p>Cada attendee típicamente tiene:</p>
+<ul>
+<li>rol (Organizer / Participant)</li>
+<li>estado (Invited / Joined / Declined / Cancelled / Waitlist)</li>
+</ul>
+<p>Esto permite:</p>
+<ul>
+<li>reservas privadas con invitados (1 Booking, N asistentes)</li>
+<li>bookings públicos con desconocidos (N asistentes hasta <code>Capacity</code>, confirmación con <code>MinToConfirm</code>)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="9-compras-pagos-e-incentivos">9) Compras, pagos e incentivos<a href="#9-compras-pagos-e-incentivos" class="hash-link" aria-label="Direct link to 9) Compras, pagos e incentivos" title="Direct link to 9) Compras, pagos e incentivos">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="order-orden-de-compra">Order (Orden de compra)<a href="#order-orden-de-compra" class="hash-link" aria-label="Direct link to Order (Orden de compra)" title="Direct link to Order (Orden de compra)">​</a></h3>
+<p>Representa una compra y/o el compromiso económico asociado a un Listing.</p>
+<ul>
+<li>contiene uno o más ítems (line items)</li>
+<li>registra total, descuentos/promos y estado (pago/fulfillment en el futuro)</li>
+</ul>
+<p>Regla simple (ajustada):</p>
+<ul>
+<li><strong>Booking</strong> representa el compromiso de tiempo (Service Listings).</li>
+<li><strong>Order</strong> representa el compromiso económico (pagos) para Product Listings <strong>y</strong> para Service Listings cuando hay pago/deposito/prepago.</li>
+<li>Un Booking puede tener <code>OrderId</code> (opcional) cuando hay pago asociado.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="devolución-por-compromiso-concepto-básico">Devolución por Compromiso (concepto básico)<a href="#devolución-por-compromiso-concepto-básico" class="hash-link" aria-label="Direct link to Devolución por Compromiso (concepto básico)" title="Direct link to Devolución por Compromiso (concepto básico)">​</a></h3>
+<p>Para reducir no-shows y fomentar reservas anticipadas, un Listing puede habilitar un modo opcional:</p>
+<ul>
+<li>el usuario reserva con anticipación</li>
+<li>paga un <strong>monto comprometido</strong></li>
+<li>si asiste → recibe una <strong>devolución</strong></li>
+<li>si no asiste → pierde el monto (según política)</li>
+</ul>
+<p><strong>MVP recomendado (por simplicidad):</strong></p>
+<ul>
+<li>devolución como <strong>crédito interno</strong></li>
+<li>asistencia confirmada por el proveedor</li>
+</ul>
+<blockquote>
+<p>Este mecanismo vive como “política del Listing” y se ejecuta vía Booking + Order.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="10-conflict-rules-en-lugar-de-availability-rules">10) Conflict Rules (en lugar de “availability rules”)<a href="#10-conflict-rules-en-lugar-de-availability-rules" class="hash-link" aria-label="Direct link to 10) Conflict Rules (en lugar de “availability rules”)" title="Direct link to 10) Conflict Rules (en lugar de “availability rules”)">​</a></h2>
+<p>En VyteMerge, la clave no es solo “cuándo estoy disponible”, sino:</p>
+<blockquote>
+<p><strong>qué considero un conflicto</strong> y <strong>qué hago cuando ocurre</strong>.</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="qué-es-un-conflicto">Qué es un conflicto<a href="#qué-es-un-conflicto" class="hash-link" aria-label="Direct link to Qué es un conflicto" title="Direct link to Qué es un conflicto">​</a></h3>
+<p>Un conflicto es una condición que hace que:</p>
+<ul>
+<li>un Slot no sea válido, o</li>
+<li>un Booking requiera revisión, o</li>
+<li>un Event deba bloquear a otro.</li>
+</ul>
+<p>Ejemplos:</p>
+<ul>
+<li>“Si tengo un evento ‘Acto Escolar’, no quiero crear slots ese día.”</li>
+<li>“Si tengo ‘Consulta’, no permitir otro booking en la misma franja.”</li>
+<li>“Si tengo un evento ‘Viaje’, bloquear toda la semana.”</li>
+<li>“Si el evento es ‘Personal’, bloquear disponibilidad pública.”</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dónde-viven-las-reglas">Dónde viven las reglas<a href="#dónde-viven-las-reglas" class="hash-link" aria-label="Direct link to Dónde viven las reglas" title="Direct link to Dónde viven las reglas">​</a></h3>
+<ul>
+<li>Las <strong>Conflict Rules</strong> se configuran en el Timeline (porque afectan el tiempo).</li>
+<li>Los Listings pueden traer restricciones (buffers, ventanas), pero la decisión “conflicto” vive en Timeline.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="qué-producen-salidas">Qué producen (salidas)<a href="#qué-producen-salidas" class="hash-link" aria-label="Direct link to Qué producen (salidas)" title="Direct link to Qué producen (salidas)">​</a></h3>
+<ul>
+<li>Bloqueo de slots (no mostrar / no permitir reservar)</li>
+<li>Degradación de visibilidad (mostrar “ocupado”)</li>
+<li>Priorización (qué gana si chocan cosas)</li>
+<li>Requerir confirmación manual (futuro)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="11-capacity-y-shared-capacity">11) Capacity y Shared Capacity<a href="#11-capacity-y-shared-capacity" class="hash-link" aria-label="Direct link to 11) Capacity y Shared Capacity" title="Direct link to 11) Capacity y Shared Capacity">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="capacity-por-listing">Capacity (por Listing)<a href="#capacity-por-listing" class="hash-link" aria-label="Direct link to Capacity (por Listing)" title="Direct link to Capacity (por Listing)">​</a></h3>
+<p>La capacidad (cupos) depende de “cómo lo vendo”, no del Service.
+Por eso:</p>
+<blockquote>
+<p><strong>Capacity vive en Listing</strong> (ej: 1:1, grupo de 10, pareja de 2).</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="shared-capacity-pool-compartido">Shared Capacity (pool compartido)<a href="#shared-capacity-pool-compartido" class="hash-link" aria-label="Direct link to Shared Capacity (pool compartido)" title="Direct link to Shared Capacity (pool compartido)">​</a></h3>
+<p>A veces varios Listings consumen el mismo “inventario”:</p>
+<ul>
+<li>la misma persona (un profesional) no puede atender dos cosas a la vez</li>
+<li>un consultorio/sala/cancha puede ser un recurso físico compartido</li>
+<li>un equipo comparte cupos</li>
+</ul>
+<p>Esto se modela como un <strong>Capacity Pool</strong> (SharedCapacityGroup):</p>
+<ul>
+<li>varios Listings apuntan al mismo pool</li>
+<li>si el pool está al límite, el slot entra en conflicto/no disponible</li>
+</ul>
+<p>Orden mental de validación de disponibilidad (propuesta):</p>
+<ol>
+<li>Conflict Rules del Timeline (eventos/ocupación/visibilidad)</li>
+<li>Reglas del Listing (buffers, ventanas, duración efectiva)</li>
+<li>Capacity (por Listing) y Shared Capacity Pool (si aplica)</li>
+<li>Políticas (manual confirm, cancelación, minToConfirm)</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="12-assignment-auto-asignación">12) Assignment (auto-asignación)<a href="#12-assignment-auto-asignación" class="hash-link" aria-label="Direct link to 12) Assignment (auto-asignación)" title="Direct link to 12) Assignment (auto-asignación)">​</a></h2>
+<p>VyteMerge puede asignar automáticamente Events/Bookings a responsables, sin que el staff cree Listings.</p>
+<p>Ejemplo (estética nails, 3 empleadas):</p>
+<ul>
+<li>el negocio vende el Listing</li>
+<li>al crearse un Booking, se aplica una regla de auto-asignación</li>
+<li>el Event aparece asignado en el Timeline de la empleada</li>
+</ul>
+<p>Esto habilita:</p>
+<ul>
+<li>operación diaria sin dar control comercial a staff</li>
+<li>trazabilidad de quién atiende qué</li>
+</ul>
+<p>Regla (a decidir y documentar):</p>
+<ul>
+<li><strong>Opción A (recomendada):</strong> Booking se crea contra el Timeline del negocio/recurso y el Event se asigna (o se espeja) al Timeline del staff.</li>
+<li><strong>Opción B:</strong> Booking se crea directamente contra el Timeline del staff (el business actúa como broker).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="13-agreements-y-access-relaciones--enforcement">13) Agreements y Access (relaciones + enforcement)<a href="#13-agreements-y-access-relaciones--enforcement" class="hash-link" aria-label="Direct link to 13) Agreements y Access (relaciones + enforcement)" title="Direct link to 13) Agreements y Access (relaciones + enforcement)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="agreements-visión-general">Agreements (visión general)<a href="#agreements-visión-general" class="hash-link" aria-label="Direct link to Agreements (visión general)" title="Direct link to Agreements (visión general)">​</a></h3>
+<p>Relaciones formales entre Profiles para:</p>
+<ul>
+<li><strong>Sharing</strong> (compartir visibilidad)</li>
+<li><strong>Delegation</strong> (operación/staff)</li>
+<li><strong>Partner/Reseller</strong> (relación comercial)</li>
+</ul>
+<p>Un Agreement define:</p>
+<ul>
+<li>scope (Profile / Timeline / Listing / etc.)</li>
+<li>permissions</li>
+<li>terms (Platform Terms + Custom Terms)</li>
+<li>revocación inmediata</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="access-visión-general">Access (visión general)<a href="#access-visión-general" class="hash-link" aria-label="Direct link to Access (visión general)" title="Direct link to Access (visión general)">​</a></h3>
+<p>Access aplica enforcement de:</p>
+<ul>
+<li>visibilidad (qué se puede ver)</li>
+<li>permisos (qué se puede hacer)</li>
+</ul>
+<p>Concepto clave:</p>
+<ul>
+<li><strong>VisibilityMode</strong> (None / BusyOnly / BusyOnlyDetails) para controlar cuánto detalle se revela.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="14-campaigns-y-publicidad">14) Campaigns y Publicidad<a href="#14-campaigns-y-publicidad" class="hash-link" aria-label="Direct link to 14) Campaigns y Publicidad" title="Direct link to 14) Campaigns y Publicidad">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="campaigns-concepto-básico">Campaigns (concepto básico)<a href="#campaigns-concepto-básico" class="hash-link" aria-label="Direct link to Campaigns (concepto básico)" title="Direct link to Campaigns (concepto básico)">​</a></h3>
+<p><strong>Campaigns</strong> permiten autopromoción dentro de VyteMerge (ingreso por publicidad).</p>
+<p>Idea central:</p>
+<ul>
+<li>una Campaign <strong>promociona uno o más Listings</strong> (no Slots).</li>
+<li>el anuncio puede mostrar “próxima disponibilidad” como metadata (derivada de Slots).</li>
+</ul>
+<p>Una Campaign típicamente define:</p>
+<ul>
+<li>objetivo (más bookings / más compras)</li>
+<li>presupuesto y fechas</li>
+<li>audiencia/segmentación (básica al inicio)</li>
+<li>creatividades (texto/imagen)</li>
+<li>métricas (impresiones, clicks, conversiones)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="licitaciones-bidding-para-promoción">Licitaciones (bidding) para promoción<a href="#licitaciones-bidding-para-promoción" class="hash-link" aria-label="Direct link to Licitaciones (bidding) para promoción" title="Direct link to Licitaciones (bidding) para promoción">​</a></h4>
+<p>Las Campaigns pueden operar con subasta:</p>
+<ul>
+<li>el seller define presupuesto y puja por audiencia/posición</li>
+<li>el sistema decide ranking según puja + relevancia/calidad (futuro)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="recomendaciones-contextuales-idea--futuro">Recomendaciones contextuales (idea / futuro)<a href="#recomendaciones-contextuales-idea--futuro" class="hash-link" aria-label="Direct link to Recomendaciones contextuales (idea / futuro)" title="Direct link to Recomendaciones contextuales (idea / futuro)">​</a></h3>
+<p>VyteMerge podría ofrecer recomendaciones “de pasada” (ej: ofertas cercanas a un lugar cuando vas a un turno), <strong>solo si el usuario lo permite</strong>.</p>
+<p>Principios (para documentar sin comprometer implementación):</p>
+<ul>
+<li>requiere <strong>consentimiento explícito</strong> (opt-in)</li>
+<li>minimización de datos (no revelar detalles sensibles)</li>
+<li>“por qué veo esto” (explicabilidad)</li>
+<li>revocable en cualquier momento</li>
+</ul>
+<blockquote>
+<p>Esta sección queda planteada para análisis posterior.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="15-feed-chat-channels-e-integraciones">15) Feed, Chat, Channels e Integraciones<a href="#15-feed-chat-channels-e-integraciones" class="hash-link" aria-label="Direct link to 15) Feed, Chat, Channels e Integraciones" title="Direct link to 15) Feed, Chat, Channels e Integraciones">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="feed-scroll-principal">Feed (scroll principal)<a href="#feed-scroll-principal" class="hash-link" aria-label="Direct link to Feed (scroll principal)" title="Direct link to Feed (scroll principal)">​</a></h3>
+<p>VyteMerge necesita un <strong>feed</strong> donde conviven diferentes “cards”:</p>
+<ul>
+<li><strong>Posts</strong> (social)</li>
+<li><strong>Listings</strong> (comercial: reservar o comprar)</li>
+<li>(opcional) <strong>Events</strong> destacados</li>
+<li><strong>Sponsored Listings</strong> (Campaigns)</li>
+</ul>
+<p>Objetivo del feed:</p>
+<ul>
+<li>descubrimiento rápido</li>
+<li>acciones simples en 1–2 pasos: Reservar, Comprar, Guardar, Seguir, Escribir</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="chat-mensajería">Chat (mensajería)<a href="#chat-mensajería" class="hash-link" aria-label="Direct link to Chat (mensajería)" title="Direct link to Chat (mensajería)">​</a></h3>
+<p>El Chat habilita:</p>
+<ul>
+<li>coordinación previa a una reserva</li>
+<li>seguimiento post-venta/servicio</li>
+<li>coordinación entre attendees (ej: partido público)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="grupos-o-canales">Grupos o Canales<a href="#grupos-o-canales" class="hash-link" aria-label="Direct link to Grupos o Canales" title="Direct link to Grupos o Canales">​</a></h3>
+<p>Canales/grupos permiten:</p>
+<ul>
+<li>segmentar audiencias (ej: “Padres Salita 3B”, “Comunidad fútbol 5”, “Clientes VIP”)</li>
+<li>publicar posts/listings a una audiencia específica</li>
+<li>aplicar beneficios/promos por canal (futuro)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="integraciones-ej-instagram">Integraciones (ej: Instagram)<a href="#integraciones-ej-instagram" class="hash-link" aria-label="Direct link to Integraciones (ej: Instagram)" title="Direct link to Integraciones (ej: Instagram)">​</a></h3>
+<p>Integración típica (por etapas):</p>
+<ol>
+<li>Importar media (fotos/videos) para Listings/Posts.</li>
+<li>Linking: links de reserva/compra para compartir afuera.</li>
+<li>(futuro) Sincronización de catálogo/publicaciones según permisos/limitaciones de la plataforma.</li>
+</ol>
+<blockquote>
+<p>Importante: no asumir capacidades externas; diseñar integración por capas.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="resumen-del-modelo">Resumen del modelo<a href="#resumen-del-modelo" class="hash-link" aria-label="Direct link to Resumen del modelo" title="Direct link to Resumen del modelo">​</a></h2>
+<ul>
+<li><strong>Profile</strong>: identidad social</li>
+<li><strong>Timeline</strong>: tiempo y conflictos</li>
+<li><strong>Place</strong>: dónde ocurre (ubicación + zona horaria)</li>
+<li><strong>Service</strong>: qué es (servicio)</li>
+<li><strong>Product</strong>: qué es (producto)</li>
+<li><strong>Catalog</strong>: conjunto de Services y Products</li>
+<li><strong>Listing</strong>: cómo se ofrece/vende (reservable o comprable; promocionable; puede depender de Place)</li>
+<li><strong>Slot</strong>: proyección reservable</li>
+<li><strong>Event</strong>: ocurre en Timeline (y puede tener Place)</li>
+<li><strong>Booking</strong>: reserva/confirmación (Private/Open)</li>
+<li><strong>Attendees</strong>: participantes (invitar/unirse, cupos, MinToConfirm)</li>
+<li><strong>Order</strong>: compras/pagos (y futuros combos)</li>
+<li><strong>Devolución por Compromiso</strong>: incentivo opcional ligado a Booking+Order</li>
+<li><strong>Agreements</strong>: relación formal (sharing/delegation/partner)</li>
+<li><strong>Access</strong>: enforcement de permisos/visibilidad</li>
+<li><strong>Campaigns</strong>: promoción pagada de Listings (con bidding)</li>
+<li><strong>Feed</strong>: descubrimiento (posts + listings + sponsored)</li>
+<li><strong>Chat</strong>: coordinación y soporte</li>
+<li><strong>Channels</strong>: audiencias segmentadas</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vytemerge">VyteMerge<a href="#vytemerge" class="hash-link" aria-label="Direct link to VyteMerge" title="Direct link to VyteMerge">​</a></h2>
+<blockquote>
+<p>Placeholder (Jarvis): este término aparece 35 veces en módulos pero no está definido en <code>concepts</code>.</p>
+</blockquote>
+<p>Definición:</p>
+<ul>
+<li>(completar)</li>
+</ul>
+<p>Relaciones:</p>
+<ul>
+<li>(completar)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="timeline-conflict-rules">Timeline Conflict Rules<a href="#timeline-conflict-rules" class="hash-link" aria-label="Direct link to Timeline Conflict Rules" title="Direct link to Timeline Conflict Rules">​</a></h2>
+<blockquote>
+<p>Placeholder (Jarvis): este término aparece 9 veces en módulos pero no está definido en <code>concepts</code>.</p>
+</blockquote>
+<p>Definición:</p>
+<ul>
+<li>(completar)</li>
+</ul>
+<p>Relaciones:</p>
+<ul>
+<li>(completar)</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vytehub/vm-docs/tree/main/docs/00-core-domain/03-core-model/core-model.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/vm-docs-public/en/docs/category/concepts"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Concepts</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/vm-docs-public/en/docs/category/módulos"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Módulos</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#tldr" class="table-of-contents__link toc-highlight">TL;DR</a></li><li><a href="#objetivo" class="table-of-contents__link toc-highlight">Objetivo</a></li><li><a href="#1-identidad-social" class="table-of-contents__link toc-highlight">1) Identidad social</a><ul><li><a href="#profile" class="table-of-contents__link toc-highlight">Profile</a></li></ul></li><li><a href="#2-tiempo-y-agenda" class="table-of-contents__link toc-highlight">2) Tiempo y agenda</a><ul><li><a href="#timeline" class="table-of-contents__link toc-highlight">Timeline</a></li></ul></li><li><a href="#3-lugares-dónde-ocurre" class="table-of-contents__link toc-highlight">3) Lugares (dónde ocurre)</a><ul><li><a href="#place-lugar--workplace" class="table-of-contents__link toc-highlight">Place (Lugar / Workplace)</a></li></ul></li><li><a href="#4-catálogo-qué-se-vende" class="table-of-contents__link toc-highlight">4) Catálogo: qué se vende</a><ul><li><a href="#service" class="table-of-contents__link toc-highlight">Service</a></li><li><a href="#product-producto" class="table-of-contents__link toc-highlight">Product (Producto)</a></li><li><a href="#catalog-catálogo" class="table-of-contents__link toc-highlight">Catalog (Catálogo)</a></li></ul></li><li><a href="#5-cómo-se-vende-listing" class="table-of-contents__link toc-highlight">5) Cómo se vende: Listing</a><ul><li><a href="#listing-listado" class="table-of-contents__link toc-highlight">Listing (Listado)</a></li></ul></li><li><a href="#6-disponibilidad-proyectada" class="table-of-contents__link toc-highlight">6) Disponibilidad proyectada</a><ul><li><a href="#slot" class="table-of-contents__link toc-highlight">Slot</a></li></ul></li><li><a href="#7-qué-pasa-en-el-tiempo-events" class="table-of-contents__link toc-highlight">7) Qué pasa en el tiempo: Events</a><ul><li><a href="#event" class="table-of-contents__link toc-highlight">Event</a></li></ul></li><li><a href="#8-reservas-bookings" class="table-of-contents__link toc-highlight">8) Reservas: Bookings</a><ul><li><a href="#booking" class="table-of-contents__link toc-highlight">Booking</a></li><li><a href="#attendees-asistentes" class="table-of-contents__link toc-highlight">Attendees (Asistentes)</a></li></ul></li><li><a href="#9-compras-pagos-e-incentivos" class="table-of-contents__link toc-highlight">9) Compras, pagos e incentivos</a><ul><li><a href="#order-orden-de-compra" class="table-of-contents__link toc-highlight">Order (Orden de compra)</a></li><li><a href="#devolución-por-compromiso-concepto-básico" class="table-of-contents__link toc-highlight">Devolución por Compromiso (concepto básico)</a></li></ul></li><li><a href="#10-conflict-rules-en-lugar-de-availability-rules" class="table-of-contents__link toc-highlight">10) Conflict Rules (en lugar de “availability rules”)</a><ul><li><a href="#qué-es-un-conflicto" class="table-of-contents__link toc-highlight">Qué es un conflicto</a></li><li><a href="#dónde-viven-las-reglas" class="table-of-contents__link toc-highlight">Dónde viven las reglas</a></li><li><a href="#qué-producen-salidas" class="table-of-contents__link toc-highlight">Qué producen (salidas)</a></li></ul></li><li><a href="#11-capacity-y-shared-capacity" class="table-of-contents__link toc-highlight">11) Capacity y Shared Capacity</a><ul><li><a href="#capacity-por-listing" class="table-of-contents__link toc-highlight">Capacity (por Listing)</a></li><li><a href="#shared-capacity-pool-compartido" class="table-of-contents__link toc-highlight">Shared Capacity (pool compartido)</a></li></ul></li><li><a href="#12-assignment-auto-asignación" class="table-of-contents__link toc-highlight">12) Assignment (auto-asignación)</a></li><li><a href="#13-agreements-y-access-relaciones--enforcement" class="table-of-contents__link toc-highlight">13) Agreements y Access (relaciones + enforcement)</a><ul><li><a href="#agreements-visión-general" class="table-of-contents__link toc-highlight">Agreements (visión general)</a></li><li><a href="#access-visión-general" class="table-of-contents__link toc-highlight">Access (visión general)</a></li></ul></li><li><a href="#14-campaigns-y-publicidad" class="table-of-contents__link toc-highlight">14) Campaigns y Publicidad</a><ul><li><a href="#campaigns-concepto-básico" class="table-of-contents__link toc-highlight">Campaigns (concepto básico)</a></li><li><a href="#recomendaciones-contextuales-idea--futuro" class="table-of-contents__link toc-highlight">Recomendaciones contextuales (idea / futuro)</a></li></ul></li><li><a href="#15-feed-chat-channels-e-integraciones" class="table-of-contents__link toc-highlight">15) Feed, Chat, Channels e Integraciones</a><ul><li><a href="#feed-scroll-principal" class="table-of-contents__link toc-highlight">Feed (scroll principal)</a></li><li><a href="#chat-mensajería" class="table-of-contents__link toc-highlight">Chat (mensajería)</a></li><li><a href="#grupos-o-canales" class="table-of-contents__link toc-highlight">Grupos o Canales</a></li><li><a href="#integraciones-ej-instagram" class="table-of-contents__link toc-highlight">Integraciones (ej: Instagram)</a></li></ul></li><li><a href="#resumen-del-modelo" class="table-of-contents__link toc-highlight">Resumen del modelo</a></li><li><a href="#vytemerge" class="table-of-contents__link toc-highlight">VyteMerge</a></li><li><a href="#timeline-conflict-rules" class="table-of-contents__link toc-highlight">Timeline Conflict Rules</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/en/docs/core-domain/vision/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/en/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 VyteMergeDocs, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-core-domain/bounded-contexts/Offer - Catalog & Listings/catalog/services" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Services | Vyte Merge Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://vytehub.github.io/vm-docs-public/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://vytehub.github.io/vm-docs-public/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/services"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Services | Vyte Merge Docs"><meta data-rh="true" name="description" content="Definición reusable de servicios (qué) y sus propiedades base. Un Service es estable; el Listing define cómo se vende y cómo se agenda."><meta data-rh="true" property="og:description" content="Definición reusable de servicios (qué) y sus propiedades base. Un Service es estable; el Listing define cómo se vende y cómo se agenda."><link data-rh="true" rel="icon" href="/vm-docs-public/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/services"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/services" hreflang="es"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/services" hreflang="en"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/services" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Core Domain","item":"https://vytehub.github.io/vm-docs-public/docs/core-domain/"},{"@type":"ListItem","position":2,"name":"Módulos","item":"https://vytehub.github.io/vm-docs-public/docs/category/módulos"},{"@type":"ListItem","position":3,"name":"Services & Products","item":"https://vytehub.github.io/vm-docs-public/docs/category/services--products"},{"@type":"ListItem","position":4,"name":"Services","item":"https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog & Listings/catalog/services"}]}</script><link rel="alternate" type="application/rss+xml" href="/vm-docs-public/blog/rss.xml" title="Vyte Merge Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/vm-docs-public/blog/atom.xml" title="Vyte Merge Docs Atom Feed"><link rel="stylesheet" href="/vm-docs-public/assets/css/styles.92c3af45.css">
+<script src="/vm-docs-public/assets/js/runtime~main.cd3b6b20.js" defer="defer"></script>
+<script src="/vm-docs-public/assets/js/main.49a9bcf4.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/vm-docs-public/img/logo.svg"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/vm-docs-public/"><div class="navbar__logo"><img src="/vm-docs-public/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/vm-docs-public/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">VyteMergeDocs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/vm-docs-public/docs/core-domain">Documentacion</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/vytehub/vm-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Cambiar entre modo oscuro y claro (actualmente system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/vm-docs-public/docs/core-domain">Core Domain</a><button aria-label="Colapsar categoría &#x27;Core Domain&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/docs/core-domain/vision/intro">Vision &amp; Scope</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/docs/category/concepts">Concepts</a><button aria-label="Ampliar la categoría &#x27;Concepts&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/vm-docs-public/docs/category/módulos">Módulos</a><button aria-label="Colapsar categoría &#x27;Módulos&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/docs/category/foundation--governance">Foundation &amp; Governance</a><button aria-label="Ampliar la categoría &#x27;Foundation &amp; Governance&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/docs/category/timelines">Supply - Time &amp; Place</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/vm-docs-public/docs/category/services--products">Offer - Catalog &amp; Listings</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/vm-docs-public/docs/category/services--products">Services &amp; Products</a><button aria-label="Colapsar categoría &#x27;Services &amp; Products&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/overview">Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/services">Services</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/products">Products</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/relationships">Relationships</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/terms">Terms</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/docs/category/listings">Listings</a><button aria-label="Ampliar la categoría &#x27;Listings&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/forms">Forms</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/docs/category/social">Social &amp; Discovery</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Communication/channels">Communication</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Modulos pendientes de revisar">Mdulos/features de negocio a revisar (pendientes)</a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/docs/domain-behavior">Domain Behavior</a><button aria-label="Ampliar la categoría &#x27;Domain Behavior&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/docs/product-variants">Product Variants / Use Cases</a><button aria-label="Ampliar la categoría &#x27;Product Variants / Use Cases&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/docs/architecture">Architecture &amp; Implementation</a><button aria-label="Ampliar la categoría &#x27;Architecture &amp; Implementation&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/vm-docs-public/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/docs/core-domain"><span>Core Domain</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/docs/category/módulos"><span>Módulos</span></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Offer - Catalog &amp; Listings</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/docs/category/services--products"><span>Services &amp; Products</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Services</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Services</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TL;DR<a href="#tldr" class="hash-link" aria-label="Enlace directo al TL;DR" title="Enlace directo al TL;DR">​</a></h2>
+<p>Un <strong>Service</strong> es la definición reusable de <em>qué</em> ofrecés.</p>
+<ul>
+<li>Vive en el <strong>Catalog</strong>.</li>
+<li>Es <strong>estable</strong> y reutilizable.</li>
+<li><strong>No</strong> define precio, promos, canales ni scheduling final.</li>
+<li>Se vende/reserva a través de <strong>Listings</strong>.</li>
+</ul>
+<blockquote>
+<p>Regla mental:<br>
+<strong>Service = qué es</strong><br>
+<strong>Listing = cómo se ofrece / vende / agenda</strong></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="qué-es-un-service">Qué es un Service<a href="#qué-es-un-service" class="hash-link" aria-label="Enlace directo al Qué es un Service" title="Enlace directo al Qué es un Service">​</a></h2>
+<p>Un <strong>Service</strong> describe un servicio de manera reusable y relativamente estable.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>Consulta médica</li>
+<li>Masaje descontracturante</li>
+<li>Alquiler cancha fútbol 5</li>
+<li>Depilación láser</li>
+<li>Sesión de terapia</li>
+</ul>
+<p>Un Service existe para:</p>
+<ul>
+<li>mantener una definición única (“Masaje”)</li>
+<li>permitir múltiples <strong>Listings</strong> (promo, express, canal, etc.)</li>
+<li>reportar demanda por tipo de servicio (analytics)</li>
+<li>facilitar reutilización (fotos base, descripción base, tags)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="qué-problemas-resuelve-por-qué-no-usar-solo-listings">Qué problemas resuelve (por qué no usar solo Listings)<a href="#qué-problemas-resuelve-por-qué-no-usar-solo-listings" class="hash-link" aria-label="Enlace directo al Qué problemas resuelve (por qué no usar solo Listings)" title="Enlace directo al Qué problemas resuelve (por qué no usar solo Listings)">​</a></h2>
+<p>Sin Services, terminás duplicando el mismo “qué” en múltiples ofertas:</p>
+<ul>
+<li>“Masaje 60m”</li>
+<li>“Masaje VIP”</li>
+<li>“Masaje Promo 2x1”</li>
+<li>“Masaje Express”</li>
+</ul>
+<p>Eso genera:</p>
+<ul>
+<li>descripciones inconsistentes</li>
+<li>media duplicada</li>
+<li>tags duplicados</li>
+<li>reportes difíciles (“¿cuántos masajes vendo?”)</li>
+</ul>
+<p>Con Services:</p>
+<ul>
+<li>la definición vive una sola vez</li>
+<li>cada oferta se expresa como un Listing</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="propiedades-típicas-lenguaje-de-negocio">Propiedades típicas (lenguaje de negocio)<a href="#propiedades-típicas-lenguaje-de-negocio" class="hash-link" aria-label="Enlace directo al Propiedades típicas (lenguaje de negocio)" title="Enlace directo al Propiedades típicas (lenguaje de negocio)">​</a></h2>
+<p>Campos comunes:</p>
+<ul>
+<li><strong>Name</strong> (nombre)</li>
+<li><strong>Description</strong> (descripción)</li>
+<li><strong>Category</strong> (opcional)</li>
+<li><strong>Tags</strong> (para discovery)</li>
+<li><strong>BaseDuration</strong> (duración base)</li>
+<li><strong>BaseMedia</strong> (fotos, cover)</li>
+<li><strong>Requirements / Notes</strong> (opcional)<br>
+<!-- -->Ej: “venir en ayunas”, “traer estudios”, “no usar crema el día anterior”</li>
+<li><strong>BaseTerms (opcional)</strong><br>
+<!-- -->Términos genéricos del servicio (no de la oferta puntual)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="duración-base-qué-significa">Duración base (qué significa)<a href="#duración-base-qué-significa" class="hash-link" aria-label="Enlace directo al Duración base (qué significa)" title="Enlace directo al Duración base (qué significa)">​</a></h3>
+<p>La <strong>duración base</strong> representa el tiempo típico del servicio en condiciones normales.</p>
+<p>No es necesariamente la duración final porque:</p>
+<ul>
+<li>un Listing puede vender una versión express (30m)</li>
+<li>un Listing puede agregar buffers antes/después</li>
+<li>un Listing puede ser grupal (y variar duración o dinámica)</li>
+<li>un Listing puede cambiar duración por canal (ej: VIP más largo)</li>
+</ul>
+<p><strong>Regla recomendada</strong></p>
+<ul>
+<li><strong>Service</strong> guarda duración base (semántica)</li>
+<li><strong>Listing</strong> define duración efectiva + buffers + reglas operativas/comerciales</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="media-fotos-y-relación-con-listings">Media (fotos) y relación con Listings<a href="#media-fotos-y-relación-con-listings" class="hash-link" aria-label="Enlace directo al Media (fotos) y relación con Listings" title="Enlace directo al Media (fotos) y relación con Listings">​</a></h2>
+<ul>
+<li>El Service puede tener <strong>media base</strong> (default).</li>
+<li>El Listing puede tener <strong>media propia</strong> (promo, flyer, campaña).</li>
+</ul>
+<p><strong>Regla de UI (MVP)</strong></p>
+<ol>
+<li>Si el Listing tiene media → se muestra la del Listing.</li>
+<li>Si no → fallback a media del Service.</li>
+</ol>
+<p>Esto permite:</p>
+<ul>
+<li>mantener fotos “oficiales” del servicio</li>
+<li>sin impedir promos específicas por listing</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="relación-con-place-dónde-ocurre">Relación con Place (dónde ocurre)<a href="#relación-con-place-dónde-ocurre" class="hash-link" aria-label="Enlace directo al Relación con Place (dónde ocurre)" title="Enlace directo al Relación con Place (dónde ocurre)">​</a></h2>
+<p>Un Service puede ser:</p>
+<ul>
+<li><strong>agnóstico</strong> (sin lugar)</li>
+<li>o tener un “lugar típico” como referencia</li>
+</ul>
+<p>Pero la verdad del “dónde” se define en:</p>
+<ul>
+<li>el <strong>Listing</strong> (ej: “Consulta en consultorio”, “Visita a domicilio”)</li>
+<li>o el <strong>Booking/Event</strong> (instancia concreta, dirección final)</li>
+</ul>
+<blockquote>
+<p>Recomendación MVP: mantener Place a nivel Listing/Booking, no en Service.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ejemplos-de-modelado">Ejemplos de modelado<a href="#ejemplos-de-modelado" class="hash-link" aria-label="Enlace directo al Ejemplos de modelado" title="Enlace directo al Ejemplos de modelado">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-médico-con-hospital--consultorio">1) Médico con hospital + consultorio<a href="#1-médico-con-hospital--consultorio" class="hash-link" aria-label="Enlace directo al 1) Médico con hospital + consultorio" title="Enlace directo al 1) Médico con hospital + consultorio">​</a></h3>
+<ul>
+<li>Service: <code>Consulta</code></li>
+<li>Listing A: “Consulta consultorio”<!-- -->
+<ul>
+<li>Place = consultorio</li>
+<li>duración = 30m</li>
+</ul>
+</li>
+<li>Listing B: “Consulta hospital”<!-- -->
+<ul>
+<li>Place = hospital</li>
+<li>duración = 20m</li>
+</ul>
+</li>
+</ul>
+<p>El Service no se duplica. Cambia la oferta.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-estética-nails-3-servicios">2) Estética nails (3 servicios)<a href="#2-estética-nails-3-servicios" class="hash-link" aria-label="Enlace directo al 2) Estética nails (3 servicios)" title="Enlace directo al 2) Estética nails (3 servicios)">​</a></h3>
+<p>Services:</p>
+<ul>
+<li>Capping (90m base)</li>
+<li>Manicura (60m base)</li>
+<li>Gel (30m base)</li>
+</ul>
+<p>Los Listings definen:</p>
+<ul>
+<li>pricing/promos</li>
+<li>scheduling (buffers, ventana, etc.)</li>
+<li>capacity pools y assignment (staff)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="qué-no-debe-ir-en-service-errores-comunes">Qué NO debe ir en Service (errores comunes)<a href="#qué-no-debe-ir-en-service-errores-comunes" class="hash-link" aria-label="Enlace directo al Qué NO debe ir en Service (errores comunes)" title="Enlace directo al Qué NO debe ir en Service (errores comunes)">​</a></h2>
+<ul>
+<li>❌ Precio y promos (van en Listing)</li>
+<li>❌ Visibilidad/canales (van en Listing/Channels)</li>
+<li>❌ Reglas de agenda/conflictos del usuario (van en Timeline Conflict Rules)</li>
+<li>❌ Auto-asignación/capacity pools (van en Listing/Assignment)</li>
+<li>❌ Formularios de booking (van en Listing → Forms)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="checklist-mvp">Checklist (MVP)<a href="#checklist-mvp" class="hash-link" aria-label="Enlace directo al Checklist (MVP)" title="Enlace directo al Checklist (MVP)">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Service tiene Name/Description/Tags/BaseDuration</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Service puede tener media base (fallback)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Listing referencia Service y define el “cómo”</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Duración base ≠ duración efectiva (listing manda)</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vytehub/vm-docs/tree/main/docs/00-core-domain/04-bounded-contexts/03.Offer - Catalog &amp; Listings/01.catalog/02.services.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar esta página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/overview"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Overview</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/catalog/products"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Products</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#tldr" class="table-of-contents__link toc-highlight">TL;DR</a></li><li><a href="#qué-es-un-service" class="table-of-contents__link toc-highlight">Qué es un Service</a></li><li><a href="#qué-problemas-resuelve-por-qué-no-usar-solo-listings" class="table-of-contents__link toc-highlight">Qué problemas resuelve (por qué no usar solo Listings)</a></li><li><a href="#propiedades-típicas-lenguaje-de-negocio" class="table-of-contents__link toc-highlight">Propiedades típicas (lenguaje de negocio)</a><ul><li><a href="#duración-base-qué-significa" class="table-of-contents__link toc-highlight">Duración base (qué significa)</a></li></ul></li><li><a href="#media-fotos-y-relación-con-listings" class="table-of-contents__link toc-highlight">Media (fotos) y relación con Listings</a></li><li><a href="#relación-con-place-dónde-ocurre" class="table-of-contents__link toc-highlight">Relación con Place (dónde ocurre)</a></li><li><a href="#ejemplos-de-modelado" class="table-of-contents__link toc-highlight">Ejemplos de modelado</a><ul><li><a href="#1-médico-con-hospital--consultorio" class="table-of-contents__link toc-highlight">1) Médico con hospital + consultorio</a></li><li><a href="#2-estética-nails-3-servicios" class="table-of-contents__link toc-highlight">2) Estética nails (3 servicios)</a></li></ul></li><li><a href="#qué-no-debe-ir-en-service-errores-comunes" class="table-of-contents__link toc-highlight">Qué NO debe ir en Service (errores comunes)</a></li><li><a href="#checklist-mvp" class="table-of-contents__link toc-highlight">Checklist (MVP)</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/docs/core-domain/vision/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 VyteMergeDocs, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

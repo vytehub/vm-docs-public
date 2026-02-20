@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-core-domain/bounded-contexts/Offer - Catalog & Listings/listing/assignment_auto" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Assignment | Vyte Merge Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://vytehub.github.io/vm-docs-public/en/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://vytehub.github.io/vm-docs-public/en/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://vytehub.github.io/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/assignment_auto"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Assignment | Vyte Merge Docs"><meta data-rh="true" name="description" content="Auto-asignación de Bookings/Events a staff sin dar control comercial."><meta data-rh="true" property="og:description" content="Auto-asignación de Bookings/Events a staff sin dar control comercial."><link data-rh="true" rel="icon" href="/vm-docs-public/en/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://vytehub.github.io/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/assignment_auto"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/assignment_auto" hreflang="es"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/assignment_auto" hreflang="en"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/assignment_auto" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Core Domain","item":"https://vytehub.github.io/vm-docs-public/en/docs/core-domain/"},{"@type":"ListItem","position":2,"name":"Módulos","item":"https://vytehub.github.io/vm-docs-public/en/docs/category/módulos"},{"@type":"ListItem","position":3,"name":"Listings","item":"https://vytehub.github.io/vm-docs-public/en/docs/category/listings"},{"@type":"ListItem","position":4,"name":"Assignment","item":"https://vytehub.github.io/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog & Listings/listing/assignment_auto"}]}</script><link rel="alternate" type="application/rss+xml" href="/vm-docs-public/en/blog/rss.xml" title="Vyte Merge Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/vm-docs-public/en/blog/atom.xml" title="Vyte Merge Docs Atom Feed"><link rel="stylesheet" href="/vm-docs-public/en/assets/css/styles.92c3af45.css">
+<script src="/vm-docs-public/en/assets/js/runtime~main.94d2cfd4.js" defer="defer"></script>
+<script src="/vm-docs-public/en/assets/js/main.d874a4bf.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/vm-docs-public/en/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/vm-docs-public/en/"><div class="navbar__logo"><img src="/vm-docs-public/en/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/vm-docs-public/en/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">VyteMergeDocs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/vm-docs-public/en/docs/core-domain">Documentacion</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/vytehub/vm-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/vm-docs-public/en/docs/core-domain">Core Domain</a><button aria-label="Collapse sidebar category &#x27;Core Domain&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/en/docs/core-domain/vision/intro">Vision &amp; Scope</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/en/docs/category/concepts">Concepts</a><button aria-label="Expand sidebar category &#x27;Concepts&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/vm-docs-public/en/docs/category/módulos">Módulos</a><button aria-label="Collapse sidebar category &#x27;Módulos&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/en/docs/category/foundation--governance">Foundation &amp; Governance</a><button aria-label="Expand sidebar category &#x27;Foundation &amp; Governance&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/en/docs/category/timelines">Supply - Time &amp; Place</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/vm-docs-public/en/docs/category/services--products">Offer - Catalog &amp; Listings</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/en/docs/category/services--products">Services &amp; Products</a><button aria-label="Expand sidebar category &#x27;Services &amp; Products&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/vm-docs-public/en/docs/category/listings">Listings</a><button aria-label="Collapse sidebar category &#x27;Listings&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/overview">Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/basic_properties">Basic Properties</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/add_ons_bundles">Add-ons &amp; Bundles</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/scheduling_slots">Scheduling &amp; Slots</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/booking_rules">Booking Rules</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/capacity_shared_capacity">Capacity</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/assignment_auto">Assignment</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/channels_visibility">Channels &amp; Visibility</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/forms">Forms</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/price_promos">Price &amp; Promos</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/terms_disclaimer">Terms &amp; Disclaimer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/privacy">Privacy</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/status_lifecycle">Status &amp; Lifecycle</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/forms">Forms</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/en/docs/category/social">Social &amp; Discovery</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/channels">Communication</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Modulos pendientes de revisar">Mdulos/features de negocio a revisar (pendientes)</a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/domain-behavior">Domain Behavior</a><button aria-label="Expand sidebar category &#x27;Domain Behavior&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/product-variants">Product Variants / Use Cases</a><button aria-label="Expand sidebar category &#x27;Product Variants / Use Cases&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/architecture">Architecture &amp; Implementation</a><button aria-label="Expand sidebar category &#x27;Architecture &amp; Implementation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/vm-docs-public/en/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/en/docs/core-domain"><span>Core Domain</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/en/docs/category/módulos"><span>Módulos</span></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Offer - Catalog &amp; Listings</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/en/docs/category/listings"><span>Listings</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Assignment</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Assignment (auto-asignación)</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TL;DR<a href="#tldr" class="hash-link" aria-label="Direct link to TL;DR" title="Direct link to TL;DR">​</a></h2>
+<p><strong>Assignment</strong> permite que un negocio venda un <strong>Service Listing</strong> y que el sistema <strong>asigne automáticamente</strong> cada booking a una persona (staff) o recurso, sin que ese staff tenga que “manejar el catálogo” ni publicar listings.</p>
+<ul>
+<li>El negocio controla <strong>qué se vende</strong> (Listing).</li>
+<li>El sistema decide <strong>quién atiende</strong> (Assignment).</li>
+<li>El resultado se refleja en el <strong>Timeline</strong> del responsable (Event asignado).</li>
+</ul>
+<blockquote>
+<p>Staff y permisos se gobiernan por <strong>Agreements + Access</strong>. Assignment solo decide “a quién le cae”.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="contexto--problema">Contexto / Problema<a href="#contexto--problema" class="hash-link" aria-label="Direct link to Contexto / Problema" title="Direct link to Contexto / Problema">​</a></h2>
+<p>En negocios con staff (estética, clínica, gimnasio, consultorio compartido):</p>
+<ul>
+<li>el negocio quiere un único punto de venta (un listing por servicio)</li>
+<li>pero la atención la realizan personas distintas</li>
+<li>y esas personas necesitan ver su agenda para organizarse</li>
+</ul>
+<p>Sin Assignment, el negocio tendría que:</p>
+<ul>
+<li>crear listings duplicados por cada empleado, o</li>
+<li>asignar manualmente cada booking, o</li>
+<li>darle control comercial al staff (lo cual no siempre quiere)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="objetivo-de-negocio">Objetivo de negocio<a href="#objetivo-de-negocio" class="hash-link" aria-label="Direct link to Objetivo de negocio" title="Direct link to Objetivo de negocio">​</a></h2>
+<ul>
+<li>Evitar fricción operativa (menos “administración manual”).</li>
+<li>Mantener una sola “oferta” comercial (listing) y asignar internamente.</li>
+<li>Garantizar que el booking respeta:<!-- -->
+<ul>
+<li>disponibilidad real (conflicts)</li>
+<li>shared capacity (pools)</li>
+<li>skills/limitaciones del staff</li>
+</ul>
+</li>
+<li>Soportar escenarios:<!-- -->
+<ul>
+<li>nails con skills distintos</li>
+<li>clínica con especialidades</li>
+<li>gabinetes + profesionales</li>
+<li>partner/reseller que vende pero no atiende</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="qué-es-assignment-exactamente">Qué es Assignment exactamente<a href="#qué-es-assignment-exactamente" class="hash-link" aria-label="Direct link to Qué es Assignment exactamente" title="Direct link to Qué es Assignment exactamente">​</a></h2>
+<p>Assignment es una decisión que, dado un <strong>Booking</strong> (o intento de booking), resuelve:</p>
+<ul>
+<li><code>AssigneeType</code>: <code>StaffMember</code> | <code>Resource</code> | <code>Pool</code></li>
+<li><code>AssigneeId</code>: quién es el responsable final</li>
+<li><code>AssignmentReason</code>: por qué se eligió (audit/debug)</li>
+</ul>
+<p>Luego:</p>
+<ul>
+<li>se crea/actualiza un <strong>Event</strong> en el Timeline correspondiente del assignee (o se asigna el Event del owner al assignee según tu modelo)</li>
+<li>se registra el vínculo en el booking (<code>AssignedTo</code>)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="modelo-mental-simple">Modelo mental (simple)<a href="#modelo-mental-simple" class="hash-link" aria-label="Direct link to Modelo mental (simple)" title="Direct link to Modelo mental (simple)">​</a></h2>
+<p>Un booking reserva un intervalo de tiempo. Assignment decide <strong>quién lo consume</strong>.</p>
+<ul>
+<li>En nails: el booking consume 1 empleada durante el intervalo.</li>
+<li>En gabinete: el booking consume 1 gabinete (pool fijo), y opcionalmente 1 profesional (pool skills).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ejemplo-nails-skills-pool">Ejemplo Nails (skills pool)<a href="#ejemplo-nails-skills-pool" class="hash-link" aria-label="Direct link to Ejemplo Nails (skills pool)" title="Direct link to Ejemplo Nails (skills pool)">​</a></h2>
+<p>Empleadas:</p>
+<ul>
+<li>E1: puede <code>A</code>, <code>B</code></li>
+<li>E2: puede <code>B</code>, <code>C</code></li>
+<li>E3: puede <code>A</code>, <code>B</code>, <code>C</code></li>
+</ul>
+<p>Flujo:</p>
+<ol>
+<li>el negocio publica un listing “Servicio <code>B</code>”</li>
+<li>entra un booking para <code>B</code> en <code>[10:00, 11:00)</code></li>
+<li>Assignment elige una empleada disponible que pueda <code>B</code></li>
+<li>el event aparece en el Timeline de esa empleada</li>
+</ol>
+<p>Resultado:</p>
+<ul>
+<li>el negocio vendió “B”</li>
+<li>el sistema asignó “quién atiende”</li>
+<li>se evita duplicar listings por empleada</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="inputs-que-usa-assignment">Inputs que usa Assignment<a href="#inputs-que-usa-assignment" class="hash-link" aria-label="Direct link to Inputs que usa Assignment" title="Direct link to Inputs que usa Assignment">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-del-listing">1) Del Listing<a href="#1-del-listing" class="hash-link" aria-label="Direct link to 1) Del Listing" title="Direct link to 1) Del Listing">​</a></h3>
+<ul>
+<li><code>AssignmentEnabled</code> (bool)</li>
+<li><code>AssignmentMode</code> (por ejemplo <code>Auto</code> | <code>Manual</code>)</li>
+<li><code>EligibilityRules</code> (quién puede recibir asignación)<!-- -->
+<ul>
+<li>skills requeridos (service)</li>
+<li>tags/categorías (opcional)</li>
+</ul>
+</li>
+<li><code>Strategy</code> (cómo elegir dentro del grupo elegible)</li>
+<li><code>Constraints</code> (opcional)<!-- -->
+<ul>
+<li>“solo mujeres”, “solo senior”, “solo X lugar” (si aplica)</li>
+</ul>
+</li>
+<li><code>SharedCapacityPoolId</code> (si el listing consume un pool fijo)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-del-booking">2) Del Booking<a href="#2-del-booking" class="hash-link" aria-label="Direct link to 2) Del Booking" title="Direct link to 2) Del Booking">​</a></h3>
+<ul>
+<li><code>Interval</code> (start/end)</li>
+<li><code>ServiceId</code> (o service extension si add-ons)</li>
+<li><code>PlaceId</code> (si aplica)</li>
+<li><code>AddOns</code> (si extienden duración)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-del-contexto-operativo">3) Del contexto operativo<a href="#3-del-contexto-operativo" class="hash-link" aria-label="Direct link to 3) Del contexto operativo" title="Direct link to 3) Del contexto operativo">​</a></h3>
+<ul>
+<li>disponibilidad real en Timeline (conflicts)</li>
+<li>pools de capacidad (fijo o skills)</li>
+<li>bloqueos/permisos (Access) si influyen en la asignación<!-- -->
+<ul>
+<li>ej: staff revocado por agreement no es elegible</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="estrategias-de-asignación-lenguaje-de-negocio">Estrategias de asignación (lenguaje de negocio)<a href="#estrategias-de-asignación-lenguaje-de-negocio" class="hash-link" aria-label="Direct link to Estrategias de asignación (lenguaje de negocio)" title="Direct link to Estrategias de asignación (lenguaje de negocio)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="round-robin">Round-robin<a href="#round-robin" class="hash-link" aria-label="Direct link to Round-robin" title="Direct link to Round-robin">​</a></h3>
+<p>Distribuye equitativamente para balancear carga.</p>
+<ul>
+<li>útil para estética (varias empleadas similares)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="skills-first">Skills-first<a href="#skills-first" class="hash-link" aria-label="Direct link to Skills-first" title="Direct link to Skills-first">​</a></h3>
+<p>Primero filtra por skills, luego elige por disponibilidad.</p>
+<ul>
+<li>útil cuando no todos pueden hacer todo</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="priority--ranking">Priority / Ranking<a href="#priority--ranking" class="hash-link" aria-label="Direct link to Priority / Ranking" title="Direct link to Priority / Ranking">​</a></h3>
+<p>Lista con prioridad (E3 primero, luego E1, etc.).</p>
+<ul>
+<li>útil para “senior” o responsables principales</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="least-loaded">Least-loaded<a href="#least-loaded" class="hash-link" aria-label="Direct link to Least-loaded" title="Direct link to Least-loaded">​</a></h3>
+<p>Elige el que tenga menos bookings en un período.</p>
+<ul>
+<li>útil para distribuir trabajo sin rotación estricta</li>
+</ul>
+<blockquote>
+<p>Recomendación MVP: empezar con <code>Skills-first</code> + <code>Round-robin</code> dentro del grupo.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="reglas-de-disponibilidad-qué-puede-fallar">Reglas de disponibilidad (qué puede fallar)<a href="#reglas-de-disponibilidad-qué-puede-fallar" class="hash-link" aria-label="Direct link to Reglas de disponibilidad (qué puede fallar)" title="Direct link to Reglas de disponibilidad (qué puede fallar)">​</a></h2>
+<p>Un assignee es elegible solo si:</p>
+<ul>
+<li>está disponible en el intervalo (no hay conflicto)</li>
+<li>pertenece al grupo habilitado (agreement activo)</li>
+<li>cumple skills requeridos</li>
+<li>no rompe shared capacity (si aplica)</li>
+</ul>
+<p>Si no hay candidato:</p>
+<ul>
+<li>el booking no puede confirmarse (o queda Pending/Requested según tu política)</li>
+<li>se devuelve razón clara: <code>NoEligibleAssignee</code></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="assignment-y-cambios-posteriores">Assignment y cambios posteriores<a href="#assignment-y-cambios-posteriores" class="hash-link" aria-label="Direct link to Assignment y cambios posteriores" title="Direct link to Assignment y cambios posteriores">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="re-asignación-futuro--opcional">Re-asignación (futuro / opcional)<a href="#re-asignación-futuro--opcional" class="hash-link" aria-label="Direct link to Re-asignación (futuro / opcional)" title="Direct link to Re-asignación (futuro / opcional)">​</a></h3>
+<p>Puede ocurrir si:</p>
+<ul>
+<li>el staff cancela</li>
+<li>el negocio decide re-balancear</li>
+<li>se detecta conflicto nuevo</li>
+</ul>
+<p>Política recomendada:</p>
+<ul>
+<li>permitir re-asignación solo antes de un deadline</li>
+<li>registrar auditoría (quién, cuándo, por qué)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lock-in-al-confirmar">Lock-in al confirmar<a href="#lock-in-al-confirmar" class="hash-link" aria-label="Direct link to Lock-in al confirmar" title="Direct link to Lock-in al confirmar">​</a></h3>
+<p>Una vez <code>Confirmed</code>, el booking debería:</p>
+<ul>
+<li>persistir <code>AssignedTo</code></li>
+<li>no cambiar silenciosamente (a menos que haya re-asignación explícita)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="interacción-con-agreements--access">Interacción con Agreements + Access<a href="#interacción-con-agreements--access" class="hash-link" aria-label="Direct link to Interacción con Agreements + Access" title="Direct link to Interacción con Agreements + Access">​</a></h2>
+<p>Assignment <strong>no</strong> gestiona permisos.
+Solo debe respetar “quién es elegible” según relaciones vigentes.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>si una empleada sale del staff (agreement revocado) → deja de ser elegible</li>
+<li>si un partner vende un listing pero no atiende → no entra en elegibles de assignment</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kpis-para-productooperación">KPIs (para producto/operación)<a href="#kpis-para-productooperación" class="hash-link" aria-label="Direct link to KPIs (para producto/operación)" title="Direct link to KPIs (para producto/operación)">​</a></h2>
+<ul>
+<li>% de bookings auto-asignados exitosamente</li>
+<li>% de fallos por “no hay staff elegible”</li>
+<li>distribución de carga por staff (balance)</li>
+<li>tiempo promedio hasta confirmación (si hay pending/request)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="checklist-mvp">Checklist (MVP)<a href="#checklist-mvp" class="hash-link" aria-label="Direct link to Checklist (MVP)" title="Direct link to Checklist (MVP)">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <code>AssignmentEnabled</code> por listing</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->definir pool de elegibles (staff con agreement activo)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->filtrar por skills (service) y disponibilidad (conflicts)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->estrategia simple (round-robin dentro de elegibles)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->persistir <code>AssignedTo</code> en booking al confirmar</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->crear/asignar Event en timeline del staff</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->razones claras de error (<code>NoEligibleAssignee</code>, <code>Conflict</code>, <code>PoolFull</code>)</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vytehub/vm-docs/tree/main/docs/00-core-domain/04-bounded-contexts/03.Offer - Catalog &amp; Listings/02.listing/07.assignment_auto.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/capacity_shared_capacity"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Capacity</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Offer - Catalog &amp; Listings/listing/channels_visibility"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Channels &amp; Visibility</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#tldr" class="table-of-contents__link toc-highlight">TL;DR</a></li><li><a href="#contexto--problema" class="table-of-contents__link toc-highlight">Contexto / Problema</a></li><li><a href="#objetivo-de-negocio" class="table-of-contents__link toc-highlight">Objetivo de negocio</a></li><li><a href="#qué-es-assignment-exactamente" class="table-of-contents__link toc-highlight">Qué es Assignment exactamente</a></li><li><a href="#modelo-mental-simple" class="table-of-contents__link toc-highlight">Modelo mental (simple)</a></li><li><a href="#ejemplo-nails-skills-pool" class="table-of-contents__link toc-highlight">Ejemplo Nails (skills pool)</a></li><li><a href="#inputs-que-usa-assignment" class="table-of-contents__link toc-highlight">Inputs que usa Assignment</a><ul><li><a href="#1-del-listing" class="table-of-contents__link toc-highlight">1) Del Listing</a></li><li><a href="#2-del-booking" class="table-of-contents__link toc-highlight">2) Del Booking</a></li><li><a href="#3-del-contexto-operativo" class="table-of-contents__link toc-highlight">3) Del contexto operativo</a></li></ul></li><li><a href="#estrategias-de-asignación-lenguaje-de-negocio" class="table-of-contents__link toc-highlight">Estrategias de asignación (lenguaje de negocio)</a><ul><li><a href="#round-robin" class="table-of-contents__link toc-highlight">Round-robin</a></li><li><a href="#skills-first" class="table-of-contents__link toc-highlight">Skills-first</a></li><li><a href="#priority--ranking" class="table-of-contents__link toc-highlight">Priority / Ranking</a></li><li><a href="#least-loaded" class="table-of-contents__link toc-highlight">Least-loaded</a></li></ul></li><li><a href="#reglas-de-disponibilidad-qué-puede-fallar" class="table-of-contents__link toc-highlight">Reglas de disponibilidad (qué puede fallar)</a></li><li><a href="#assignment-y-cambios-posteriores" class="table-of-contents__link toc-highlight">Assignment y cambios posteriores</a><ul><li><a href="#re-asignación-futuro--opcional" class="table-of-contents__link toc-highlight">Re-asignación (futuro / opcional)</a></li><li><a href="#lock-in-al-confirmar" class="table-of-contents__link toc-highlight">Lock-in al confirmar</a></li></ul></li><li><a href="#interacción-con-agreements--access" class="table-of-contents__link toc-highlight">Interacción con Agreements + Access</a></li><li><a href="#kpis-para-productooperación" class="table-of-contents__link toc-highlight">KPIs (para producto/operación)</a></li><li><a href="#checklist-mvp" class="table-of-contents__link toc-highlight">Checklist (MVP)</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/en/docs/core-domain/vision/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/en/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 VyteMergeDocs, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

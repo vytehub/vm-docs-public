@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-core-domain/bounded-contexts/Communication/notifications/reminders" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Reminders | Vyte Merge Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://vytehub.github.io/vm-docs-public/en/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://vytehub.github.io/vm-docs-public/en/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://vytehub.github.io/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/notifications/reminders"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Reminders | Vyte Merge Docs"><meta data-rh="true" name="description" content="Recordatorios automáticos para Bookings/Events - canales, scheduling, templates, tracking y buenas prácticas."><meta data-rh="true" property="og:description" content="Recordatorios automáticos para Bookings/Events - canales, scheduling, templates, tracking y buenas prácticas."><link data-rh="true" rel="icon" href="/vm-docs-public/en/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://vytehub.github.io/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/notifications/reminders"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Communication/notifications/reminders" hreflang="es"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/notifications/reminders" hreflang="en"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Communication/notifications/reminders" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Core Domain","item":"https://vytehub.github.io/vm-docs-public/en/docs/core-domain/"},{"@type":"ListItem","position":2,"name":"Módulos","item":"https://vytehub.github.io/vm-docs-public/en/docs/category/módulos"},{"@type":"ListItem","position":3,"name":"Notifications","item":"https://vytehub.github.io/vm-docs-public/en/docs/category/notifications"},{"@type":"ListItem","position":4,"name":"Reminders","item":"https://vytehub.github.io/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/notifications/reminders"}]}</script><link rel="alternate" type="application/rss+xml" href="/vm-docs-public/en/blog/rss.xml" title="Vyte Merge Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/vm-docs-public/en/blog/atom.xml" title="Vyte Merge Docs Atom Feed"><link rel="stylesheet" href="/vm-docs-public/en/assets/css/styles.92c3af45.css">
+<script src="/vm-docs-public/en/assets/js/runtime~main.94d2cfd4.js" defer="defer"></script>
+<script src="/vm-docs-public/en/assets/js/main.d874a4bf.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/vm-docs-public/en/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/vm-docs-public/en/"><div class="navbar__logo"><img src="/vm-docs-public/en/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/vm-docs-public/en/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">VyteMergeDocs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/vm-docs-public/en/docs/core-domain">Documentacion</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/vytehub/vm-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/vm-docs-public/en/docs/core-domain">Core Domain</a><button aria-label="Collapse sidebar category &#x27;Core Domain&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/en/docs/core-domain/vision/intro">Vision &amp; Scope</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/en/docs/category/concepts">Concepts</a><button aria-label="Expand sidebar category &#x27;Concepts&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/vm-docs-public/en/docs/category/módulos">Módulos</a><button aria-label="Collapse sidebar category &#x27;Módulos&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/en/docs/category/foundation--governance">Foundation &amp; Governance</a><button aria-label="Expand sidebar category &#x27;Foundation &amp; Governance&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/en/docs/category/timelines">Supply - Time &amp; Place</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/en/docs/category/services--products">Offer - Catalog &amp; Listings</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/en/docs/category/social">Social &amp; Discovery</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/channels">Communication</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/channels">Channels</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/vm-docs-public/en/docs/category/notifications">Notifications</a><button aria-label="Collapse sidebar category &#x27;Notifications&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/notifications/overview">Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/notifications/reminders">Reminders</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/notifications/templates">Templates</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/notifications/delivery-tracking">Delivery &amp; Tracking</a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Modulos pendientes de revisar">Mdulos/features de negocio a revisar (pendientes)</a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/domain-behavior">Domain Behavior</a><button aria-label="Expand sidebar category &#x27;Domain Behavior&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/product-variants">Product Variants / Use Cases</a><button aria-label="Expand sidebar category &#x27;Product Variants / Use Cases&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/architecture">Architecture &amp; Implementation</a><button aria-label="Expand sidebar category &#x27;Architecture &amp; Implementation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/vm-docs-public/en/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/en/docs/core-domain"><span>Core Domain</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/en/docs/category/módulos"><span>Módulos</span></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Communication</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/en/docs/category/notifications"><span>Notifications</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Reminders</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Reminders</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TL;DR<a href="#tldr" class="hash-link" aria-label="Direct link to TL;DR" title="Direct link to TL;DR">​</a></h2>
+<p>Los <strong>Reminders</strong> son recordatorios automáticos que se envían a clientes y asistentes para eventos, citas y reservas.</p>
+<p>Objetivos:</p>
+<ul>
+<li><strong>reducir ausencias (no-shows)</strong></li>
+<li>mantener a las personas informadas</li>
+<li>habilitar acciones rápidas (<strong>Confirm / Reschedule / Cancel</strong>)</li>
+</ul>
+<blockquote>
+<p>Reminders se basan en <strong>Bookings/Events</strong> (instancias con fecha/hora).<br>
+<!-- -->Un Listing puede sugerir defaults, pero el envío ocurre sobre una reserva concreta.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-dónde-vive-la-configuración-sin-complicarlo">1. Dónde vive la configuración (sin complicarlo)<a href="#1-dónde-vive-la-configuración-sin-complicarlo" class="hash-link" aria-label="Direct link to 1. Dónde vive la configuración (sin complicarlo)" title="Direct link to 1. Dónde vive la configuración (sin complicarlo)">​</a></h2>
+<p>En VyteMerge la configuración puede existir en niveles:</p>
+<ol>
+<li><strong>Owner Defaults</strong> (Profile/Organization)<br>
+<!-- -->La configuración estándar del negocio (lo más común).</li>
+<li><strong>Listing Defaults</strong> (opcional)<br>
+<!-- -->Si un listing requiere reglas distintas (ej: cirugías vs consultas).</li>
+<li><strong>Booking Override</strong> (excepcional)<br>
+<!-- -->Un caso puntual (ej: reprogramación manual con reminder extra).</li>
+</ol>
+<p>Regla simple:</p>
+<blockquote>
+<p>lo más específico gana (Booking &gt; Listing &gt; Owner).</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-qué-dispara-un-reminder-triggers">2. Qué dispara un Reminder (Triggers)<a href="#2-qué-dispara-un-reminder-triggers" class="hash-link" aria-label="Direct link to 2. Qué dispara un Reminder (Triggers)" title="Direct link to 2. Qué dispara un Reminder (Triggers)">​</a></h2>
+<p>MVP recomendado:</p>
+<ul>
+<li><code>BookingConfirmed</code> → schedule reminders</li>
+<li><code>BookingRescheduled</code> → recalcular y reprogramar reminders</li>
+<li><code>BookingCancelled</code> → cancelar reminders pendientes + (opcional) enviar cancelación</li>
+</ul>
+<p>Opcionales (fase 2):</p>
+<ul>
+<li><code>MinToConfirmReached</code> (para bookings abiertos con cupo mínimo)</li>
+<li><code>EventUpdated</code> (para eventos manuales)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-canales-de-envío-channels">3. Canales de envío (Channels)<a href="#3-canales-de-envío-channels" class="hash-link" aria-label="Direct link to 3. Canales de envío (Channels)" title="Direct link to 3. Canales de envío (Channels)">​</a></h2>
+<p>Canales posibles:</p>
+<ul>
+<li><strong>Email</strong></li>
+<li><strong>Push</strong></li>
+<li><strong>SMS</strong> (fase 2)</li>
+<li><strong>WhatsApp</strong> (fase 2)</li>
+</ul>
+<p>Recomendación MVP:</p>
+<ul>
+<li>arrancar con <strong>Email + Push</strong></li>
+<li>sumar SMS/WhatsApp cuando haya infraestructura y compliance</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="preferencias-del-usuario">Preferencias del usuario<a href="#preferencias-del-usuario" class="hash-link" aria-label="Direct link to Preferencias del usuario" title="Direct link to Preferencias del usuario">​</a></h3>
+<p>Cada destinatario puede:</p>
+<ul>
+<li>habilitar/deshabilitar canales</li>
+<li>definir quiet hours (ver sección 6)</li>
+<li>elegir idioma (si aplica)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-cuándo-se-envía-scheduling">4. Cuándo se envía (Scheduling)<a href="#4-cuándo-se-envía-scheduling" class="hash-link" aria-label="Direct link to 4. Cuándo se envía (Scheduling)" title="Direct link to 4. Cuándo se envía (Scheduling)">​</a></h2>
+<p>Los reminders se programan relativos al inicio del booking/event.</p>
+<p>Ejemplos típicos:</p>
+<ul>
+<li>24h antes (preparación)</li>
+<li>2–6h antes (recordatorio final)</li>
+<li>15–60min antes (último aviso)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="timezone-regla-clara">Timezone (regla clara)<a href="#timezone-regla-clara" class="hash-link" aria-label="Direct link to Timezone (regla clara)" title="Direct link to Timezone (regla clara)">​</a></h3>
+<ul>
+<li>Por defecto, programar en la <strong>zona horaria del Place</strong> (si existe).</li>
+<li>Si no hay Place, usar la timezone del <strong>Owner Profile</strong>.</li>
+<li>Si el destinatario tiene timezone propia, la UI puede mostrarlo en su TZ, pero el schedule debe ser consistente.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-templates-y-variables-message-templates">5. Templates y variables (Message Templates)<a href="#5-templates-y-variables-message-templates" class="hash-link" aria-label="Direct link to 5. Templates y variables (Message Templates)" title="Direct link to 5. Templates y variables (Message Templates)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="qué-se-personaliza">Qué se personaliza<a href="#qué-se-personaliza" class="hash-link" aria-label="Direct link to Qué se personaliza" title="Direct link to Qué se personaliza">​</a></h3>
+<ul>
+<li>cuerpo del mensaje (por canal)</li>
+<li>idioma/tono (opcional)</li>
+<li>links de acción (si aplican)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="variables-dinámicas-permitidas">Variables dinámicas (permitidas)<a href="#variables-dinámicas-permitidas" class="hash-link" aria-label="Direct link to Variables dinámicas (permitidas)" title="Direct link to Variables dinámicas (permitidas)">​</a></h3>
+<p>Ejemplos:</p>
+<ul>
+<li><code>{clientName}</code></li>
+<li><code>{listingTitle}</code></li>
+<li><code>{serviceName}</code></li>
+<li><code>{date}</code></li>
+<li><code>{time}</code></li>
+<li><code>{location}</code></li>
+<li><code>{price}</code> <em>(solo si Access lo permite)</em></li>
+<li><code>{actions.confirmUrl}</code>, <code>{actions.rescheduleUrl}</code>, <code>{actions.cancelUrl}</code></li>
+</ul>
+<blockquote>
+<p>Importante: <strong>Access/VisibilityMode</strong> define qué campos se pueden incluir.<br>
+<!-- -->Si el usuario solo tiene vista mínima, no mandamos detalles sensibles.</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="plantillas-recomendación">Plantillas (recomendación)<a href="#plantillas-recomendación" class="hash-link" aria-label="Direct link to Plantillas (recomendación)" title="Direct link to Plantillas (recomendación)">​</a></h3>
+<ul>
+<li>permitir guardar <strong>templates</strong> reutilizables</li>
+<li>versionar templates (simple: <code>TemplateId</code> + <code>UpdatedAt</code>)</li>
+<li>al enviar, guardar snapshot del texto final enviado (auditoría)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-buenas-prácticas-quiet-hours-rate-limits-y-anti-spam">6. Buenas prácticas: quiet hours, rate limits y anti-spam<a href="#6-buenas-prácticas-quiet-hours-rate-limits-y-anti-spam" class="hash-link" aria-label="Direct link to 6. Buenas prácticas: quiet hours, rate limits y anti-spam" title="Direct link to 6. Buenas prácticas: quiet hours, rate limits y anti-spam">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="quiet-hours">Quiet hours<a href="#quiet-hours" class="hash-link" aria-label="Direct link to Quiet hours" title="Direct link to Quiet hours">​</a></h3>
+<p>Evitar enviar en horarios molestos:</p>
+<ul>
+<li>ejemplo: no enviar entre 22:00–08:00 del destinatario</li>
+</ul>
+<p>Si un reminder cae en quiet hours:</p>
+<ul>
+<li>se envía al primer horario permitido siguiente, o</li>
+<li>se omite (según política del owner)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rate-limits">Rate limits<a href="#rate-limits" class="hash-link" aria-label="Direct link to Rate limits" title="Direct link to Rate limits">​</a></h3>
+<p>Especialmente para SMS/WhatsApp:</p>
+<ul>
+<li>limitar envíos por usuario/por día</li>
+<li>fallback a Email si el canal premium falla</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-interacción-acciones-dentro-del-reminder">7. Interacción: acciones dentro del reminder<a href="#7-interacción-acciones-dentro-del-reminder" class="hash-link" aria-label="Direct link to 7. Interacción: acciones dentro del reminder" title="Direct link to 7. Interacción: acciones dentro del reminder">​</a></h2>
+<p>Acciones típicas:</p>
+<ul>
+<li><strong>Confirm attendance</strong></li>
+<li><strong>Reschedule</strong></li>
+<li><strong>Cancel booking</strong></li>
+</ul>
+<p>Reglas:</p>
+<ul>
+<li>los links deben ser <strong>one-tap</strong> (con token de seguridad)</li>
+<li>la acción debe registrarse en el sistema (ver tracking)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-tracking-lo-mínimo-que-necesitás">8. Tracking (lo mínimo que necesitás)<a href="#8-tracking-lo-mínimo-que-necesitás" class="hash-link" aria-label="Direct link to 8. Tracking (lo mínimo que necesitás)" title="Direct link to 8. Tracking (lo mínimo que necesitás)">​</a></h2>
+<p>Estados recomendados:</p>
+<ul>
+<li><code>Scheduled</code></li>
+<li><code>Sent</code></li>
+<li><code>Delivered</code> <em>(si el proveedor lo soporta)</em></li>
+<li><code>Failed</code></li>
+<li><code>ActionTaken</code> <em>(Confirm/Reschedule/Cancel)</em></li>
+</ul>
+<p>MVP mínimo:</p>
+<ul>
+<li><code>Scheduled</code> / <code>Sent</code> / <code>Failed</code> / <code>ActionTaken</code></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="9-resumen-ux-ideas-de-pantalla">9. Resumen UX (ideas de pantalla)<a href="#9-resumen-ux-ideas-de-pantalla" class="hash-link" aria-label="Direct link to 9. Resumen UX (ideas de pantalla)" title="Direct link to 9. Resumen UX (ideas de pantalla)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuración-del-owner-simple">Configuración del Owner (simple)<a href="#configuración-del-owner-simple" class="hash-link" aria-label="Direct link to Configuración del Owner (simple)" title="Direct link to Configuración del Owner (simple)">​</a></h3>
+<ul>
+<li>toggles por canal (Email/Push)</li>
+<li>lista de offsets (24h, 6h, 1h)</li>
+<li>template por defecto</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vista-de-un-booking-operativa">Vista de un Booking (operativa)<a href="#vista-de-un-booking-operativa" class="hash-link" aria-label="Direct link to Vista de un Booking (operativa)" title="Direct link to Vista de un Booking (operativa)">​</a></h3>
+<ul>
+<li>timeline de reminders programados</li>
+<li>estado por reminder (sent/failed)</li>
+<li>botón “Enviar reminder ahora” (opcional, auditado)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="10-ejemplos-rápidos">10. Ejemplos rápidos<a href="#10-ejemplos-rápidos" class="hash-link" aria-label="Direct link to 10. Ejemplos rápidos" title="Direct link to 10. Ejemplos rápidos">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hospital">Hospital<a href="#hospital" class="hash-link" aria-label="Direct link to Hospital" title="Direct link to Hospital">​</a></h3>
+<ul>
+<li>48h + 24h + 2h</li>
+<li>confirmación con 1 tap</li>
+<li>reprogramación fácil para reducir ausentismo</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cancha-de-fútbol-booking-con-attendees">Cancha de fútbol (booking con attendees)<a href="#cancha-de-fútbol-booking-con-attendees" class="hash-link" aria-label="Direct link to Cancha de fútbol (booking con attendees)" title="Direct link to Cancha de fútbol (booking con attendees)">​</a></h3>
+<ul>
+<li>reminder al organizador (24h y 2h)</li>
+<li>reminder a attendees confirmados (6h)</li>
+<li>si <code>MinToConfirm</code> no se alcanza, aviso automático (fase 2)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="checklist-mvp">Checklist (MVP)<a href="#checklist-mvp" class="hash-link" aria-label="Direct link to Checklist (MVP)" title="Direct link to Checklist (MVP)">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Triggers: BookingConfirmed, BookingRescheduled, BookingCancelled</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Canales: Email + Push</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Scheduling offsets configurables por Owner (+ override por Listing opcional)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Templates con variables permitidas</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Links de acción seguros (confirm/reschedule/cancel)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Tracking mínimo (scheduled/sent/failed/action)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Respetar Access/VisibilityMode para no filtrar datos sensibles</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vytehub/vm-docs/tree/main/docs/00-core-domain/04-bounded-contexts/05.Communication/02.notifications/02.reminders.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/notifications/overview"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Overview</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/vm-docs-public/en/docs/core-domain/bounded-contexts/Communication/notifications/templates"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Templates</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#tldr" class="table-of-contents__link toc-highlight">TL;DR</a></li><li><a href="#1-dónde-vive-la-configuración-sin-complicarlo" class="table-of-contents__link toc-highlight">1. Dónde vive la configuración (sin complicarlo)</a></li><li><a href="#2-qué-dispara-un-reminder-triggers" class="table-of-contents__link toc-highlight">2. Qué dispara un Reminder (Triggers)</a></li><li><a href="#3-canales-de-envío-channels" class="table-of-contents__link toc-highlight">3. Canales de envío (Channels)</a><ul><li><a href="#preferencias-del-usuario" class="table-of-contents__link toc-highlight">Preferencias del usuario</a></li></ul></li><li><a href="#4-cuándo-se-envía-scheduling" class="table-of-contents__link toc-highlight">4. Cuándo se envía (Scheduling)</a><ul><li><a href="#timezone-regla-clara" class="table-of-contents__link toc-highlight">Timezone (regla clara)</a></li></ul></li><li><a href="#5-templates-y-variables-message-templates" class="table-of-contents__link toc-highlight">5. Templates y variables (Message Templates)</a><ul><li><a href="#qué-se-personaliza" class="table-of-contents__link toc-highlight">Qué se personaliza</a></li><li><a href="#variables-dinámicas-permitidas" class="table-of-contents__link toc-highlight">Variables dinámicas (permitidas)</a></li><li><a href="#plantillas-recomendación" class="table-of-contents__link toc-highlight">Plantillas (recomendación)</a></li></ul></li><li><a href="#6-buenas-prácticas-quiet-hours-rate-limits-y-anti-spam" class="table-of-contents__link toc-highlight">6. Buenas prácticas: quiet hours, rate limits y anti-spam</a><ul><li><a href="#quiet-hours" class="table-of-contents__link toc-highlight">Quiet hours</a></li><li><a href="#rate-limits" class="table-of-contents__link toc-highlight">Rate limits</a></li></ul></li><li><a href="#7-interacción-acciones-dentro-del-reminder" class="table-of-contents__link toc-highlight">7. Interacción: acciones dentro del reminder</a></li><li><a href="#8-tracking-lo-mínimo-que-necesitás" class="table-of-contents__link toc-highlight">8. Tracking (lo mínimo que necesitás)</a></li><li><a href="#9-resumen-ux-ideas-de-pantalla" class="table-of-contents__link toc-highlight">9. Resumen UX (ideas de pantalla)</a><ul><li><a href="#configuración-del-owner-simple" class="table-of-contents__link toc-highlight">Configuración del Owner (simple)</a></li><li><a href="#vista-de-un-booking-operativa" class="table-of-contents__link toc-highlight">Vista de un Booking (operativa)</a></li></ul></li><li><a href="#10-ejemplos-rápidos" class="table-of-contents__link toc-highlight">10. Ejemplos rápidos</a><ul><li><a href="#hospital" class="table-of-contents__link toc-highlight">Hospital</a></li><li><a href="#cancha-de-fútbol-booking-con-attendees" class="table-of-contents__link toc-highlight">Cancha de fútbol (booking con attendees)</a></li></ul></li><li><a href="#checklist-mvp" class="table-of-contents__link toc-highlight">Checklist (MVP)</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/en/docs/core-domain/vision/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/en/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 VyteMergeDocs, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

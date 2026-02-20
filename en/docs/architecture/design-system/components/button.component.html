@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-architecture/design-system/components/button.component" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Button | Vyte Merge Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://vytehub.github.io/vm-docs-public/en/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://vytehub.github.io/vm-docs-public/en/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://vytehub.github.io/vm-docs-public/en/docs/architecture/design-system/components/button.component"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Button | Vyte Merge Docs"><meta data-rh="true" name="description" content="Convención: los nombres de tokens, propiedades y variantes se mantienen en inglés (contrato con código)."><meta data-rh="true" property="og:description" content="Convención: los nombres de tokens, propiedades y variantes se mantienen en inglés (contrato con código)."><link data-rh="true" rel="icon" href="/vm-docs-public/en/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://vytehub.github.io/vm-docs-public/en/docs/architecture/design-system/components/button.component"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/architecture/design-system/components/button.component" hreflang="es"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/en/docs/architecture/design-system/components/button.component" hreflang="en"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/architecture/design-system/components/button.component" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Architecture & Implementation","item":"https://vytehub.github.io/vm-docs-public/en/docs/architecture/"},{"@type":"ListItem","position":2,"name":"Design & Tokens (Figma)","item":"https://vytehub.github.io/vm-docs-public/en/docs/category/design--tokens-figma"},{"@type":"ListItem","position":3,"name":"Components","item":"https://vytehub.github.io/vm-docs-public/en/docs/category/components"},{"@type":"ListItem","position":4,"name":"Button","item":"https://vytehub.github.io/vm-docs-public/en/docs/architecture/design-system/components/button.component"}]}</script><link rel="alternate" type="application/rss+xml" href="/vm-docs-public/en/blog/rss.xml" title="Vyte Merge Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/vm-docs-public/en/blog/atom.xml" title="Vyte Merge Docs Atom Feed"><link rel="stylesheet" href="/vm-docs-public/en/assets/css/styles.92c3af45.css">
+<script src="/vm-docs-public/en/assets/js/runtime~main.94d2cfd4.js" defer="defer"></script>
+<script src="/vm-docs-public/en/assets/js/main.d874a4bf.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/vm-docs-public/en/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/vm-docs-public/en/"><div class="navbar__logo"><img src="/vm-docs-public/en/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/vm-docs-public/en/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">VyteMergeDocs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/vm-docs-public/en/docs/core-domain">Documentacion</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/vytehub/vm-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/core-domain">Core Domain</a><button aria-label="Expand sidebar category &#x27;Core Domain&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/domain-behavior">Domain Behavior</a><button aria-label="Expand sidebar category &#x27;Domain Behavior&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/en/docs/product-variants">Product Variants / Use Cases</a><button aria-label="Expand sidebar category &#x27;Product Variants / Use Cases&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/vm-docs-public/en/docs/architecture">Architecture &amp; Implementation</a><button aria-label="Collapse sidebar category &#x27;Architecture &amp; Implementation&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/en/docs/category/architecture">Architecture</a><button aria-label="Expand sidebar category &#x27;Architecture&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/vm-docs-public/en/docs/category/design--tokens-figma">Design &amp; Tokens (Figma)</a><button aria-label="Collapse sidebar category &#x27;Design &amp; Tokens (Figma)&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/architecture/design-system/design-tokens-architecture">Design Tokens Architecture</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/architecture/design-system/text-styles">Design Tokens Architecture</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/architecture/design-system/colors">Colors</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/en/docs/architecture/design-system/sizes">Sizes</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/en/docs/architecture/design-system/typography/primitive-semantics">Typography</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/vm-docs-public/en/docs/category/components">Components</a><button aria-label="Collapse sidebar category &#x27;Components&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/vm-docs-public/en/docs/architecture/design-system/components/button.component">Button</a></li></ul></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/vm-docs-public/en/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/en/docs/architecture"><span>Architecture &amp; Implementation</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/en/docs/category/design--tokens-figma"><span>Design &amp; Tokens (Figma)</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/en/docs/category/components"><span>Components</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Button</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Button</h1></header>
+<blockquote>
+<p><strong>Convención:</strong> los nombres de tokens, propiedades y variantes se mantienen en <strong>inglés</strong> (contrato con código).<br>
+<!-- -->Esta documentación está en <strong>español</strong> y se basa en tus <strong>Semantic Colors</strong> reales (<code>surface/content/border/ring/action/feedback</code>) + tus <strong>Semantic Sizes</strong> + <strong>Semantic Typography</strong>.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="qué-problema-resuelve">Qué problema resuelve<a href="#qué-problema-resuelve" class="hash-link" aria-label="Direct link to Qué problema resuelve" title="Direct link to Qué problema resuelve">​</a></h2>
+<p><code>Button</code> es el componente base para acciones (CTA). Esta guía define:</p>
+<ul>
+<li><strong>API del componente</strong> (variants/props) para Figma y código.</li>
+<li><strong>Reglas de comportamiento</strong> (states).</li>
+<li><strong>Mapping exacto</strong> de colores usando tus tokens existentes: <code>action.*</code> + <code>ring.focus</code>.</li>
+<li>Qué partes dependen de <code>Semantic Sizes</code> (radius/stroke/space) y <code>Semantic Typography</code> (text size/weight).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="terminología-de-tokens">Terminología de tokens<a href="#terminología-de-tokens" class="hash-link" aria-label="Direct link to Terminología de tokens" title="Direct link to Terminología de tokens">​</a></h2>
+<p>En tu sistema de tokens de color existen estos namespaces:</p>
+<ul>
+<li><code>surface.*</code> → fondos/superficies generales</li>
+<li><code>content.*</code> → colores de texto/íconos para contenido general</li>
+<li><code>border.*</code> → bordes globales (neutrales)</li>
+<li><code>ring.*</code> → colores de focus ring</li>
+<li><code>action.*</code> → colores para <strong>acciones</strong> (botones/links) en variantes <code>filled/outlined</code></li>
+<li><code>feedback.*</code> → colores para estados de feedback (success/warning/error/info)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="qué-es-action">¿Qué es <code>action</code>?<a href="#qué-es-action" class="hash-link" aria-label="Direct link to qué-es-action" title="Direct link to qué-es-action">​</a></h3>
+<p><code>action</code> <strong>no es un token único</strong>, es un <strong>grupo</strong> que contiene colores para controles interactivos.
+Ejemplos (existentes):</p>
+<ul>
+<li><code>action.primary.filled.bg.default</code></li>
+<li><code>action.primary.outlined.text.hover</code></li>
+<li><code>action.accent.outlined.border.disabled</code></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="api-del-componente">API del componente<a href="#api-del-componente" class="hash-link" aria-label="Direct link to API del componente" title="Direct link to API del componente">​</a></h2>
+<p>Propiedades recomendadas (Figma Component Set / props en código):</p>
+<ul>
+<li><code>intent</code>: <code>primary | accent</code></li>
+<li><code>variant</code>: <code>filled | outlined | ghost</code></li>
+<li><code>size</code>: <code>sm | md | lg</code></li>
+<li><code>state</code>: <code>default | hover | pressed | focus | disabled</code></li>
+<li><code>icon</code>: <code>none | leading | trailing | only</code></li>
+<li><code>width</code>: <code>auto | full</code> <em>(opcional)</em></li>
+</ul>
+<blockquote>
+<p>Nota: hoy <strong>no</strong> definimos <code>intent=danger</code> porque no existen tokens <code>action.danger.*</code>.<br>
+<!-- -->Más adelante se puede agregar sin romper el API.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="anatomía">Anatomía<a href="#anatomía" class="hash-link" aria-label="Direct link to Anatomía" title="Direct link to Anatomía">​</a></h2>
+<p>Estructura (conceptual):</p>
+<ul>
+<li>Container (auto layout)<!-- -->
+<ul>
+<li>Optional icon (leading/trailing/only)</li>
+<li>Label</li>
+</ul>
+</li>
+</ul>
+<p>Reglas:</p>
+<ul>
+<li><code>icon=none</code>: no renderiza íconos</li>
+<li><code>icon=only</code>: no renderiza label, y el botón debe mantener forma cuadrada (ancho≈alto)</li>
+<li><code>loading</code> (si se agrega): recomienda reemplazar ícono por spinner manteniendo ancho estable</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tamaños">Tamaños<a href="#tamaños" class="hash-link" aria-label="Direct link to Tamaños" title="Direct link to Tamaños">​</a></h2>
+<p>Si todavía no existen tokens <code>component.button.*</code>, este componente consume directamente <code>space.*</code> y <code>text.size.*</code>.</p>
+<p>Propuesta (ajustable):</p>
+<table><thead><tr><th>size</th><th style="text-align:right">padding-y</th><th style="text-align:right">padding-x</th><th>label typography</th><th>label weight</th></tr></thead><tbody><tr><td>sm</td><td style="text-align:right"><code>space.2xs</code></td><td style="text-align:right"><code>space.sm</code></td><td><code>text.size.sm</code></td><td><code>font.weight.medium</code></td></tr><tr><td>md</td><td style="text-align:right"><code>space.xs</code></td><td style="text-align:right"><code>space.md</code></td><td><code>text.size.base</code></td><td><code>font.weight.medium</code></td></tr><tr><td>lg</td><td style="text-align:right"><code>space.sm</code></td><td style="text-align:right"><code>space.lg</code></td><td><code>text.size.lg</code></td><td><code>font.weight.medium</code></td></tr></tbody></table>
+<p>Icon size (propuesta):</p>
+<ul>
+<li>sm: 16</li>
+<li>md: 16</li>
+<li>lg: 18</li>
+</ul>
+<p>Radius:</p>
+<ul>
+<li>Usar <code>radius.md</code> (o <code>radius.lg</code> si querés estética más redondeada)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="border--focus-ring">Border + Focus ring<a href="#border--focus-ring" class="hash-link" aria-label="Direct link to Border + Focus ring" title="Direct link to Border + Focus ring">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="border-solo-outlined">Border (solo <code>outlined</code>)<a href="#border-solo-outlined" class="hash-link" aria-label="Direct link to border-solo-outlined" title="Direct link to border-solo-outlined">​</a></h3>
+<ul>
+<li>Border width: <code>stroke.thin</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="focus-ring-todos-los-variants">Focus ring (todos los variants)<a href="#focus-ring-todos-los-variants" class="hash-link" aria-label="Direct link to Focus ring (todos los variants)" title="Direct link to Focus ring (todos los variants)">​</a></h3>
+<p>Cuando <code>state=focus</code>:</p>
+<ul>
+<li>Ring color: <code>ring.focus</code></li>
+<li>Ring thickness: <code>stroke.focusRing</code></li>
+</ul>
+<blockquote>
+<p>En Figma puede representarse como stroke externo (outside) o un “halo” (shape) detrás.<br>
+<!-- -->En código, típicamente es un <code>outline</code> / <code>box-shadow</code> con ese color y grosor.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="variants">Variants<a href="#variants" class="hash-link" aria-label="Direct link to Variants" title="Direct link to Variants">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="filled"><code>filled</code><a href="#filled" class="hash-link" aria-label="Direct link to filled" title="Direct link to filled">​</a></h3>
+<ul>
+<li>Background: <code>action.&lt;intent&gt;.filled.bg.&lt;state&gt;</code></li>
+<li>Text/Icon: <code>action.&lt;intent&gt;.filled.text</code></li>
+<li>Border: none</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="outlined"><code>outlined</code><a href="#outlined" class="hash-link" aria-label="Direct link to outlined" title="Direct link to outlined">​</a></h3>
+<ul>
+<li>Background: <code>action.&lt;intent&gt;.outlined.bg.&lt;state&gt;</code></li>
+<li>Border: <code>action.&lt;intent&gt;.outlined.border.&lt;state&gt;</code></li>
+<li>Text/Icon: <code>action.&lt;intent&gt;.outlined.text.&lt;state&gt;</code></li>
+<li>Border width: <code>stroke.thin</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ghost"><code>ghost</code><a href="#ghost" class="hash-link" aria-label="Direct link to ghost" title="Direct link to ghost">​</a></h3>
+<p>Ghost no tiene tokens propios: se construye <strong>sin border</strong> y con background transparente en <code>default</code>.</p>
+<ul>
+<li>Background:<!-- -->
+<ul>
+<li><code>default</code>: none (transparent)</li>
+<li><code>hover|focus|pressed</code>: <code>action.&lt;intent&gt;.outlined.bg.&lt;state&gt;</code></li>
+</ul>
+</li>
+<li>Text/Icon:<!-- -->
+<ul>
+<li><code>default|hover|focus|disabled</code>: <code>action.&lt;intent&gt;.outlined.text.&lt;state&gt;</code></li>
+</ul>
+</li>
+<li>Border: none</li>
+<li>Focus: ring igual a todos</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="states">States<a href="#states" class="hash-link" aria-label="Direct link to States" title="Direct link to States">​</a></h2>
+<p>Estados soportados:</p>
+<ul>
+<li><code>default</code>: estado base</li>
+<li><code>hover</code>: feedback de hover</li>
+<li><code>pressed</code>: feedback al presionar</li>
+<li><code>focus</code>: accesibilidad (ring visible)</li>
+<li><code>disabled</code>: deshabilitado</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="regla-de-oro">Regla de oro<a href="#regla-de-oro" class="hash-link" aria-label="Direct link to Regla de oro" title="Direct link to Regla de oro">​</a></h3>
+<p>Los states <strong>solo cambian tokens</strong> (bg/border/text) y/o ring. No se usan hex manuales.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mapping-exacto-de-tokens-por-intentvariantstate">Mapping exacto de tokens (por intent/variant/state)<a href="#mapping-exacto-de-tokens-por-intentvariantstate" class="hash-link" aria-label="Direct link to Mapping exacto de tokens (por intent/variant/state)" title="Direct link to Mapping exacto de tokens (por intent/variant/state)">​</a></h2>
+<blockquote>
+<p>Los nombres que aparecen debajo existen en tu export actual de <strong>Semantic Colors</strong>.</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="intent--primary">intent = <code>primary</code><a href="#intent--primary" class="hash-link" aria-label="Direct link to intent--primary" title="Direct link to intent--primary">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="variant-filled">Variant: <code>filled</code><a href="#variant-filled" class="hash-link" aria-label="Direct link to variant-filled" title="Direct link to variant-filled">​</a></h4>
+<ul>
+<li>Text/Icon: <code>action.primary.filled.text</code></li>
+<li>BG:<!-- -->
+<ul>
+<li><code>action.primary.filled.bg.default</code></li>
+<li><code>action.primary.filled.bg.hover</code></li>
+<li><code>action.primary.filled.bg.pressed</code></li>
+<li><code>action.primary.filled.bg.disabled</code></li>
+<li><code>action.primary.filled.bg.disabledLight</code> <em>(opcional)</em></li>
+</ul>
+</li>
+</ul>
+<p>Mapping por state:</p>
+<table><thead><tr><th>state</th><th>background</th><th>text/icon</th><th>ring</th></tr></thead><tbody><tr><td>default</td><td><code>action.primary.filled.bg.default</code></td><td><code>action.primary.filled.text</code></td><td>—</td></tr><tr><td>hover</td><td><code>action.primary.filled.bg.hover</code></td><td><code>action.primary.filled.text</code></td><td>—</td></tr><tr><td>pressed</td><td><code>action.primary.filled.bg.pressed</code></td><td><code>action.primary.filled.text</code></td><td>—</td></tr><tr><td>focus</td><td><code>action.primary.filled.bg.default</code></td><td><code>action.primary.filled.text</code></td><td><code>ring.focus</code></td></tr><tr><td>disabled</td><td><code>action.primary.filled.bg.disabled</code></td><td><code>content.text.primary.disabled</code></td><td>—</td></tr></tbody></table>
+<blockquote>
+<p>Nota: no existe <code>action.primary.filled.text.disabled</code>.<br>
+<!-- -->Por eso, para texto disabled usamos <code>content.text.primary.disabled</code>.</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="variant-outlined">Variant: <code>outlined</code><a href="#variant-outlined" class="hash-link" aria-label="Direct link to variant-outlined" title="Direct link to variant-outlined">​</a></h4>
+<p>Tokens:</p>
+<ul>
+<li>BG: <code>action.primary.outlined.bg.*</code></li>
+<li>Border: <code>action.primary.outlined.border.*</code></li>
+<li>Text: <code>action.primary.outlined.text.*</code></li>
+</ul>
+<p>Mapping:</p>
+<table><thead><tr><th>state</th><th>background</th><th>border</th><th>text/icon</th><th>ring</th></tr></thead><tbody><tr><td>default</td><td><code>action.primary.outlined.bg.default</code></td><td><code>action.primary.outlined.border.default</code></td><td><code>action.primary.outlined.text.default</code></td><td>—</td></tr><tr><td>hover</td><td><code>action.primary.outlined.bg.hover</code></td><td><code>action.primary.outlined.border.hover</code></td><td><code>action.primary.outlined.text.hover</code></td><td>—</td></tr><tr><td>pressed</td><td><code>action.primary.outlined.bg.pressed</code></td><td><code>action.primary.outlined.border.focus</code></td><td><code>action.primary.outlined.text.focus</code></td><td>—</td></tr><tr><td>focus</td><td><code>action.primary.outlined.bg.focus</code></td><td><code>action.primary.outlined.border.focus</code></td><td><code>action.primary.outlined.text.focus</code></td><td><code>ring.focus</code></td></tr><tr><td>disabled</td><td><code>action.primary.outlined.bg.disabled</code></td><td><code>action.primary.outlined.border.disabled</code></td><td><code>action.primary.outlined.text.disabled</code></td><td>—</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="variant-ghost">Variant: <code>ghost</code><a href="#variant-ghost" class="hash-link" aria-label="Direct link to variant-ghost" title="Direct link to variant-ghost">​</a></h4>
+<p>Ghost = outlined sin border y sin bg en default.</p>
+<table><thead><tr><th>state</th><th>background</th><th>text/icon</th><th>ring</th></tr></thead><tbody><tr><td>default</td><td>none</td><td><code>action.primary.outlined.text.default</code></td><td>—</td></tr><tr><td>hover</td><td><code>action.primary.outlined.bg.hover</code></td><td><code>action.primary.outlined.text.hover</code></td><td>—</td></tr><tr><td>pressed</td><td><code>action.primary.outlined.bg.pressed</code></td><td><code>action.primary.outlined.text.focus</code></td><td>—</td></tr><tr><td>focus</td><td><code>action.primary.outlined.bg.focus</code></td><td><code>action.primary.outlined.text.focus</code></td><td><code>ring.focus</code></td></tr><tr><td>disabled</td><td>none</td><td><code>action.primary.outlined.text.disabled</code></td><td>—</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="intent--accent">intent = <code>accent</code><a href="#intent--accent" class="hash-link" aria-label="Direct link to intent--accent" title="Direct link to intent--accent">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="variant-filled-1">Variant: <code>filled</code><a href="#variant-filled-1" class="hash-link" aria-label="Direct link to variant-filled-1" title="Direct link to variant-filled-1">​</a></h4>
+<ul>
+<li>Text/Icon: <code>action.accent.filled.text</code></li>
+<li>BG:<!-- -->
+<ul>
+<li><code>action.accent.filled.bg.default</code></li>
+<li><code>action.accent.filled.bg.hover</code></li>
+<li><code>action.accent.filled.bg.pressed</code></li>
+<li><code>action.accent.filled.bg.disabled</code></li>
+<li><code>action.accent.filled.bg.disabledLight</code> <em>(opcional)</em></li>
+</ul>
+</li>
+</ul>
+<p>Mapping:</p>
+<table><thead><tr><th>state</th><th>background</th><th>text/icon</th><th>ring</th></tr></thead><tbody><tr><td>default</td><td><code>action.accent.filled.bg.default</code></td><td><code>action.accent.filled.text</code></td><td>—</td></tr><tr><td>hover</td><td><code>action.accent.filled.bg.hover</code></td><td><code>action.accent.filled.text</code></td><td>—</td></tr><tr><td>pressed</td><td><code>action.accent.filled.bg.pressed</code></td><td><code>action.accent.filled.text</code></td><td>—</td></tr><tr><td>focus</td><td><code>action.accent.filled.bg.default</code></td><td><code>action.accent.filled.text</code></td><td><code>ring.focus</code></td></tr><tr><td>disabled</td><td><code>action.accent.filled.bg.disabled</code></td><td><code>content.text.primary.disabled</code></td><td>—</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="variant-outlined-1">Variant: <code>outlined</code><a href="#variant-outlined-1" class="hash-link" aria-label="Direct link to variant-outlined-1" title="Direct link to variant-outlined-1">​</a></h4>
+<table><thead><tr><th>state</th><th>background</th><th>border</th><th>text/icon</th><th>ring</th></tr></thead><tbody><tr><td>default</td><td><code>action.accent.outlined.bg.default</code></td><td><code>action.accent.outlined.border.default</code></td><td><code>action.accent.outlined.text.default</code></td><td>—</td></tr><tr><td>hover</td><td><code>action.accent.outlined.bg.hover</code></td><td><code>action.accent.outlined.border.hover</code></td><td><code>action.accent.outlined.text.hover</code></td><td>—</td></tr><tr><td>pressed</td><td><code>action.accent.outlined.bg.pressed</code></td><td><code>action.accent.outlined.border.focus</code></td><td><code>action.accent.outlined.text.focus</code></td><td>—</td></tr><tr><td>focus</td><td><code>action.accent.outlined.bg.focus</code></td><td><code>action.accent.outlined.border.focus</code></td><td><code>action.accent.outlined.text.focus</code></td><td><code>ring.focus</code></td></tr><tr><td>disabled</td><td><code>action.accent.outlined.bg.disabled</code></td><td><code>action.accent.outlined.border.disabled</code></td><td><code>action.accent.outlined.text.disabled</code></td><td>—</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="variant-ghost-1">Variant: <code>ghost</code><a href="#variant-ghost-1" class="hash-link" aria-label="Direct link to variant-ghost-1" title="Direct link to variant-ghost-1">​</a></h4>
+<table><thead><tr><th>state</th><th>background</th><th>text/icon</th><th>ring</th></tr></thead><tbody><tr><td>default</td><td>none</td><td><code>action.accent.outlined.text.default</code></td><td>—</td></tr><tr><td>hover</td><td><code>action.accent.outlined.bg.hover</code></td><td><code>action.accent.outlined.text.hover</code></td><td>—</td></tr><tr><td>pressed</td><td><code>action.accent.outlined.bg.pressed</code></td><td><code>action.accent.outlined.text.focus</code></td><td>—</td></tr><tr><td>focus</td><td><code>action.accent.outlined.bg.focus</code></td><td><code>action.accent.outlined.text.focus</code></td><td><code>ring.focus</code></td></tr><tr><td>disabled</td><td>none</td><td><code>action.accent.outlined.text.disabled</code></td><td>—</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="accesibilidad">Accesibilidad<a href="#accesibilidad" class="hash-link" aria-label="Direct link to Accesibilidad" title="Direct link to Accesibilidad">​</a></h2>
+<ul>
+<li><code>state=focus</code> siempre debe mostrar ring visible (<code>ring.focus</code> + <code>stroke.focusRing</code>).</li>
+<li><code>disabled</code> debe comunicar deshabilitado (no solo por color; idealmente también por cursor/interaction en código).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="roadmap-de-tokens-opcional">Roadmap de tokens (opcional)<a href="#roadmap-de-tokens-opcional" class="hash-link" aria-label="Direct link to Roadmap de tokens (opcional)" title="Direct link to Roadmap de tokens (opcional)">​</a></h2>
+<p>Para facilitar consistencia y evitar “layout decisions” dentro del componente:</p>
+<ol>
+<li>Tokens de sizing del componente:</li>
+</ol>
+<ul>
+<li><code>component.button.paddingX.sm|md|lg</code></li>
+<li><code>component.button.paddingY.sm|md|lg</code></li>
+<li><code>component.button.gap</code></li>
+<li><code>component.button.iconSize.sm|md|lg</code></li>
+</ul>
+<ol start="2">
+<li>Tokens de texto disabled para filled:</li>
+</ol>
+<ul>
+<li><code>action.&lt;intent&gt;.filled.text.disabled</code> <em>(para evitar el fallback a <code>content.text.primary.disabled</code>)</em></li>
+</ul>
+<ol start="3">
+<li>Token de border pressed (si lo querés explícito):</li>
+</ol>
+<ul>
+<li><code>action.&lt;intent&gt;.outlined.border.pressed</code></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vista-gráfica-del-api-de-variantes">Vista gráfica del API de variantes<a href="#vista-gráfica-del-api-de-variantes" class="hash-link" aria-label="Direct link to Vista gráfica del API de variantes" title="Direct link to Vista gráfica del API de variantes">​</a></h2>
+<!-- -->
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="qué-combinaciones-hay-que-cubrir-documentación-mínima">Qué combinaciones hay que cubrir (documentación mínima)<a href="#qué-combinaciones-hay-que-cubrir-documentación-mínima" class="hash-link" aria-label="Direct link to Qué combinaciones hay que cubrir (documentación mínima)" title="Direct link to Qué combinaciones hay que cubrir (documentación mínima)">​</a></h2>
+<blockquote>
+<p>No tiene sentido renderizar todas las combinaciones posibles (ver “explosión combinatoria”).<br>
+<!-- -->Para documentación, esta cobertura mínima suele ser suficiente:</p>
+</blockquote>
+<table><thead><tr><th>Grupo</th><th>Qué mostrar</th><th>Por qué</th></tr></thead><tbody><tr><td>Sizes</td><td><code>sm/md/lg</code> con <code>filled + primary + default</code></td><td>compara dimensiones/tipografía</td></tr><tr><td>Variants</td><td><code>filled/outlined/ghost</code> con <code>primary + md + default</code></td><td>compara estilos base</td></tr><tr><td>Intents</td><td><code>primary/accent</code> con <code>filled + md + default</code></td><td>compara tonalidad</td></tr><tr><td>States</td><td><code>default/hover/pressed/focus/disabled</code> con <code>primary + md + filled</code></td><td>comportamiento</td></tr><tr><td>Icon</td><td><code>none/leading/trailing/only</code> con <code>primary + md + filled + default</code></td><td>anatomía</td></tr><tr><td>Width (opcional)</td><td><code>auto/full</code> con <code>primary + md + filled + default</code></td><td>uso en formularios</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="matriz-core-qué-existe">Matriz core (qué existe)<a href="#matriz-core-qué-existe" class="hash-link" aria-label="Direct link to Matriz core (qué existe)" title="Direct link to Matriz core (qué existe)">​</a></h3>
+<table><thead><tr><th>intent \ variant</th><th style="text-align:right">filled</th><th style="text-align:right">outlined</th><th style="text-align:right">ghost</th></tr></thead><tbody><tr><td>primary</td><td style="text-align:right">✅</td><td style="text-align:right">✅</td><td style="text-align:right">✅</td></tr><tr><td>accent</td><td style="text-align:right">✅</td><td style="text-align:right">✅</td><td style="text-align:right">✅</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="matrices-de-estados-por-variant-tokens-exactos">Matrices de estados por variant (tokens exactos)<a href="#matrices-de-estados-por-variant-tokens-exactos" class="hash-link" aria-label="Direct link to Matrices de estados por variant (tokens exactos)" title="Direct link to Matrices de estados por variant (tokens exactos)">​</a></h2>
+<blockquote>
+<p><code>intent</code> ∈ <code>{primary, accent}</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="filled-1">filled<a href="#filled-1" class="hash-link" aria-label="Direct link to filled" title="Direct link to filled">​</a></h3>
+<table><thead><tr><th>state</th><th>background token</th><th>text token</th><th>ring</th></tr></thead><tbody><tr><td>default</td><td><code>action.&lt;intent&gt;.filled.bg.default</code></td><td><code>action.&lt;intent&gt;.filled.text</code></td><td>—</td></tr><tr><td>hover</td><td><code>action.&lt;intent&gt;.filled.bg.hover</code></td><td><code>action.&lt;intent&gt;.filled.text</code></td><td>—</td></tr><tr><td>pressed</td><td><code>action.&lt;intent&gt;.filled.bg.pressed</code></td><td><code>action.&lt;intent&gt;.filled.text</code></td><td>—</td></tr><tr><td>focus</td><td><code>action.&lt;intent&gt;.filled.bg.default</code></td><td><code>action.&lt;intent&gt;.filled.text</code></td><td><code>ring.focus</code> + <code>stroke.focusRing</code></td></tr><tr><td>disabled</td><td><code>action.&lt;intent&gt;.filled.bg.disabled</code></td><td><code>content.text.primary.disabled</code></td><td>—</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="outlined-1">outlined<a href="#outlined-1" class="hash-link" aria-label="Direct link to outlined" title="Direct link to outlined">​</a></h3>
+<table><thead><tr><th>state</th><th>bg token</th><th>border token</th><th>text token</th><th>ring</th></tr></thead><tbody><tr><td>default</td><td><code>action.&lt;intent&gt;.outlined.bg.default</code></td><td><code>action.&lt;intent&gt;.outlined.border.default</code></td><td><code>action.&lt;intent&gt;.outlined.text.default</code></td><td>—</td></tr><tr><td>hover</td><td><code>action.&lt;intent&gt;.outlined.bg.hover</code></td><td><code>action.&lt;intent&gt;.outlined.border.hover</code></td><td><code>action.&lt;intent&gt;.outlined.text.hover</code></td><td>—</td></tr><tr><td>pressed</td><td><code>action.&lt;intent&gt;.outlined.bg.pressed</code></td><td><code>action.&lt;intent&gt;.outlined.border.focus</code></td><td><code>action.&lt;intent&gt;.outlined.text.focus</code></td><td>—</td></tr><tr><td>focus</td><td><code>action.&lt;intent&gt;.outlined.bg.focus</code></td><td><code>action.&lt;intent&gt;.outlined.border.focus</code></td><td><code>action.&lt;intent&gt;.outlined.text.focus</code></td><td><code>ring.focus</code> + <code>stroke.focusRing</code></td></tr><tr><td>disabled</td><td><code>action.&lt;intent&gt;.outlined.bg.disabled</code></td><td><code>action.&lt;intent&gt;.outlined.border.disabled</code></td><td><code>action.&lt;intent&gt;.outlined.text.disabled</code></td><td>—</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ghost-1">ghost<a href="#ghost-1" class="hash-link" aria-label="Direct link to ghost" title="Direct link to ghost">​</a></h3>
+<table><thead><tr><th>state</th><th>bg token</th><th>text token</th><th>ring</th></tr></thead><tbody><tr><td>default</td><td>none</td><td><code>action.&lt;intent&gt;.outlined.text.default</code></td><td>—</td></tr><tr><td>hover</td><td><code>action.&lt;intent&gt;.outlined.bg.hover</code></td><td><code>action.&lt;intent&gt;.outlined.text.hover</code></td><td>—</td></tr><tr><td>pressed</td><td><code>action.&lt;intent&gt;.outlined.bg.pressed</code></td><td><code>action.&lt;intent&gt;.outlined.text.focus</code></td><td>—</td></tr><tr><td>focus</td><td><code>action.&lt;intent&gt;.outlined.bg.focus</code></td><td><code>action.&lt;intent&gt;.outlined.text.focus</code></td><td><code>ring.focus</code> + <code>stroke.focusRing</code></td></tr><tr><td>disabled</td><td>none</td><td><code>action.&lt;intent&gt;.outlined.text.disabled</code></td><td>—</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="explosión-combinatoria-por-qué-no-documentamos-todo-junto">Explosión combinatoria (por qué no documentamos todo junto)<a href="#explosión-combinatoria-por-qué-no-documentamos-todo-junto" class="hash-link" aria-label="Direct link to Explosión combinatoria (por qué no documentamos todo junto)" title="Direct link to Explosión combinatoria (por qué no documentamos todo junto)">​</a></h2>
+</div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vytehub/vm-docs/tree/main/docs/03-architecture/design-system/components/button.component.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/vm-docs-public/en/docs/category/components"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Components</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#qué-problema-resuelve" class="table-of-contents__link toc-highlight">Qué problema resuelve</a></li><li><a href="#terminología-de-tokens" class="table-of-contents__link toc-highlight">Terminología de tokens</a><ul><li><a href="#qué-es-action" class="table-of-contents__link toc-highlight">¿Qué es <code>action</code>?</a></li></ul></li><li><a href="#api-del-componente" class="table-of-contents__link toc-highlight">API del componente</a></li><li><a href="#anatomía" class="table-of-contents__link toc-highlight">Anatomía</a></li><li><a href="#tamaños" class="table-of-contents__link toc-highlight">Tamaños</a></li><li><a href="#border--focus-ring" class="table-of-contents__link toc-highlight">Border + Focus ring</a><ul><li><a href="#border-solo-outlined" class="table-of-contents__link toc-highlight">Border (solo <code>outlined</code>)</a></li><li><a href="#focus-ring-todos-los-variants" class="table-of-contents__link toc-highlight">Focus ring (todos los variants)</a></li></ul></li><li><a href="#variants" class="table-of-contents__link toc-highlight">Variants</a><ul><li><a href="#filled" class="table-of-contents__link toc-highlight"><code>filled</code></a></li><li><a href="#outlined" class="table-of-contents__link toc-highlight"><code>outlined</code></a></li><li><a href="#ghost" class="table-of-contents__link toc-highlight"><code>ghost</code></a></li></ul></li><li><a href="#states" class="table-of-contents__link toc-highlight">States</a><ul><li><a href="#regla-de-oro" class="table-of-contents__link toc-highlight">Regla de oro</a></li></ul></li><li><a href="#mapping-exacto-de-tokens-por-intentvariantstate" class="table-of-contents__link toc-highlight">Mapping exacto de tokens (por intent/variant/state)</a><ul><li><a href="#intent--primary" class="table-of-contents__link toc-highlight">intent = <code>primary</code></a></li><li><a href="#intent--accent" class="table-of-contents__link toc-highlight">intent = <code>accent</code></a></li></ul></li><li><a href="#accesibilidad" class="table-of-contents__link toc-highlight">Accesibilidad</a></li><li><a href="#roadmap-de-tokens-opcional" class="table-of-contents__link toc-highlight">Roadmap de tokens (opcional)</a></li><li><a href="#vista-gráfica-del-api-de-variantes" class="table-of-contents__link toc-highlight">Vista gráfica del API de variantes</a></li><li><a href="#qué-combinaciones-hay-que-cubrir-documentación-mínima" class="table-of-contents__link toc-highlight">Qué combinaciones hay que cubrir (documentación mínima)</a><ul><li><a href="#matriz-core-qué-existe" class="table-of-contents__link toc-highlight">Matriz core (qué existe)</a></li></ul></li><li><a href="#matrices-de-estados-por-variant-tokens-exactos" class="table-of-contents__link toc-highlight">Matrices de estados por variant (tokens exactos)</a><ul><li><a href="#filled-1" class="table-of-contents__link toc-highlight">filled</a></li><li><a href="#outlined-1" class="table-of-contents__link toc-highlight">outlined</a></li><li><a href="#ghost-1" class="table-of-contents__link toc-highlight">ghost</a></li></ul></li><li><a href="#explosión-combinatoria-por-qué-no-documentamos-todo-junto" class="table-of-contents__link toc-highlight">Explosión combinatoria (por qué no documentamos todo junto)</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/en/docs/core-domain/vision/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/en/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 VyteMergeDocs, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

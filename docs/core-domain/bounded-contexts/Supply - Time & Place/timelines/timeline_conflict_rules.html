@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-core-domain/bounded-contexts/Supply - Time & Place/timelines/timeline_conflict_rules" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Timeline Conflict Rules | Vyte Merge Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://vytehub.github.io/vm-docs-public/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://vytehub.github.io/vm-docs-public/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Supply - Time &amp; Place/timelines/timeline_conflict_rules"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Timeline Conflict Rules | Vyte Merge Docs"><meta data-rh="true" name="description" content="Reglas del Timeline para decidir qué hacer cuando eventos reales chocan con slots o reservas proyectadas."><meta data-rh="true" property="og:description" content="Reglas del Timeline para decidir qué hacer cuando eventos reales chocan con slots o reservas proyectadas."><link data-rh="true" rel="icon" href="/vm-docs-public/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Supply - Time &amp; Place/timelines/timeline_conflict_rules"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Supply - Time &amp; Place/timelines/timeline_conflict_rules" hreflang="es"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/en/docs/core-domain/bounded-contexts/Supply - Time &amp; Place/timelines/timeline_conflict_rules" hreflang="en"><link data-rh="true" rel="alternate" href="https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Supply - Time &amp; Place/timelines/timeline_conflict_rules" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Core Domain","item":"https://vytehub.github.io/vm-docs-public/docs/core-domain/"},{"@type":"ListItem","position":2,"name":"Módulos","item":"https://vytehub.github.io/vm-docs-public/docs/category/módulos"},{"@type":"ListItem","position":3,"name":"Timelines","item":"https://vytehub.github.io/vm-docs-public/docs/category/timelines"},{"@type":"ListItem","position":4,"name":"Timeline Conflict Rules","item":"https://vytehub.github.io/vm-docs-public/docs/core-domain/bounded-contexts/Supply - Time & Place/timelines/timeline_conflict_rules"}]}</script><link rel="alternate" type="application/rss+xml" href="/vm-docs-public/blog/rss.xml" title="Vyte Merge Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/vm-docs-public/blog/atom.xml" title="Vyte Merge Docs Atom Feed"><link rel="stylesheet" href="/vm-docs-public/assets/css/styles.92c3af45.css">
+<script src="/vm-docs-public/assets/js/runtime~main.cd3b6b20.js" defer="defer"></script>
+<script src="/vm-docs-public/assets/js/main.49a9bcf4.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/vm-docs-public/img/logo.svg"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/vm-docs-public/"><div class="navbar__logo"><img src="/vm-docs-public/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/vm-docs-public/img/logo.svg" alt="VyteMerge Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">VyteMergeDocs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/vm-docs-public/docs/core-domain">Documentacion</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/vytehub/vm-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Cambiar entre modo oscuro y claro (actualmente system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/vm-docs-public/docs/core-domain">Core Domain</a><button aria-label="Colapsar categoría &#x27;Core Domain&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/docs/core-domain/vision/intro">Vision &amp; Scope</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/docs/category/concepts">Concepts</a><button aria-label="Ampliar la categoría &#x27;Concepts&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/vm-docs-public/docs/category/módulos">Módulos</a><button aria-label="Colapsar categoría &#x27;Módulos&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/docs/category/foundation--governance">Foundation &amp; Governance</a><button aria-label="Ampliar la categoría &#x27;Foundation &amp; Governance&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/vm-docs-public/docs/category/timelines">Supply - Time &amp; Place</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/vm-docs-public/docs/category/timelines">Timelines</a><button aria-label="Colapsar categoría &#x27;Timelines&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Supply - Time &amp; Place/timelines/timeline">Timeline</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Supply - Time &amp; Place/timelines/timeline_conflict_rules">Timeline Conflict Rules</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Supply - Time &amp; Place/timelines/timeline_sharing">Timeline Sharing &amp; Visibility</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/vm-docs-public/docs/category/places">Places</a><button aria-label="Ampliar la categoría &#x27;Places&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/docs/category/services--products">Offer - Catalog &amp; Listings</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/docs/category/social">Social &amp; Discovery</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Communication/channels">Communication</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/vm-docs-public/docs/core-domain/bounded-contexts/Modulos pendientes de revisar">Mdulos/features de negocio a revisar (pendientes)</a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/docs/domain-behavior">Domain Behavior</a><button aria-label="Ampliar la categoría &#x27;Domain Behavior&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/docs/product-variants">Product Variants / Use Cases</a><button aria-label="Ampliar la categoría &#x27;Product Variants / Use Cases&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/vm-docs-public/docs/architecture">Architecture &amp; Implementation</a><button aria-label="Ampliar la categoría &#x27;Architecture &amp; Implementation&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/vm-docs-public/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/docs/core-domain"><span>Core Domain</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/docs/category/módulos"><span>Módulos</span></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Supply - Time &amp; Place</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/vm-docs-public/docs/category/timelines"><span>Timelines</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Timeline Conflict Rules</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Timeline Conflict Rules</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="decisiones-automáticas-ante-conflictos-de-agenda">Decisiones automáticas ante conflictos de agenda<a href="#decisiones-automáticas-ante-conflictos-de-agenda" class="hash-link" aria-label="Enlace directo al Decisiones automáticas ante conflictos de agenda" title="Enlace directo al Decisiones automáticas ante conflictos de agenda">​</a></h2>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-visión-general">1. Visión general<a href="#1-visión-general" class="hash-link" aria-label="Enlace directo al 1. Visión general" title="Enlace directo al 1. Visión general">​</a></h2>
+<p>Las <strong>Timeline Conflict Rules</strong> permiten definir <strong>cómo el sistema debe reaccionar cuando existen conflictos reales de agenda</strong>.</p>
+<p>Un conflicto ocurre cuando:</p>
+<ul>
+<li>existe un <strong>Event</strong> (compromiso real)</li>
+<li>se superpone en el tiempo</li>
+<li>con <strong>slots proyectados</strong> o con reservas por ocurrir</li>
+</ul>
+<p>Estas decisiones:</p>
+<ul>
+<li>viven <strong>en el Timeline</strong></li>
+<li>son independientes de un listing específico</li>
+<li>se aplican a múltiples ofertas y contextos</li>
+<li>centralizan cómo el sistema reacciona ante la realidad</li>
+</ul>
+<p>A diferencia de <strong>Capacity Pools</strong> (que controlan <em>cuántas</em> cosas pueden ocurrir),
+las Timeline Conflict Rules controlan <em>si</em> algo debería mostrarse o permitir reserva.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-el-problema-que-resuelven">2. El problema que resuelven<a href="#2-el-problema-que-resuelven" class="hash-link" aria-label="Enlace directo al 2. El problema que resuelven" title="Enlace directo al 2. El problema que resuelven">​</a></h2>
+<p>En la vida real:</p>
+<ul>
+<li>lo personal, familiar y laboral se mezcla</li>
+<li>no todos los eventos afectan todo lo que vendo</li>
+<li>si “desaparecen slots” sin explicación, se pierde confianza</li>
+</ul>
+<p>Las Timeline Conflict Rules permiten expresar estas decisiones <strong>una sola vez</strong>, en un solo lugar.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-principios-clave">3. Principios clave<a href="#3-principios-clave" class="hash-link" aria-label="Enlace directo al 3. Principios clave" title="Enlace directo al 3. Principios clave">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-se-observan-events-no-intenciones">3.1 Se observan events, no intenciones<a href="#31-se-observan-events-no-intenciones" class="hash-link" aria-label="Enlace directo al 3.1 Se observan events, no intenciones" title="Enlace directo al 3.1 Se observan events, no intenciones">​</a></h3>
+<ul>
+<li>no asignan staff</li>
+<li>no “entienden” por qué un evento existe</li>
+<li>solo observan <strong>Events</strong> con filtros</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="32-el-timeline-decide">3.2 El Timeline decide<a href="#32-el-timeline-decide" class="hash-link" aria-label="Enlace directo al 3.2 El Timeline decide" title="Enlace directo al 3.2 El Timeline decide">​</a></h3>
+<ul>
+<li>el <strong>Listing</strong> define reglas operativas/comerciales (duración, buffers, repetición, etc.)</li>
+<li>el <strong>Timeline</strong> define qué cuenta como conflicto y qué hacer</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="33-separación-clara">3.3 Separación clara<a href="#33-separación-clara" class="hash-link" aria-label="Enlace directo al 3.3 Separación clara" title="Enlace directo al 3.3 Separación clara">​</a></h3>
+<ul>
+<li><strong>Slots</strong> → disponibilidad proyectada (no verdad)</li>
+<li><strong>Events</strong> → compromisos reales</li>
+<li><strong>Conflicts</strong> → decisiones ante solapamientos</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-anatomía-de-una-rule-source--target--action">4. Anatomía de una rule (Source / Target / Action)<a href="#4-anatomía-de-una-rule-source--target--action" class="hash-link" aria-label="Enlace directo al 4. Anatomía de una rule (Source / Target / Action)" title="Enlace directo al 4. Anatomía de una rule (Source / Target / Action)">​</a></h2>
+<p>Cada rule se define con tres partes:</p>
+<ol>
+<li><strong>Source</strong> – qué events observar</li>
+<li><strong>Target</strong> – qué se ve afectado</li>
+<li><strong>Action</strong> – qué decisión tomar</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-source--events-observados">5. Source — Events observados<a href="#5-source--events-observados" class="hash-link" aria-label="Enlace directo al 5. Source — Events observados" title="Enlace directo al 5. Source — Events observados">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="timelines-observados">Timelines observados<a href="#timelines-observados" class="hash-link" aria-label="Enlace directo al Timelines observados" title="Enlace directo al Timelines observados">​</a></h3>
+<p>Una rule puede observar events en:</p>
+<ul>
+<li>el Timeline actual</li>
+<li>otros timelines del mismo Profile</li>
+<li>timelines compartidos (familia, colegio, etc.)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="filtros-recomendados">Filtros recomendados<a href="#filtros-recomendados" class="hash-link" aria-label="Enlace directo al Filtros recomendados" title="Enlace directo al Filtros recomendados">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="status">Status<a href="#status" class="hash-link" aria-label="Enlace directo al Status" title="Enlace directo al Status">​</a></h4>
+<ul>
+<li>Pending</li>
+<li>Confirmed</li>
+</ul>
+<blockquote>
+<p>Cancelled y Completed se ignoran por defecto.</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tags">Tags<a href="#tags" class="hash-link" aria-label="Enlace directo al Tags" title="Enlace directo al Tags">​</a></h4>
+<p>Ejemplos:</p>
+<ul>
+<li><code>#travel</code></li>
+<li><code>#family</code></li>
+<li><code>#school</code></li>
+<li><code>#impostergable</code></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-importante-si-el-source-es-un-timeline-compartido">6. Importante: si el source es un timeline compartido<a href="#6-importante-si-el-source-es-un-timeline-compartido" class="hash-link" aria-label="Enlace directo al 6. Importante: si el source es un timeline compartido" title="Enlace directo al 6. Importante: si el source es un timeline compartido">​</a></h2>
+<p>Si querés que una conflict rule observe <strong>tags</strong> en un timeline compartido:</p>
+<ul>
+<li>el sharing debe ser al menos <strong>BusyOnlyDetails</strong> (porque BusyOnly no expone tags)</li>
+<li>o la rule debe basarse solo en “ocupación” (BusyOnly)</li>
+</ul>
+<p>Esto evita falsas expectativas del tipo “quiero filtrar por #school pero no compartimos tags”.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-target--qué-se-ve-afectado">7. Target — Qué se ve afectado<a href="#7-target--qué-se-ve-afectado" class="hash-link" aria-label="Enlace directo al 7. Target — Qué se ve afectado" title="Enlace directo al 7. Target — Qué se ve afectado">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="listings-reservables">Listings reservables<a href="#listings-reservables" class="hash-link" aria-label="Enlace directo al Listings reservables" title="Enlace directo al Listings reservables">​</a></h3>
+<ul>
+<li>listings específicos</li>
+<li>o <strong>All Listings reservables</strong></li>
+<li>o listings que cumplan una condición simple (ej: “presencial” vs “remoto”, categoría, tag del listing)</li>
+</ul>
+<blockquote>
+<p>Nota: esto reemplaza “Offerings” del modelo anterior.</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="events-opcional--futuro">Events (opcional / futuro)<a href="#events-opcional--futuro" class="hash-link" aria-label="Enlace directo al Events (opcional / futuro)" title="Enlace directo al Events (opcional / futuro)">​</a></h3>
+<ul>
+<li>notificar sobre events</li>
+<li>o aplicar acciones (con mucha cautela)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-actions--decisiones-del-sistema">8. Actions — Decisiones del sistema<a href="#8-actions--decisiones-del-sistema" class="hash-link" aria-label="Enlace directo al 8. Actions — Decisiones del sistema" title="Enlace directo al 8. Actions — Decisiones del sistema">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sobre-slots-mvp">Sobre Slots (MVP)<a href="#sobre-slots-mvp" class="hash-link" aria-label="Enlace directo al Sobre Slots (MVP)" title="Enlace directo al Sobre Slots (MVP)">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="hide-slots-default">Hide slots (default)<a href="#hide-slots-default" class="hash-link" aria-label="Enlace directo al Hide slots (default)" title="Enlace directo al Hide slots (default)">​</a></h4>
+<ul>
+<li>el slot no se muestra</li>
+<li>no afecta bookings existentes</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="notify-only">Notify only<a href="#notify-only" class="hash-link" aria-label="Enlace directo al Notify only" title="Enlace directo al Notify only">​</a></h4>
+<ul>
+<li>el slot puede mantenerse visible (según política)</li>
+<li>se genera alerta/revisión</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sobre-events-futuro">Sobre Events (futuro)<a href="#sobre-events-futuro" class="hash-link" aria-label="Enlace directo al Sobre Events (futuro)" title="Enlace directo al Sobre Events (futuro)">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="cancel-event--cancel-and-reschedule">Cancel event / Cancel and reschedule<a href="#cancel-event--cancel-and-reschedule" class="hash-link" aria-label="Enlace directo al Cancel event / Cancel and reschedule" title="Enlace directo al Cancel event / Cancel and reschedule">​</a></h4>
+<ul>
+<li>solo cuando exista un marco claro de permisos, auditoría y UX</li>
+<li>recomendable dejarlo como fase futura</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="9-cuándo-se-activa-un-conflicto">9. Cuándo se activa un conflicto<a href="#9-cuándo-se-activa-un-conflicto" class="hash-link" aria-label="Enlace directo al 9. Cuándo se activa un conflicto" title="Enlace directo al 9. Cuándo se activa un conflicto">​</a></h2>
+<p>Una rule se ejecuta cuando:</p>
+<ul>
+<li>existe un event observado</li>
+<li>cumple filtros</li>
+<li>se solapa temporalmente</li>
+<li>considerando duración y buffers (si aplica)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="10-relación-con-capacity-pools">10. Relación con Capacity Pools<a href="#10-relación-con-capacity-pools" class="hash-link" aria-label="Enlace directo al 10. Relación con Capacity Pools" title="Enlace directo al 10. Relación con Capacity Pools">​</a></h2>
+<p>Orden mental recomendado:</p>
+<ol>
+<li>Timeline Conflict Rules (¿es elegible el intervalo?)</li>
+<li>Capacity Pools (¿hay cupo real en ese intervalo?)</li>
+<li>Mostrar u ocultar slots</li>
+</ol>
+<p>Si hay conflicto → no tiene sentido evaluar capacity.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="11-ejemplos-reales">11. Ejemplos reales<a href="#11-ejemplos-reales" class="hash-link" aria-label="Enlace directo al 11. Ejemplos reales" title="Enlace directo al 11. Ejemplos reales">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bloqueo-total-por-viaje">Bloqueo total por viaje<a href="#bloqueo-total-por-viaje" class="hash-link" aria-label="Enlace directo al Bloqueo total por viaje" title="Enlace directo al Bloqueo total por viaje">​</a></h3>
+<p><strong>Source</strong></p>
+<ul>
+<li>Timeline personal</li>
+<li>Tag <code>#travel</code></li>
+</ul>
+<p><strong>Target</strong></p>
+<ul>
+<li>All Listings reservables</li>
+</ul>
+<p><strong>Action</strong></p>
+<ul>
+<li>Hide slots</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="evento-escolar-afecta-solo-listados-presenciales">Evento escolar afecta solo listados presenciales<a href="#evento-escolar-afecta-solo-listados-presenciales" class="hash-link" aria-label="Enlace directo al Evento escolar afecta solo listados presenciales" title="Enlace directo al Evento escolar afecta solo listados presenciales">​</a></h3>
+<p><strong>Source</strong></p>
+<ul>
+<li>Timeline familiar</li>
+<li>Tag <code>#school</code></li>
+</ul>
+<p><strong>Target</strong></p>
+<ul>
+<li>Listings “presenciales”</li>
+</ul>
+<p><strong>Action</strong></p>
+<ul>
+<li>Hide slots</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monitoreo-sin-bloqueo-automático">Monitoreo sin bloqueo automático<a href="#monitoreo-sin-bloqueo-automático" class="hash-link" aria-label="Enlace directo al Monitoreo sin bloqueo automático" title="Enlace directo al Monitoreo sin bloqueo automático">​</a></h3>
+<p><strong>Source</strong></p>
+<ul>
+<li>Timeline de equipo/organización</li>
+<li>Status Confirmed</li>
+</ul>
+<p><strong>Target</strong></p>
+<ul>
+<li>All Listings reservables</li>
+</ul>
+<p><strong>Action</strong></p>
+<ul>
+<li>Notify only</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="12-ux-sugerido">12. UX sugerido<a href="#12-ux-sugerido" class="hash-link" aria-label="Enlace directo al 12. UX sugerido" title="Enlace directo al 12. UX sugerido">​</a></h2>
+<ul>
+<li>Tab “Conflicts” dentro del Timeline</li>
+<li>reglas expresadas en lenguaje natural:</li>
+</ul>
+<blockquote>
+<p>“When timeline X has event tagged #school → hide slots for Listings presenciales”</p>
+</blockquote>
+<ul>
+<li>vista previa del impacto</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="13-frase-final">13. Frase final<a href="#13-frase-final" class="hash-link" aria-label="Enlace directo al 13. Frase final" title="Enlace directo al 13. Frase final">​</a></h2>
+<blockquote>
+<p><strong>Timeline Conflict Rules no venden tiempo.<br>
+<!-- -->Aseguran coherencia cuando la realidad se superpone.</strong></p>
+</blockquote></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vytehub/vm-docs/tree/main/docs/00-core-domain/04-bounded-contexts/02.Supply - Time &amp; Place/01.timelines/02.timeline_conflict_rules.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar esta página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/vm-docs-public/docs/core-domain/bounded-contexts/Supply - Time &amp; Place/timelines/timeline"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Timeline</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/vm-docs-public/docs/core-domain/bounded-contexts/Supply - Time &amp; Place/timelines/timeline_sharing"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Timeline Sharing &amp; Visibility</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#decisiones-automáticas-ante-conflictos-de-agenda" class="table-of-contents__link toc-highlight">Decisiones automáticas ante conflictos de agenda</a></li><li><a href="#1-visión-general" class="table-of-contents__link toc-highlight">1. Visión general</a></li><li><a href="#2-el-problema-que-resuelven" class="table-of-contents__link toc-highlight">2. El problema que resuelven</a></li><li><a href="#3-principios-clave" class="table-of-contents__link toc-highlight">3. Principios clave</a><ul><li><a href="#31-se-observan-events-no-intenciones" class="table-of-contents__link toc-highlight">3.1 Se observan events, no intenciones</a></li><li><a href="#32-el-timeline-decide" class="table-of-contents__link toc-highlight">3.2 El Timeline decide</a></li><li><a href="#33-separación-clara" class="table-of-contents__link toc-highlight">3.3 Separación clara</a></li></ul></li><li><a href="#4-anatomía-de-una-rule-source--target--action" class="table-of-contents__link toc-highlight">4. Anatomía de una rule (Source / Target / Action)</a></li><li><a href="#5-source--events-observados" class="table-of-contents__link toc-highlight">5. Source — Events observados</a><ul><li><a href="#timelines-observados" class="table-of-contents__link toc-highlight">Timelines observados</a></li><li><a href="#filtros-recomendados" class="table-of-contents__link toc-highlight">Filtros recomendados</a></li></ul></li><li><a href="#6-importante-si-el-source-es-un-timeline-compartido" class="table-of-contents__link toc-highlight">6. Importante: si el source es un timeline compartido</a></li><li><a href="#7-target--qué-se-ve-afectado" class="table-of-contents__link toc-highlight">7. Target — Qué se ve afectado</a><ul><li><a href="#listings-reservables" class="table-of-contents__link toc-highlight">Listings reservables</a></li><li><a href="#events-opcional--futuro" class="table-of-contents__link toc-highlight">Events (opcional / futuro)</a></li></ul></li><li><a href="#8-actions--decisiones-del-sistema" class="table-of-contents__link toc-highlight">8. Actions — Decisiones del sistema</a><ul><li><a href="#sobre-slots-mvp" class="table-of-contents__link toc-highlight">Sobre Slots (MVP)</a></li><li><a href="#sobre-events-futuro" class="table-of-contents__link toc-highlight">Sobre Events (futuro)</a></li></ul></li><li><a href="#9-cuándo-se-activa-un-conflicto" class="table-of-contents__link toc-highlight">9. Cuándo se activa un conflicto</a></li><li><a href="#10-relación-con-capacity-pools" class="table-of-contents__link toc-highlight">10. Relación con Capacity Pools</a></li><li><a href="#11-ejemplos-reales" class="table-of-contents__link toc-highlight">11. Ejemplos reales</a><ul><li><a href="#bloqueo-total-por-viaje" class="table-of-contents__link toc-highlight">Bloqueo total por viaje</a></li><li><a href="#evento-escolar-afecta-solo-listados-presenciales" class="table-of-contents__link toc-highlight">Evento escolar afecta solo listados presenciales</a></li><li><a href="#monitoreo-sin-bloqueo-automático" class="table-of-contents__link toc-highlight">Monitoreo sin bloqueo automático</a></li></ul></li><li><a href="#12-ux-sugerido" class="table-of-contents__link toc-highlight">12. UX sugerido</a></li><li><a href="#13-frase-final" class="table-of-contents__link toc-highlight">13. Frase final</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/docs/core-domain/vision/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/vm-docs-public/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 VyteMergeDocs, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
